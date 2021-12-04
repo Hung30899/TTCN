@@ -16,7 +16,8 @@ namespace TTCN.Class
         public static void Connect()
         {
             Con = new SqlConnection(); //Khởi tạo đối tượng kết nối
-            Con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\H\Desktop\ttcn\TTCN\TTCN\QLPM.mdf;Integrated Security=True";
+            Con.ConnectionString = //@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\H\Desktop\ttcn\TTCN\TTCN\QLPM.mdf;Integrated Security=True";
+            @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\abc\TTCN\TTCN\TTCN\QLPM.mdf;Integrated Security=True";
             Con.Open();
         }
         public static void RunSQLDel(string sql)

@@ -71,18 +71,19 @@ namespace TTCN
             this.dgvUser.BackgroundColor = System.Drawing.Color.White;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUser.Location = new System.Drawing.Point(0, 461);
+            this.dgvUser.Location = new System.Drawing.Point(0, 400);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.RowHeadersWidth = 51;
-            this.dgvUser.Size = new System.Drawing.Size(1368, 226);
+            this.dgvUser.Size = new System.Drawing.Size(1085, 349);
             this.dgvUser.TabIndex = 14;
+            this.dgvUser.Click += new System.EventHandler(this.dgvUser_Click);
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(22, 7);
+            this.label1.Location = new System.Drawing.Point(-50, -10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(553, 89);
             this.label1.TabIndex = 0;
@@ -96,11 +97,10 @@ namespace TTCN
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1368, 110);
+            this.panel2.Size = new System.Drawing.Size(1368, 73);
             this.panel2.TabIndex = 27;
             // 
             // pictureBox1
@@ -108,7 +108,7 @@ namespace TTCN
             this.pictureBox1.Image = global::TTCN.Properties.Resources.icon_rai_khoan;
             this.pictureBox1.Location = new System.Drawing.Point(30, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(113, 106);
+            this.pictureBox1.Size = new System.Drawing.Size(75, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -127,7 +127,7 @@ namespace TTCN
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1368, 461);
+            this.panel1.Size = new System.Drawing.Size(1085, 400);
             this.panel1.TabIndex = 13;
             // 
             // groupBox3
@@ -147,18 +147,19 @@ namespace TTCN
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(141, 115);
+            this.groupBox3.Location = new System.Drawing.Point(33, 101);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(976, 230);
+            this.groupBox3.Size = new System.Drawing.Size(821, 230);
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chi tiết";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // rbnNu
             // 
             this.rbnNu.AutoSize = true;
             this.rbnNu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnNu.Location = new System.Drawing.Point(800, 47);
+            this.rbnNu.Location = new System.Drawing.Point(636, 47);
             this.rbnNu.Name = "rbnNu";
             this.rbnNu.Size = new System.Drawing.Size(51, 25);
             this.rbnNu.TabIndex = 7;
@@ -170,7 +171,7 @@ namespace TTCN
             this.rbnNam.AutoSize = true;
             this.rbnNam.Checked = true;
             this.rbnNam.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnNam.Location = new System.Drawing.Point(696, 47);
+            this.rbnNam.Location = new System.Drawing.Point(532, 47);
             this.rbnNam.Name = "rbnNam";
             this.rbnNam.Size = new System.Drawing.Size(65, 25);
             this.rbnNam.TabIndex = 6;
@@ -181,7 +182,7 @@ namespace TTCN
             // txtSDT
             // 
             this.txtSDT.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(696, 135);
+            this.txtSDT.Location = new System.Drawing.Point(532, 135);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(240, 29);
             this.txtSDT.TabIndex = 9;
@@ -191,7 +192,7 @@ namespace TTCN
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(541, 143);
+            this.label7.Location = new System.Drawing.Point(434, 143);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 21);
             this.label7.TabIndex = 23;
@@ -200,7 +201,7 @@ namespace TTCN
             // txtBoMon
             // 
             this.txtBoMon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoMon.Location = new System.Drawing.Point(696, 87);
+            this.txtBoMon.Location = new System.Drawing.Point(532, 87);
             this.txtBoMon.Name = "txtBoMon";
             this.txtBoMon.Size = new System.Drawing.Size(240, 29);
             this.txtBoMon.TabIndex = 8;
@@ -210,7 +211,7 @@ namespace TTCN
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(541, 95);
+            this.label6.Location = new System.Drawing.Point(434, 95);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 21);
             this.label6.TabIndex = 21;
@@ -219,7 +220,7 @@ namespace TTCN
             // txtHoTen
             // 
             this.txtHoTen.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTen.Location = new System.Drawing.Point(215, 135);
+            this.txtHoTen.Location = new System.Drawing.Point(138, 135);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(240, 29);
             this.txtHoTen.TabIndex = 4;
@@ -238,7 +239,7 @@ namespace TTCN
             // txtUser
             // 
             this.txtUser.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(215, 46);
+            this.txtUser.Location = new System.Drawing.Point(138, 46);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(240, 29);
             this.txtUser.TabIndex = 1;
@@ -248,7 +249,7 @@ namespace TTCN
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(541, 47);
+            this.label12.Location = new System.Drawing.Point(434, 47);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(80, 21);
             this.label12.TabIndex = 14;
@@ -257,7 +258,7 @@ namespace TTCN
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(215, 87);
+            this.txtPass.Location = new System.Drawing.Point(138, 87);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(240, 29);
             this.txtPass.TabIndex = 2;
@@ -291,9 +292,9 @@ namespace TTCN
             this.groupBox1.Controls.Add(this.rbnUser);
             this.groupBox1.Controls.Add(this.btnTimKiem);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 369);
+            this.groupBox1.Location = new System.Drawing.Point(0, 322);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1368, 92);
+            this.groupBox1.Size = new System.Drawing.Size(1085, 78);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
@@ -303,7 +304,7 @@ namespace TTCN
             this.cboSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboSearch.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSearch.FormattingEnabled = true;
-            this.cboSearch.Location = new System.Drawing.Point(383, 29);
+            this.cboSearch.Location = new System.Drawing.Point(324, 25);
             this.cboSearch.Name = "cboSearch";
             this.cboSearch.Size = new System.Drawing.Size(230, 31);
             this.cboSearch.TabIndex = 25;
@@ -312,11 +313,10 @@ namespace TTCN
             // 
             this.rbnTen.AutoSize = true;
             this.rbnTen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.rbnTen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbnTen.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnTen.Location = new System.Drawing.Point(802, 37);
+            this.rbnTen.Location = new System.Drawing.Point(743, 32);
             this.rbnTen.Name = "rbnTen";
-            this.rbnTen.Size = new System.Drawing.Size(100, 25);
+            this.rbnTen.Size = new System.Drawing.Size(101, 25);
             this.rbnTen.TabIndex = 3;
             this.rbnTen.Text = "Theo Tên";
             this.rbnTen.UseVisualStyleBackColor = true;
@@ -328,7 +328,7 @@ namespace TTCN
             this.rbnUser.Checked = true;
             this.rbnUser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.rbnUser.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnUser.Location = new System.Drawing.Point(650, 37);
+            this.rbnUser.Location = new System.Drawing.Point(591, 32);
             this.rbnUser.Name = "rbnUser";
             this.rbnUser.Size = new System.Drawing.Size(146, 25);
             this.rbnUser.TabIndex = 2;
@@ -344,9 +344,9 @@ namespace TTCN
             this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.Image = global::TTCN.Properties.Resources.img_timkiem;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(215, 19);
+            this.btnTimKiem.Location = new System.Drawing.Point(163, 15);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(148, 48);
+            this.btnTimKiem.Size = new System.Drawing.Size(140, 41);
             this.btnTimKiem.TabIndex = 0;
             this.btnTimKiem.Text = "     Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
@@ -360,7 +360,7 @@ namespace TTCN
             this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Image = global::TTCN.Properties.Resources.img_huy;
             this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.Location = new System.Drawing.Point(1147, 314);
+            this.btnHuy.Location = new System.Drawing.Point(899, 295);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(94, 31);
             this.btnHuy.TabIndex = 13;
@@ -375,7 +375,7 @@ namespace TTCN
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Image = global::TTCN.Properties.Resources.img_luu;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(1147, 267);
+            this.btnLuu.Location = new System.Drawing.Point(899, 248);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(94, 31);
             this.btnLuu.TabIndex = 12;
@@ -390,7 +390,7 @@ namespace TTCN
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::TTCN.Properties.Resources.img_xoa;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(1147, 221);
+            this.btnXoa.Location = new System.Drawing.Point(899, 202);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(94, 31);
             this.btnXoa.TabIndex = 11;
@@ -405,7 +405,7 @@ namespace TTCN
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = global::TTCN.Properties.Resources.img_sua;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(1147, 175);
+            this.btnSua.Location = new System.Drawing.Point(899, 156);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(94, 31);
             this.btnSua.TabIndex = 10;
@@ -421,7 +421,7 @@ namespace TTCN
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = global::TTCN.Properties.Resources.img_them;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(1147, 130);
+            this.btnThem.Location = new System.Drawing.Point(899, 111);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(94, 31);
             this.btnThem.TabIndex = 9;
@@ -433,7 +433,7 @@ namespace TTCN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1368, 687);
+            this.ClientSize = new System.Drawing.Size(1085, 749);
             this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.panel1);
             this.Name = "frmNguoiDung";
