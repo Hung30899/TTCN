@@ -36,5 +36,10 @@ namespace TTCN
         {
             Functions.Connect();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

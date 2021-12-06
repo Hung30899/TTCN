@@ -36,19 +36,16 @@ namespace TTCN
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtUser = new System.Windows.Forms.TextBox();
+            this.cboSearch = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dtpBD = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dgvUser = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.rbnpm = new System.Windows.Forms.RadioButton();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.rbnmm = new System.Windows.Forms.RadioButton();
+            this.dgvLS = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLS)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,10 +53,9 @@ namespace TTCN
             this.label1.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(-22, 4);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(-29, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 72);
+            this.label1.Size = new System.Drawing.Size(365, 89);
             this.label1.TabIndex = 0;
             this.label1.Text = "LỊCH SỬ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,9 +67,9 @@ namespace TTCN
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(848, 316);
+            this.panel1.Size = new System.Drawing.Size(1136, 288);
             this.panel1.TabIndex = 13;
             // 
             // panel2
@@ -84,129 +80,107 @@ namespace TTCN
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(848, 82);
+            this.panel2.Size = new System.Drawing.Size(1136, 100);
             this.panel2.TabIndex = 27;
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
-            this.groupBox3.Controls.Add(this.txtUser);
+            this.groupBox3.Controls.Add(this.cboSearch);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.dtpBD);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.radioButton1);
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.rbnpm);
+            this.groupBox3.Controls.Add(this.btnTimKiem);
+            this.groupBox3.Controls.Add(this.rbnmm);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(28, 93);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Location = new System.Drawing.Point(37, 114);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox3.Size = new System.Drawing.Size(782, 195);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(1043, 161);
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm Kiếm";
             // 
-            // txtUser
+            // cboSearch
             // 
-            this.txtUser.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(15, 72);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(223, 26);
-            this.txtUser.TabIndex = 30;
+            this.cboSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboSearch.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSearch.FormattingEnabled = true;
+            this.cboSearch.Location = new System.Drawing.Point(20, 86);
+            this.cboSearch.Name = "cboSearch";
+            this.cboSearch.Size = new System.Drawing.Size(230, 37);
+            this.cboSearch.TabIndex = 29;
+            this.cboSearch.SelectedIndexChanged += new System.EventHandler(this.cboSearch_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(11, 44);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(15, 54);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 22);
+            this.label4.Size = new System.Drawing.Size(105, 26);
             this.label4.TabIndex = 28;
             this.label4.Text = "Từ khóa:";
             // 
-            // dtpBD
+            // rbnpm
             // 
-            this.dtpBD.CalendarFont = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBD.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBD.Location = new System.Drawing.Point(95, 117);
-            this.dtpBD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtpBD.Name = "dtpBD";
-            this.dtpBD.Size = new System.Drawing.Size(143, 32);
-            this.dtpBD.TabIndex = 35;
-            this.dtpBD.ValueChanged += new System.EventHandler(this.dtpBD_ValueChanged);
+            this.rbnpm.AutoSize = true;
+            this.rbnpm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.rbnpm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbnpm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbnpm.Location = new System.Drawing.Point(458, 91);
+            this.rbnpm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbnpm.Name = "rbnpm";
+            this.rbnpm.Size = new System.Drawing.Size(198, 31);
+            this.rbnpm.TabIndex = 27;
+            this.rbnpm.Text = "Theo Phòng Máy";
+            this.rbnpm.UseVisualStyleBackColor = true;
+            this.rbnpm.CheckedChanged += new System.EventHandler(this.rbnpm_CheckedChanged);
             // 
-            // label2
+            // btnTimKiem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 121);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 25);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Ngày:";
+            this.btnTimKiem.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.Image = global::TTCN.Properties.Resources.img_timkiem;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(829, 79);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(195, 48);
+            this.btnTimKiem.TabIndex = 25;
+            this.btnTimKiem.Text = "     Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // radioButton1
+            // rbnmm
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(385, 72);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(157, 25);
-            this.radioButton1.TabIndex = 27;
-            this.radioButton1.Text = "Theo Phòng Máy";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbnmm.AutoSize = true;
+            this.rbnmm.Checked = true;
+            this.rbnmm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.rbnmm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbnmm.Location = new System.Drawing.Point(274, 91);
+            this.rbnmm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbnmm.Name = "rbnmm";
+            this.rbnmm.Size = new System.Drawing.Size(170, 31);
+            this.rbnmm.TabIndex = 26;
+            this.rbnmm.TabStop = true;
+            this.rbnmm.Text = "Theo Mã Máy";
+            this.rbnmm.UseVisualStyleBackColor = true;
+            this.rbnmm.CheckedChanged += new System.EventHandler(this.rbnmm_CheckedChanged);
             // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::TTCN.Properties.Resources.img_timkiem;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(621, 62);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 39);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "     Tìm kiếm";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(253, 72);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(134, 25);
-            this.radioButton2.TabIndex = 26;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Theo Mã Máy";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // dgvUser
+            // dgvLS
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(242)))), ((int)(((byte)(232)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvUser.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvUser.BackgroundColor = System.Drawing.Color.White;
-            this.dgvUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvLS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvLS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvLS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvLS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -214,8 +188,8 @@ namespace TTCN
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvUser.ColumnHeadersHeight = 40;
+            this.dgvLS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvLS.ColumnHeadersHeight = 40;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -223,46 +197,33 @@ namespace TTCN
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUser.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUser.GridColor = System.Drawing.Color.DodgerBlue;
-            this.dgvUser.Location = new System.Drawing.Point(0, 0);
-            this.dgvUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgvUser.Name = "dgvUser";
-            this.dgvUser.RowHeadersWidth = 51;
-            this.dgvUser.Size = new System.Drawing.Size(848, 581);
-            this.dgvUser.TabIndex = 14;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::TTCN.Properties.Resources.kisspng_computer_icons_clip_art_refresh_icon_5b4b98c4dd95d7_4801181515316809649076__2_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(621, 122);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 39);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "     Làm Mới ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.dgvLS.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvLS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvLS.GridColor = System.Drawing.Color.DodgerBlue;
+            this.dgvLS.Location = new System.Drawing.Point(0, 288);
+            this.dgvLS.Name = "dgvLS";
+            this.dgvLS.RowHeadersWidth = 51;
+            this.dgvLS.Size = new System.Drawing.Size(1136, 427);
+            this.dgvLS.TabIndex = 14;
+            this.dgvLS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLS_CellContentClick);
+            this.dgvLS.Click += new System.EventHandler(this.dgvLS_Click);
             // 
             // frmLichSu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 581);
+            this.ClientSize = new System.Drawing.Size(1136, 715);
+            this.Controls.Add(this.dgvLS);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dgvUser);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmLichSu";
             this.Text = "frmLichSu";
+            this.Load += new System.EventHandler(this.frmLichSu_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,15 +232,12 @@ namespace TTCN
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dgvUser;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbnpm;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.RadioButton rbnmm;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.DateTimePicker dtpBD;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cboSearch;
+        private System.Windows.Forms.DataGridView dgvLS;
     }
 }

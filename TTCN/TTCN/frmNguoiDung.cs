@@ -323,6 +323,11 @@ namespace TTCN
 
         }
 
+        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void LoadDataGridView()
         {
             string sql;
