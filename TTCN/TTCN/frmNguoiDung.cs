@@ -323,6 +323,11 @@ namespace TTCN
 
         }
 
+        private void cboSearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void LoadDataGridView()
         {
             string sql;

@@ -32,7 +32,6 @@ namespace TTCN
             this.dgvUser = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rbnNu = new System.Windows.Forms.RadioButton();
@@ -52,6 +51,7 @@ namespace TTCN
             this.cboSearch = new System.Windows.Forms.ComboBox();
             this.rbnTen = new System.Windows.Forms.RadioButton();
             this.rbnUser = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -60,10 +60,10 @@ namespace TTCN
             this.btnThem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvUser
@@ -102,16 +102,6 @@ namespace TTCN
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1368, 73);
             this.panel2.TabIndex = 27;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TTCN.Properties.Resources.icon_rai_khoan;
-            this.pictureBox1.Location = new System.Drawing.Point(30, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 67);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -308,6 +298,7 @@ namespace TTCN
             this.cboSearch.Name = "cboSearch";
             this.cboSearch.Size = new System.Drawing.Size(230, 31);
             this.cboSearch.TabIndex = 25;
+            this.cboSearch.SelectedIndexChanged += new System.EventHandler(this.cboSearch_SelectedIndexChanged);
             // 
             // rbnTen
             // 
@@ -336,6 +327,16 @@ namespace TTCN
             this.rbnUser.Text = "Theo Username";
             this.rbnUser.UseVisualStyleBackColor = true;
             this.rbnUser.CheckedChanged += new System.EventHandler(this.rbnUser_CheckedChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TTCN.Properties.Resources.icon_rai_khoan;
+            this.pictureBox1.Location = new System.Drawing.Point(30, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 67);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // btnTimKiem
             // 
@@ -441,12 +442,12 @@ namespace TTCN
             this.Load += new System.EventHandler(this.frmNguoiDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

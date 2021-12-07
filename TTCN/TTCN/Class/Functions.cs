@@ -16,8 +16,7 @@ namespace TTCN.Class
         public static void Connect()
         {
             Con = new SqlConnection(); //Khởi tạo đối tượng kết nối
-            Con.ConnectionString = //@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\H\Desktop\ttcn\TTCN\TTCN\QLPM.mdf;Integrated Security=True";
-            @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\abc\TTCN\TTCN\TTCN\QLPM.mdf;Integrated Security=True";
+            Con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + GetPath2("") + @"QLPM.mdf;Integrated Security=True;Connect Timeout=30";
             Con.Open();
         }
         public static void RunSQLDel(string sql)
@@ -126,5 +125,17 @@ namespace TTCN.Class
                 frm.ActiveMdiChild.Close();
             }
         }
+        public static string GetPath2(string fname)
+        {
+
+            string startupPath = System.IO.Directory.GetCurrentDirectory();
+
+            startupPath = AppDomain.CurrentDomain.BaseDirectory;
+            startupPath = startupPath.Replace("\\bin\\Debug", "");
+            return startupPath + fname.Trim();
+
+
+        }
+        
     }
 }

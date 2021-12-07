@@ -244,9 +244,29 @@ namespace TTCN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mt_tt_hong1 {
+            get {
+                object obj = ResourceManager.GetObject("mt_tt_hong1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mt_tt_tot {
             get {
                 object obj = ResourceManager.GetObject("mt_tt_tot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mt_tt_tot1 {
+            get {
+                object obj = ResourceManager.GetObject("mt_tt_tot1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

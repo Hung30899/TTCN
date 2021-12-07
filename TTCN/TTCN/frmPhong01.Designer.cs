@@ -35,7 +35,7 @@ namespace TTCN
             this.cboChon = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grbSoDo = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -90,11 +90,9 @@ namespace TTCN
             this.btnMay01 = new System.Windows.Forms.Button();
             this.pnlThongTinMay = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.lblPMM = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.lblTinhTrang = new System.Windows.Forms.Label();
+            this.lblTT = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -103,7 +101,7 @@ namespace TTCN
             this.lblMayHong = new System.Windows.Forms.Label();
             this.lblMayTot = new System.Windows.Forms.Label();
             this.lblSoLuong = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.lblViTri = new System.Windows.Forms.Label();
             this.lblTen = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -111,46 +109,22 @@ namespace TTCN
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.grbGV = new System.Windows.Forms.GroupBox();
             this.grbCB = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
+            this.grbGV = new System.Windows.Forms.GroupBox();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnBaoCao = new System.Windows.Forms.Button();
-            this.label30 = new System.Windows.Forms.Label();
+            this.lblBanPhim = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblManHinh = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblPhongMay = new System.Windows.Forms.Label();
+            this.cboTT = new System.Windows.Forms.ComboBox();
+            this.lblPM = new System.Windows.Forms.Label();
+            this.lblHDH = new System.Windows.Forms.Label();
+            this.lblChuot = new System.Windows.Forms.Label();
+            this.lblOCung = new System.Windows.Forms.Label();
+            this.lblRam = new System.Windows.Forms.Label();
+            this.lblCPU = new System.Windows.Forms.Label();
+            this.lblMain = new System.Windows.Forms.Label();
             this.lblSoMay = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -161,13 +135,37 @@ namespace TTCN
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtHDH = new System.Windows.Forms.TextBox();
+            this.txtChuot = new System.Windows.Forms.TextBox();
+            this.txtBanPhim = new System.Windows.Forms.TextBox();
+            this.txtManHinh = new System.Windows.Forms.TextBox();
+            this.txtOCung = new System.Windows.Forms.TextBox();
+            this.txtRAM = new System.Windows.Forms.TextBox();
+            this.txtCPU = new System.Windows.Forms.TextBox();
+            this.txtMain = new System.Windows.Forms.TextBox();
+            this.txtSoMay = new System.Windows.Forms.TextBox();
+            this.btnHuy2 = new System.Windows.Forms.Button();
+            this.btnCapNhat = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.cboTinhTrang = new System.Windows.Forms.ComboBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.txtPM = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.grbSoDo.SuspendLayout();
             this.pnlThongTinMay.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.grbGV.SuspendLayout();
             this.grbCB.SuspendLayout();
+            this.grbGV.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -208,7 +206,7 @@ namespace TTCN
             this.cboChon.Size = new System.Drawing.Size(241, 40);
             this.cboChon.TabIndex = 2;
             this.cboChon.Tag = "";
-            this.cboChon.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.cboChon.SelectedIndexChanged += new System.EventHandler(this.cboChon_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -234,67 +232,67 @@ namespace TTCN
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // groupBox1
+            // grbSoDo
             // 
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.btnMay47);
-            this.groupBox1.Controls.Add(this.btnMay07);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btnMay15);
-            this.groupBox1.Controls.Add(this.btnMay48);
-            this.groupBox1.Controls.Add(this.btnMay23);
-            this.groupBox1.Controls.Add(this.btnMay40);
-            this.groupBox1.Controls.Add(this.btnMay31);
-            this.groupBox1.Controls.Add(this.btnMay46);
-            this.groupBox1.Controls.Add(this.btnMay39);
-            this.groupBox1.Controls.Add(this.btnMay32);
-            this.groupBox1.Controls.Add(this.btnMay24);
-            this.groupBox1.Controls.Add(this.btnMay45);
-            this.groupBox1.Controls.Add(this.btnMay16);
-            this.groupBox1.Controls.Add(this.btnMay44);
-            this.groupBox1.Controls.Add(this.btnMay08);
-            this.groupBox1.Controls.Add(this.btnMay43);
-            this.groupBox1.Controls.Add(this.btnMay42);
-            this.groupBox1.Controls.Add(this.btnMay41);
-            this.groupBox1.Controls.Add(this.btnMay38);
-            this.groupBox1.Controls.Add(this.btnMay37);
-            this.groupBox1.Controls.Add(this.btnMay36);
-            this.groupBox1.Controls.Add(this.btnMay35);
-            this.groupBox1.Controls.Add(this.btnMay34);
-            this.groupBox1.Controls.Add(this.btnMay33);
-            this.groupBox1.Controls.Add(this.btnMay30);
-            this.groupBox1.Controls.Add(this.btnMay29);
-            this.groupBox1.Controls.Add(this.btnMay28);
-            this.groupBox1.Controls.Add(this.btnMay27);
-            this.groupBox1.Controls.Add(this.btnMay26);
-            this.groupBox1.Controls.Add(this.btnMay25);
-            this.groupBox1.Controls.Add(this.btnMay22);
-            this.groupBox1.Controls.Add(this.btnMay21);
-            this.groupBox1.Controls.Add(this.btnMay20);
-            this.groupBox1.Controls.Add(this.btnMay19);
-            this.groupBox1.Controls.Add(this.btnMay18);
-            this.groupBox1.Controls.Add(this.btnMay17);
-            this.groupBox1.Controls.Add(this.btnMay14);
-            this.groupBox1.Controls.Add(this.btnMay13);
-            this.groupBox1.Controls.Add(this.btnMay12);
-            this.groupBox1.Controls.Add(this.btnMay11);
-            this.groupBox1.Controls.Add(this.btnMay10);
-            this.groupBox1.Controls.Add(this.btnMay09);
-            this.groupBox1.Controls.Add(this.btnMay06);
-            this.groupBox1.Controls.Add(this.btnMay05);
-            this.groupBox1.Controls.Add(this.btnMay04);
-            this.groupBox1.Controls.Add(this.btnMay03);
-            this.groupBox1.Controls.Add(this.btnMay02);
-            this.groupBox1.Controls.Add(this.btnMay01);
-            this.groupBox1.Font = new System.Drawing.Font("Candara", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(46, 109);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1137, 884);
-            this.groupBox1.TabIndex = 51;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sơ đồ phòng máy";
+            this.grbSoDo.Controls.Add(this.label21);
+            this.grbSoDo.Controls.Add(this.label24);
+            this.grbSoDo.Controls.Add(this.label3);
+            this.grbSoDo.Controls.Add(this.btnMay47);
+            this.grbSoDo.Controls.Add(this.btnMay07);
+            this.grbSoDo.Controls.Add(this.label2);
+            this.grbSoDo.Controls.Add(this.btnMay15);
+            this.grbSoDo.Controls.Add(this.btnMay48);
+            this.grbSoDo.Controls.Add(this.btnMay23);
+            this.grbSoDo.Controls.Add(this.btnMay40);
+            this.grbSoDo.Controls.Add(this.btnMay31);
+            this.grbSoDo.Controls.Add(this.btnMay46);
+            this.grbSoDo.Controls.Add(this.btnMay39);
+            this.grbSoDo.Controls.Add(this.btnMay32);
+            this.grbSoDo.Controls.Add(this.btnMay24);
+            this.grbSoDo.Controls.Add(this.btnMay45);
+            this.grbSoDo.Controls.Add(this.btnMay16);
+            this.grbSoDo.Controls.Add(this.btnMay44);
+            this.grbSoDo.Controls.Add(this.btnMay08);
+            this.grbSoDo.Controls.Add(this.btnMay43);
+            this.grbSoDo.Controls.Add(this.btnMay42);
+            this.grbSoDo.Controls.Add(this.btnMay41);
+            this.grbSoDo.Controls.Add(this.btnMay38);
+            this.grbSoDo.Controls.Add(this.btnMay37);
+            this.grbSoDo.Controls.Add(this.btnMay36);
+            this.grbSoDo.Controls.Add(this.btnMay35);
+            this.grbSoDo.Controls.Add(this.btnMay34);
+            this.grbSoDo.Controls.Add(this.btnMay33);
+            this.grbSoDo.Controls.Add(this.btnMay30);
+            this.grbSoDo.Controls.Add(this.btnMay29);
+            this.grbSoDo.Controls.Add(this.btnMay28);
+            this.grbSoDo.Controls.Add(this.btnMay27);
+            this.grbSoDo.Controls.Add(this.btnMay26);
+            this.grbSoDo.Controls.Add(this.btnMay25);
+            this.grbSoDo.Controls.Add(this.btnMay22);
+            this.grbSoDo.Controls.Add(this.btnMay21);
+            this.grbSoDo.Controls.Add(this.btnMay20);
+            this.grbSoDo.Controls.Add(this.btnMay19);
+            this.grbSoDo.Controls.Add(this.btnMay18);
+            this.grbSoDo.Controls.Add(this.btnMay17);
+            this.grbSoDo.Controls.Add(this.btnMay14);
+            this.grbSoDo.Controls.Add(this.btnMay13);
+            this.grbSoDo.Controls.Add(this.btnMay12);
+            this.grbSoDo.Controls.Add(this.btnMay11);
+            this.grbSoDo.Controls.Add(this.btnMay10);
+            this.grbSoDo.Controls.Add(this.btnMay09);
+            this.grbSoDo.Controls.Add(this.btnMay06);
+            this.grbSoDo.Controls.Add(this.btnMay05);
+            this.grbSoDo.Controls.Add(this.btnMay04);
+            this.grbSoDo.Controls.Add(this.btnMay03);
+            this.grbSoDo.Controls.Add(this.btnMay02);
+            this.grbSoDo.Controls.Add(this.btnMay01);
+            this.grbSoDo.Font = new System.Drawing.Font("Candara", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbSoDo.Location = new System.Drawing.Point(46, 109);
+            this.grbSoDo.Name = "grbSoDo";
+            this.grbSoDo.Size = new System.Drawing.Size(1137, 884);
+            this.grbSoDo.TabIndex = 51;
+            this.grbSoDo.TabStop = false;
+            this.grbSoDo.Text = "Sơ đồ phòng máy";
             // 
             // label21
             // 
@@ -335,7 +333,7 @@ namespace TTCN
             this.btnMay47.FlatAppearance.BorderSize = 0;
             this.btnMay47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMay47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMay47.Image = ((System.Drawing.Image)(resources.GetObject("btnMay47.Image")));
+            this.btnMay47.Image = global::TTCN.Properties.Resources.mt_tt_hong1;
             this.btnMay47.Location = new System.Drawing.Point(106, 125);
             this.btnMay47.Name = "btnMay47";
             this.btnMay47.Size = new System.Drawing.Size(84, 97);
@@ -344,6 +342,7 @@ namespace TTCN
             this.btnMay47.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay47.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay47.UseVisualStyleBackColor = false;
+            this.btnMay47.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay07
             // 
@@ -361,6 +360,7 @@ namespace TTCN
             this.btnMay07.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay07.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay07.UseVisualStyleBackColor = false;
+            this.btnMay07.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // label2
             // 
@@ -390,6 +390,7 @@ namespace TTCN
             this.btnMay15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay15.UseVisualStyleBackColor = false;
+            this.btnMay15.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay48
             // 
@@ -398,7 +399,7 @@ namespace TTCN
             this.btnMay48.FlatAppearance.BorderSize = 0;
             this.btnMay48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMay48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMay48.Image = ((System.Drawing.Image)(resources.GetObject("btnMay48.Image")));
+            this.btnMay48.Image = global::TTCN.Properties.Resources.mt_tt_tot1;
             this.btnMay48.Location = new System.Drawing.Point(106, 34);
             this.btnMay48.Name = "btnMay48";
             this.btnMay48.Size = new System.Drawing.Size(84, 97);
@@ -407,6 +408,7 @@ namespace TTCN
             this.btnMay48.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay48.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay48.UseVisualStyleBackColor = false;
+            this.btnMay48.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay23
             // 
@@ -424,6 +426,7 @@ namespace TTCN
             this.btnMay23.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay23.UseVisualStyleBackColor = false;
+            this.btnMay23.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay40
             // 
@@ -441,6 +444,7 @@ namespace TTCN
             this.btnMay40.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay40.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay40.UseVisualStyleBackColor = false;
+            this.btnMay40.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay31
             // 
@@ -458,6 +462,7 @@ namespace TTCN
             this.btnMay31.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay31.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay31.UseVisualStyleBackColor = false;
+            this.btnMay31.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay46
             // 
@@ -475,6 +480,7 @@ namespace TTCN
             this.btnMay46.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay46.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay46.UseVisualStyleBackColor = false;
+            this.btnMay46.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay39
             // 
@@ -492,6 +498,7 @@ namespace TTCN
             this.btnMay39.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay39.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay39.UseVisualStyleBackColor = false;
+            this.btnMay39.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay32
             // 
@@ -509,6 +516,7 @@ namespace TTCN
             this.btnMay32.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay32.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay32.UseVisualStyleBackColor = false;
+            this.btnMay32.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay24
             // 
@@ -526,6 +534,7 @@ namespace TTCN
             this.btnMay24.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay24.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay24.UseVisualStyleBackColor = false;
+            this.btnMay24.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay45
             // 
@@ -543,6 +552,7 @@ namespace TTCN
             this.btnMay45.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay45.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay45.UseVisualStyleBackColor = false;
+            this.btnMay45.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay16
             // 
@@ -560,6 +570,7 @@ namespace TTCN
             this.btnMay16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay16.UseVisualStyleBackColor = false;
+            this.btnMay16.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay44
             // 
@@ -577,6 +588,7 @@ namespace TTCN
             this.btnMay44.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay44.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay44.UseVisualStyleBackColor = false;
+            this.btnMay44.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay08
             // 
@@ -594,6 +606,7 @@ namespace TTCN
             this.btnMay08.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay08.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay08.UseVisualStyleBackColor = false;
+            this.btnMay08.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay43
             // 
@@ -611,6 +624,7 @@ namespace TTCN
             this.btnMay43.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay43.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay43.UseVisualStyleBackColor = false;
+            this.btnMay43.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay42
             // 
@@ -628,6 +642,7 @@ namespace TTCN
             this.btnMay42.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay42.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay42.UseVisualStyleBackColor = false;
+            this.btnMay42.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay41
             // 
@@ -645,6 +660,7 @@ namespace TTCN
             this.btnMay41.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay41.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay41.UseVisualStyleBackColor = false;
+            this.btnMay41.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay38
             // 
@@ -662,6 +678,7 @@ namespace TTCN
             this.btnMay38.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay38.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay38.UseVisualStyleBackColor = false;
+            this.btnMay38.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay37
             // 
@@ -679,6 +696,7 @@ namespace TTCN
             this.btnMay37.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay37.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay37.UseVisualStyleBackColor = false;
+            this.btnMay37.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay36
             // 
@@ -696,6 +714,7 @@ namespace TTCN
             this.btnMay36.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay36.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay36.UseVisualStyleBackColor = false;
+            this.btnMay36.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay35
             // 
@@ -713,6 +732,7 @@ namespace TTCN
             this.btnMay35.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay35.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay35.UseVisualStyleBackColor = false;
+            this.btnMay35.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay34
             // 
@@ -730,6 +750,7 @@ namespace TTCN
             this.btnMay34.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay34.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay34.UseVisualStyleBackColor = false;
+            this.btnMay34.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay33
             // 
@@ -747,6 +768,7 @@ namespace TTCN
             this.btnMay33.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay33.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay33.UseVisualStyleBackColor = false;
+            this.btnMay33.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay30
             // 
@@ -764,6 +786,7 @@ namespace TTCN
             this.btnMay30.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay30.UseVisualStyleBackColor = false;
+            this.btnMay30.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay29
             // 
@@ -781,6 +804,7 @@ namespace TTCN
             this.btnMay29.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay29.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay29.UseVisualStyleBackColor = false;
+            this.btnMay29.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay28
             // 
@@ -798,6 +822,7 @@ namespace TTCN
             this.btnMay28.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay28.UseVisualStyleBackColor = false;
+            this.btnMay28.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay27
             // 
@@ -815,6 +840,7 @@ namespace TTCN
             this.btnMay27.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay27.UseVisualStyleBackColor = false;
+            this.btnMay27.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay26
             // 
@@ -832,6 +858,7 @@ namespace TTCN
             this.btnMay26.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay26.UseVisualStyleBackColor = false;
+            this.btnMay26.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay25
             // 
@@ -849,6 +876,7 @@ namespace TTCN
             this.btnMay25.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay25.UseVisualStyleBackColor = false;
+            this.btnMay25.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay22
             // 
@@ -866,6 +894,7 @@ namespace TTCN
             this.btnMay22.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay22.UseVisualStyleBackColor = false;
+            this.btnMay22.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay21
             // 
@@ -883,6 +912,7 @@ namespace TTCN
             this.btnMay21.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay21.UseVisualStyleBackColor = false;
+            this.btnMay21.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay20
             // 
@@ -900,6 +930,7 @@ namespace TTCN
             this.btnMay20.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay20.UseVisualStyleBackColor = false;
+            this.btnMay20.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay19
             // 
@@ -917,6 +948,7 @@ namespace TTCN
             this.btnMay19.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay19.UseVisualStyleBackColor = false;
+            this.btnMay19.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay18
             // 
@@ -934,6 +966,7 @@ namespace TTCN
             this.btnMay18.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay18.UseVisualStyleBackColor = false;
+            this.btnMay18.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay17
             // 
@@ -951,6 +984,7 @@ namespace TTCN
             this.btnMay17.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay17.UseVisualStyleBackColor = false;
+            this.btnMay17.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay14
             // 
@@ -968,6 +1002,7 @@ namespace TTCN
             this.btnMay14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay14.UseVisualStyleBackColor = false;
+            this.btnMay14.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay13
             // 
@@ -985,6 +1020,7 @@ namespace TTCN
             this.btnMay13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay13.UseVisualStyleBackColor = false;
+            this.btnMay13.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay12
             // 
@@ -1002,6 +1038,7 @@ namespace TTCN
             this.btnMay12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay12.UseVisualStyleBackColor = false;
+            this.btnMay12.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay11
             // 
@@ -1019,6 +1056,7 @@ namespace TTCN
             this.btnMay11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay11.UseVisualStyleBackColor = false;
+            this.btnMay11.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay10
             // 
@@ -1036,6 +1074,7 @@ namespace TTCN
             this.btnMay10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay10.UseVisualStyleBackColor = false;
+            this.btnMay10.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay09
             // 
@@ -1053,6 +1092,7 @@ namespace TTCN
             this.btnMay09.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay09.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay09.UseVisualStyleBackColor = false;
+            this.btnMay09.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay06
             // 
@@ -1070,6 +1110,7 @@ namespace TTCN
             this.btnMay06.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay06.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay06.UseVisualStyleBackColor = false;
+            this.btnMay06.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay05
             // 
@@ -1087,6 +1128,7 @@ namespace TTCN
             this.btnMay05.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay05.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay05.UseVisualStyleBackColor = false;
+            this.btnMay05.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay04
             // 
@@ -1104,6 +1146,7 @@ namespace TTCN
             this.btnMay04.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay04.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay04.UseVisualStyleBackColor = false;
+            this.btnMay04.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay03
             // 
@@ -1121,6 +1164,7 @@ namespace TTCN
             this.btnMay03.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay03.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay03.UseVisualStyleBackColor = false;
+            this.btnMay03.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay02
             // 
@@ -1138,6 +1182,7 @@ namespace TTCN
             this.btnMay02.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay02.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay02.UseVisualStyleBackColor = false;
+            this.btnMay02.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // btnMay01
             // 
@@ -1155,11 +1200,12 @@ namespace TTCN
             this.btnMay01.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMay01.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMay01.UseVisualStyleBackColor = false;
+            this.btnMay01.Click += new System.EventHandler(this.buttons_CheckedChanged);
             // 
             // pnlThongTinMay
             // 
             this.pnlThongTinMay.Controls.Add(this.groupBox3);
-            this.pnlThongTinMay.Controls.Add(this.grbGV);
+            this.pnlThongTinMay.Controls.Add(this.grbCB);
             this.pnlThongTinMay.Location = new System.Drawing.Point(1218, 127);
             this.pnlThongTinMay.Name = "pnlThongTinMay";
             this.pnlThongTinMay.Size = new System.Drawing.Size(574, 866);
@@ -1168,11 +1214,9 @@ namespace TTCN
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
-            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.lblPMM);
             this.groupBox3.Controls.Add(this.label27);
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.label25);
-            this.groupBox3.Controls.Add(this.lblTinhTrang);
+            this.groupBox3.Controls.Add(this.lblTT);
             this.groupBox3.Controls.Add(this.label22);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.button3);
@@ -1181,7 +1225,7 @@ namespace TTCN
             this.groupBox3.Controls.Add(this.lblMayHong);
             this.groupBox3.Controls.Add(this.lblMayTot);
             this.groupBox3.Controls.Add(this.lblSoLuong);
-            this.groupBox3.Controls.Add(this.label29);
+            this.groupBox3.Controls.Add(this.lblViTri);
             this.groupBox3.Controls.Add(this.lblTen);
             this.groupBox3.Controls.Add(this.label31);
             this.groupBox3.Controls.Add(this.label36);
@@ -1200,56 +1244,35 @@ namespace TTCN
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "THÔNG TIN PHÒNG MÁY";
             // 
-            // label26
+            // lblPMM
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(145, 295);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(36, 28);
-            this.label26.TabIndex = 29;
-            this.label26.Text = "lbl";
+            this.lblPMM.AutoSize = true;
+            this.lblPMM.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPMM.Location = new System.Drawing.Point(145, 259);
+            this.lblPMM.Name = "lblPMM";
+            this.lblPMM.Size = new System.Drawing.Size(36, 28);
+            this.lblPMM.TabIndex = 29;
+            this.lblPMM.Text = "lbl";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(7, 295);
+            this.label27.Location = new System.Drawing.Point(7, 259);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(128, 28);
             this.label27.TabIndex = 28;
             this.label27.Text = "Phần mềm: ";
             // 
-            // label23
+            // lblTT
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(145, 258);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(36, 28);
-            this.label23.TabIndex = 27;
-            this.label23.Text = "lbl";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(7, 257);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(129, 28);
-            this.label25.TabIndex = 26;
-            this.label25.Text = "Phần cứng: ";
-            // 
-            // lblTinhTrang
-            // 
-            this.lblTinhTrang.AutoSize = true;
-            this.lblTinhTrang.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTinhTrang.Location = new System.Drawing.Point(218, 219);
-            this.lblTinhTrang.Name = "lblTinhTrang";
-            this.lblTinhTrang.Size = new System.Drawing.Size(36, 28);
-            this.lblTinhTrang.TabIndex = 25;
-            this.lblTinhTrang.Text = "lbl";
+            this.lblTT.AutoSize = true;
+            this.lblTT.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTT.Location = new System.Drawing.Point(218, 219);
+            this.lblTT.Name = "lblTT";
+            this.lblTT.Size = new System.Drawing.Size(36, 28);
+            this.lblTT.TabIndex = 25;
+            this.lblTT.Text = "lbl";
             // 
             // label22
             // 
@@ -1257,9 +1280,9 @@ namespace TTCN
             this.label22.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(7, 215);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(198, 28);
+            this.label22.Size = new System.Drawing.Size(195, 28);
             this.label22.TabIndex = 24;
-            this.label22.Text = "Tình trạng phòng: ";
+            this.label22.Text = "Trạng thái phòng: ";
             // 
             // button2
             // 
@@ -1321,7 +1344,7 @@ namespace TTCN
             // 
             this.lblMayTot.AutoSize = true;
             this.lblMayTot.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMayTot.Location = new System.Drawing.Point(303, 142);
+            this.lblMayTot.Location = new System.Drawing.Point(258, 142);
             this.lblMayTot.Name = "lblMayTot";
             this.lblMayTot.Size = new System.Drawing.Size(36, 28);
             this.lblMayTot.TabIndex = 13;
@@ -1337,15 +1360,15 @@ namespace TTCN
             this.lblSoLuong.TabIndex = 12;
             this.lblSoLuong.Text = "lbl";
             // 
-            // label29
+            // lblViTri
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(85, 68);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(36, 28);
-            this.label29.TabIndex = 11;
-            this.label29.Text = "lbl";
+            this.lblViTri.AutoSize = true;
+            this.lblViTri.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViTri.Location = new System.Drawing.Point(85, 68);
+            this.lblViTri.Name = "lblViTri";
+            this.lblViTri.Size = new System.Drawing.Size(36, 28);
+            this.lblViTri.TabIndex = 11;
+            this.lblViTri.Text = "lbl";
             // 
             // lblTen
             // 
@@ -1417,24 +1440,63 @@ namespace TTCN
             this.label40.TabIndex = 0;
             this.label40.Text = "Tên phòng: ";
             // 
+            // grbCB
+            // 
+            this.grbCB.BackColor = System.Drawing.Color.White;
+            this.grbCB.Controls.Add(this.grbGV);
+            this.grbCB.Controls.Add(this.txtHDH);
+            this.grbCB.Controls.Add(this.txtChuot);
+            this.grbCB.Controls.Add(this.txtBanPhim);
+            this.grbCB.Controls.Add(this.txtManHinh);
+            this.grbCB.Controls.Add(this.txtOCung);
+            this.grbCB.Controls.Add(this.txtRAM);
+            this.grbCB.Controls.Add(this.txtCPU);
+            this.grbCB.Controls.Add(this.txtMain);
+            this.grbCB.Controls.Add(this.txtSoMay);
+            this.grbCB.Controls.Add(this.btnHuy2);
+            this.grbCB.Controls.Add(this.btnCapNhat);
+            this.grbCB.Controls.Add(this.label34);
+            this.grbCB.Controls.Add(this.label41);
+            this.grbCB.Controls.Add(this.cboTinhTrang);
+            this.grbCB.Controls.Add(this.label50);
+            this.grbCB.Controls.Add(this.label51);
+            this.grbCB.Controls.Add(this.label52);
+            this.grbCB.Controls.Add(this.label53);
+            this.grbCB.Controls.Add(this.label54);
+            this.grbCB.Controls.Add(this.label55);
+            this.grbCB.Controls.Add(this.label56);
+            this.grbCB.Controls.Add(this.label57);
+            this.grbCB.Controls.Add(this.label58);
+            this.grbCB.Controls.Add(this.txtPM);
+            this.grbCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.grbCB.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbCB.ForeColor = System.Drawing.Color.Navy;
+            this.grbCB.Location = new System.Drawing.Point(9, 364);
+            this.grbCB.Name = "grbCB";
+            this.grbCB.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.grbCB.Size = new System.Drawing.Size(550, 494);
+            this.grbCB.TabIndex = 28;
+            this.grbCB.TabStop = false;
+            this.grbCB.Text = "THÔNG TIN MÁY TÍNH";
+            this.grbCB.Visible = false;
+            // 
             // grbGV
             // 
             this.grbGV.BackColor = System.Drawing.Color.White;
-            this.grbGV.Controls.Add(this.grbCB);
             this.grbGV.Controls.Add(this.btnHuy);
             this.grbGV.Controls.Add(this.btnBaoCao);
-            this.grbGV.Controls.Add(this.label30);
+            this.grbGV.Controls.Add(this.lblBanPhim);
             this.grbGV.Controls.Add(this.label28);
-            this.grbGV.Controls.Add(this.label16);
+            this.grbGV.Controls.Add(this.lblManHinh);
             this.grbGV.Controls.Add(this.label8);
-            this.grbGV.Controls.Add(this.comboBox1);
-            this.grbGV.Controls.Add(this.label20);
-            this.grbGV.Controls.Add(this.label19);
-            this.grbGV.Controls.Add(this.label18);
-            this.grbGV.Controls.Add(this.label17);
-            this.grbGV.Controls.Add(this.label15);
-            this.grbGV.Controls.Add(this.label10);
-            this.grbGV.Controls.Add(this.lblPhongMay);
+            this.grbGV.Controls.Add(this.cboTT);
+            this.grbGV.Controls.Add(this.lblPM);
+            this.grbGV.Controls.Add(this.lblHDH);
+            this.grbGV.Controls.Add(this.lblChuot);
+            this.grbGV.Controls.Add(this.lblOCung);
+            this.grbGV.Controls.Add(this.lblRam);
+            this.grbGV.Controls.Add(this.lblCPU);
+            this.grbGV.Controls.Add(this.lblMain);
             this.grbGV.Controls.Add(this.lblSoMay);
             this.grbGV.Controls.Add(this.label11);
             this.grbGV.Controls.Add(this.label12);
@@ -1448,7 +1510,7 @@ namespace TTCN
             this.grbGV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.grbGV.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbGV.ForeColor = System.Drawing.Color.Navy;
-            this.grbGV.Location = new System.Drawing.Point(3, 364);
+            this.grbGV.Location = new System.Drawing.Point(0, 0);
             this.grbGV.Name = "grbGV";
             this.grbGV.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.grbGV.Size = new System.Drawing.Size(556, 494);
@@ -1456,264 +1518,11 @@ namespace TTCN
             this.grbGV.TabStop = false;
             this.grbGV.Text = "THÔNG TIN MÁY TÍNH";
             // 
-            // grbCB
-            // 
-            this.grbCB.BackColor = System.Drawing.Color.White;
-            this.grbCB.Controls.Add(this.textBox10);
-            this.grbCB.Controls.Add(this.textBox9);
-            this.grbCB.Controls.Add(this.textBox8);
-            this.grbCB.Controls.Add(this.textBox7);
-            this.grbCB.Controls.Add(this.textBox6);
-            this.grbCB.Controls.Add(this.textBox5);
-            this.grbCB.Controls.Add(this.textBox4);
-            this.grbCB.Controls.Add(this.textBox3);
-            this.grbCB.Controls.Add(this.textBox2);
-            this.grbCB.Controls.Add(this.textBox1);
-            this.grbCB.Controls.Add(this.button1);
-            this.grbCB.Controls.Add(this.button5);
-            this.grbCB.Controls.Add(this.label34);
-            this.grbCB.Controls.Add(this.label41);
-            this.grbCB.Controls.Add(this.comboBox3);
-            this.grbCB.Controls.Add(this.label50);
-            this.grbCB.Controls.Add(this.label51);
-            this.grbCB.Controls.Add(this.label52);
-            this.grbCB.Controls.Add(this.label53);
-            this.grbCB.Controls.Add(this.label54);
-            this.grbCB.Controls.Add(this.label55);
-            this.grbCB.Controls.Add(this.label56);
-            this.grbCB.Controls.Add(this.label57);
-            this.grbCB.Controls.Add(this.label58);
-            this.grbCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.grbCB.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbCB.ForeColor = System.Drawing.Color.Navy;
-            this.grbCB.Location = new System.Drawing.Point(6, 0);
-            this.grbCB.Name = "grbCB";
-            this.grbCB.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.grbCB.Size = new System.Drawing.Size(550, 494);
-            this.grbCB.TabIndex = 28;
-            this.grbCB.TabStop = false;
-            this.grbCB.Text = "THÔNG TIN MÁY TÍNH";
-            this.grbCB.Visible = false;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(161, 363);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(293, 29);
-            this.textBox10.TabIndex = 37;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(161, 329);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(293, 29);
-            this.textBox9.TabIndex = 36;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(161, 292);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(293, 29);
-            this.textBox8.TabIndex = 35;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(161, 255);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(293, 29);
-            this.textBox7.TabIndex = 34;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(161, 217);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(293, 29);
-            this.textBox6.TabIndex = 33;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(161, 178);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(293, 29);
-            this.textBox5.TabIndex = 32;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(161, 140);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(293, 29);
-            this.textBox4.TabIndex = 31;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(161, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(293, 29);
-            this.textBox3.TabIndex = 30;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(161, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(293, 29);
-            this.textBox2.TabIndex = 29;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(161, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 29);
-            this.textBox1.TabIndex = 28;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(314, 439);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 49);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Hủy";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(79, 441);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 49);
-            this.button5.TabIndex = 26;
-            this.button5.Text = "Cập nhật";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(8, 258);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(110, 27);
-            this.label34.TabIndex = 24;
-            this.label34.Text = "Bàn phím: ";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(7, 223);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(111, 27);
-            this.label41.TabIndex = 22;
-            this.label41.Text = "Màn hình: ";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(161, 403);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 30);
-            this.comboBox3.TabIndex = 21;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(14, 406);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(119, 27);
-            this.label50.TabIndex = 9;
-            this.label50.Text = "Tình trạng: ";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(13, 365);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(119, 27);
-            this.label51.TabIndex = 8;
-            this.label51.Text = "Phần mềm: ";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(10, 331);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(145, 27);
-            this.label52.TabIndex = 7;
-            this.label52.Text = "Hệ điều hành: ";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(9, 294);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(78, 27);
-            this.label53.TabIndex = 6;
-            this.label53.Text = "Chuột: ";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(7, 182);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(89, 27);
-            this.label54.TabIndex = 5;
-            this.label54.Text = "Ổ cứng: ";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(8, 143);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(64, 27);
-            this.label55.TabIndex = 3;
-            this.label55.Text = "Ram: ";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(7, 106);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(64, 27);
-            this.label56.TabIndex = 2;
-            this.label56.Text = "CPU: ";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(6, 67);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(123, 27);
-            this.label57.TabIndex = 1;
-            this.label57.Text = "Mainboard: ";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(5, 32);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(89, 27);
-            this.label58.TabIndex = 0;
-            this.label58.Text = "Số máy: ";
-            // 
             // btnHuy
             // 
+            this.btnHuy.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.btnHuy.FlatAppearance.BorderSize = 2;
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Location = new System.Drawing.Point(263, 439);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(113, 49);
@@ -1723,22 +1532,26 @@ namespace TTCN
             // 
             // btnBaoCao
             // 
+            this.btnBaoCao.BackColor = System.Drawing.Color.White;
+            this.btnBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.btnBaoCao.FlatAppearance.BorderSize = 2;
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBaoCao.Location = new System.Drawing.Point(68, 439);
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.Size = new System.Drawing.Size(119, 49);
             this.btnBaoCao.TabIndex = 26;
             this.btnBaoCao.Text = "Báo cáo";
-            this.btnBaoCao.UseVisualStyleBackColor = true;
+            this.btnBaoCao.UseVisualStyleBackColor = false;
             // 
-            // label30
+            // lblBanPhim
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(127, 229);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(36, 28);
-            this.label30.TabIndex = 25;
-            this.label30.Text = "lbl";
+            this.lblBanPhim.AutoSize = true;
+            this.lblBanPhim.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBanPhim.Location = new System.Drawing.Point(127, 229);
+            this.lblBanPhim.Name = "lblBanPhim";
+            this.lblBanPhim.Size = new System.Drawing.Size(36, 28);
+            this.lblBanPhim.TabIndex = 25;
+            this.lblBanPhim.Text = "lbl";
             // 
             // label28
             // 
@@ -1750,15 +1563,15 @@ namespace TTCN
             this.label28.TabIndex = 24;
             this.label28.Text = "Bàn phím: ";
             // 
-            // label16
+            // lblManHinh
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(128, 194);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(36, 28);
-            this.label16.TabIndex = 23;
-            this.label16.Text = "lbl";
+            this.lblManHinh.AutoSize = true;
+            this.lblManHinh.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManHinh.Location = new System.Drawing.Point(128, 194);
+            this.lblManHinh.Name = "lblManHinh";
+            this.lblManHinh.Size = new System.Drawing.Size(36, 28);
+            this.lblManHinh.TabIndex = 23;
+            this.lblManHinh.Text = "lbl";
             // 
             // label8
             // 
@@ -1770,85 +1583,84 @@ namespace TTCN
             this.label8.TabIndex = 22;
             this.label8.Text = "Màn hình: ";
             // 
-            // comboBox1
+            // cboTT
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(139, 384);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 34);
-            this.comboBox1.TabIndex = 21;
+            this.cboTT.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTT.FormattingEnabled = true;
+            this.cboTT.Location = new System.Drawing.Point(139, 384);
+            this.cboTT.Name = "cboTT";
+            this.cboTT.Size = new System.Drawing.Size(121, 34);
+            this.cboTT.TabIndex = 21;
             // 
-            // label20
+            // lblPM
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(127, 343);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(36, 28);
-            this.label20.TabIndex = 18;
-            this.label20.Text = "lbl";
+            this.lblPM.AutoSize = true;
+            this.lblPM.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPM.Location = new System.Drawing.Point(127, 343);
+            this.lblPM.Name = "lblPM";
+            this.lblPM.Size = new System.Drawing.Size(36, 28);
+            this.lblPM.TabIndex = 18;
+            this.lblPM.Text = "lbl";
             // 
-            // label19
+            // lblHDH
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(151, 303);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(36, 28);
-            this.label19.TabIndex = 17;
-            this.label19.Text = "lbl";
+            this.lblHDH.AutoSize = true;
+            this.lblHDH.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHDH.Location = new System.Drawing.Point(151, 303);
+            this.lblHDH.Name = "lblHDH";
+            this.lblHDH.Size = new System.Drawing.Size(36, 28);
+            this.lblHDH.TabIndex = 17;
+            this.lblHDH.Text = "lbl";
             // 
-            // label18
+            // lblChuot
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(88, 264);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(36, 28);
-            this.label18.TabIndex = 16;
-            this.label18.Text = "lbl";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+            this.lblChuot.AutoSize = true;
+            this.lblChuot.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChuot.Location = new System.Drawing.Point(88, 264);
+            this.lblChuot.Name = "lblChuot";
+            this.lblChuot.Size = new System.Drawing.Size(36, 28);
+            this.lblChuot.TabIndex = 16;
+            this.lblChuot.Text = "lbl";
             // 
-            // label17
+            // lblOCung
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(90, 159);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(36, 28);
-            this.label17.TabIndex = 15;
-            this.label17.Text = "lbl";
+            this.lblOCung.AutoSize = true;
+            this.lblOCung.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOCung.Location = new System.Drawing.Point(90, 159);
+            this.lblOCung.Name = "lblOCung";
+            this.lblOCung.Size = new System.Drawing.Size(36, 28);
+            this.lblOCung.TabIndex = 15;
+            this.lblOCung.Text = "lbl";
             // 
-            // label15
+            // lblRam
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(85, 125);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(36, 28);
-            this.label15.TabIndex = 13;
-            this.label15.Text = "lbl";
+            this.lblRam.AutoSize = true;
+            this.lblRam.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRam.Location = new System.Drawing.Point(85, 125);
+            this.lblRam.Name = "lblRam";
+            this.lblRam.Size = new System.Drawing.Size(36, 28);
+            this.lblRam.TabIndex = 13;
+            this.lblRam.Text = "lbl";
             // 
-            // label10
+            // lblCPU
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(85, 96);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 28);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "lbl";
+            this.lblCPU.AutoSize = true;
+            this.lblCPU.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPU.Location = new System.Drawing.Point(85, 96);
+            this.lblCPU.Name = "lblCPU";
+            this.lblCPU.Size = new System.Drawing.Size(36, 28);
+            this.lblCPU.TabIndex = 12;
+            this.lblCPU.Text = "lbl";
             // 
-            // lblPhongMay
+            // lblMain
             // 
-            this.lblPhongMay.AutoSize = true;
-            this.lblPhongMay.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhongMay.Location = new System.Drawing.Point(140, 65);
-            this.lblPhongMay.Name = "lblPhongMay";
-            this.lblPhongMay.Size = new System.Drawing.Size(36, 28);
-            this.lblPhongMay.TabIndex = 11;
-            this.lblPhongMay.Text = "lbl";
+            this.lblMain.AutoSize = true;
+            this.lblMain.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMain.Location = new System.Drawing.Point(140, 65);
+            this.lblMain.Name = "lblMain";
+            this.lblMain.Size = new System.Drawing.Size(36, 28);
+            this.lblMain.TabIndex = 11;
+            this.lblMain.Text = "lbl";
             // 
             // lblSoMay
             // 
@@ -1899,7 +1711,6 @@ namespace TTCN
             this.label14.Size = new System.Drawing.Size(84, 28);
             this.label14.TabIndex = 6;
             this.label14.Text = "Chuột: ";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label7
             // 
@@ -1950,7 +1761,235 @@ namespace TTCN
             this.label4.Size = new System.Drawing.Size(94, 28);
             this.label4.TabIndex = 0;
             this.label4.Text = "Số máy: ";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // txtHDH
+            // 
+            this.txtHDH.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHDH.Location = new System.Drawing.Point(161, 329);
+            this.txtHDH.Name = "txtHDH";
+            this.txtHDH.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtHDH.Size = new System.Drawing.Size(293, 29);
+            this.txtHDH.TabIndex = 36;
+            // 
+            // txtChuot
+            // 
+            this.txtChuot.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChuot.Location = new System.Drawing.Point(161, 292);
+            this.txtChuot.Name = "txtChuot";
+            this.txtChuot.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtChuot.Size = new System.Drawing.Size(293, 29);
+            this.txtChuot.TabIndex = 35;
+            // 
+            // txtBanPhim
+            // 
+            this.txtBanPhim.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBanPhim.Location = new System.Drawing.Point(161, 255);
+            this.txtBanPhim.Name = "txtBanPhim";
+            this.txtBanPhim.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtBanPhim.Size = new System.Drawing.Size(293, 29);
+            this.txtBanPhim.TabIndex = 34;
+            // 
+            // txtManHinh
+            // 
+            this.txtManHinh.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtManHinh.Location = new System.Drawing.Point(161, 217);
+            this.txtManHinh.Name = "txtManHinh";
+            this.txtManHinh.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtManHinh.Size = new System.Drawing.Size(293, 29);
+            this.txtManHinh.TabIndex = 33;
+            // 
+            // txtOCung
+            // 
+            this.txtOCung.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOCung.Location = new System.Drawing.Point(161, 178);
+            this.txtOCung.Name = "txtOCung";
+            this.txtOCung.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtOCung.Size = new System.Drawing.Size(293, 29);
+            this.txtOCung.TabIndex = 32;
+            // 
+            // txtRAM
+            // 
+            this.txtRAM.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRAM.Location = new System.Drawing.Point(161, 140);
+            this.txtRAM.Name = "txtRAM";
+            this.txtRAM.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtRAM.Size = new System.Drawing.Size(293, 29);
+            this.txtRAM.TabIndex = 31;
+            // 
+            // txtCPU
+            // 
+            this.txtCPU.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPU.Location = new System.Drawing.Point(161, 101);
+            this.txtCPU.Name = "txtCPU";
+            this.txtCPU.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtCPU.Size = new System.Drawing.Size(293, 29);
+            this.txtCPU.TabIndex = 30;
+            // 
+            // txtMain
+            // 
+            this.txtMain.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMain.Location = new System.Drawing.Point(161, 66);
+            this.txtMain.Name = "txtMain";
+            this.txtMain.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtMain.Size = new System.Drawing.Size(293, 29);
+            this.txtMain.TabIndex = 29;
+            // 
+            // txtSoMay
+            // 
+            this.txtSoMay.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoMay.Location = new System.Drawing.Point(161, 32);
+            this.txtSoMay.Name = "txtSoMay";
+            this.txtSoMay.Size = new System.Drawing.Size(293, 29);
+            this.txtSoMay.TabIndex = 28;
+            // 
+            // btnHuy2
+            // 
+            this.btnHuy2.BackColor = System.Drawing.Color.White;
+            this.btnHuy2.Location = new System.Drawing.Point(314, 439);
+            this.btnHuy2.Name = "btnHuy2";
+            this.btnHuy2.Size = new System.Drawing.Size(113, 49);
+            this.btnHuy2.TabIndex = 27;
+            this.btnHuy2.Text = "Hủy";
+            this.btnHuy2.UseVisualStyleBackColor = false;
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.BackColor = System.Drawing.Color.White;
+            this.btnCapNhat.Location = new System.Drawing.Point(79, 441);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(119, 49);
+            this.btnCapNhat.TabIndex = 26;
+            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.UseVisualStyleBackColor = false;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(8, 256);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(110, 27);
+            this.label34.TabIndex = 24;
+            this.label34.Text = "Bàn phím: ";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(7, 218);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(111, 27);
+            this.label41.TabIndex = 22;
+            this.label41.Text = "Màn hình: ";
+            // 
+            // cboTinhTrang
+            // 
+            this.cboTinhTrang.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTinhTrang.FormattingEnabled = true;
+            this.cboTinhTrang.Location = new System.Drawing.Point(161, 403);
+            this.cboTinhTrang.Name = "cboTinhTrang";
+            this.cboTinhTrang.Size = new System.Drawing.Size(121, 30);
+            this.cboTinhTrang.TabIndex = 21;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(14, 406);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(119, 27);
+            this.label50.TabIndex = 9;
+            this.label50.Text = "Tình trạng: ";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(13, 365);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(119, 27);
+            this.label51.TabIndex = 8;
+            this.label51.Text = "Phần mềm: ";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(10, 331);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(145, 27);
+            this.label52.TabIndex = 7;
+            this.label52.Text = "Hệ điều hành: ";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(9, 294);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(78, 27);
+            this.label53.TabIndex = 6;
+            this.label53.Text = "Chuột: ";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(7, 180);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(89, 27);
+            this.label54.TabIndex = 5;
+            this.label54.Text = "Ổ cứng: ";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(8, 142);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(64, 27);
+            this.label55.TabIndex = 3;
+            this.label55.Text = "Ram: ";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(7, 106);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(64, 27);
+            this.label56.TabIndex = 2;
+            this.label56.Text = "CPU: ";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(6, 67);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(123, 27);
+            this.label57.TabIndex = 1;
+            this.label57.Text = "Mainboard: ";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(5, 32);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(89, 27);
+            this.label58.TabIndex = 0;
+            this.label58.Text = "Số máy: ";
+            // 
+            // txtPM
+            // 
+            this.txtPM.AllowDrop = true;
+            this.txtPM.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPM.Location = new System.Drawing.Point(161, 363);
+            this.txtPM.Name = "txtPM";
+            this.txtPM.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtPM.Size = new System.Drawing.Size(293, 29);
+            this.txtPM.TabIndex = 37;
             // 
             // frmPhong01
             // 
@@ -1960,22 +1999,22 @@ namespace TTCN
             this.ClientSize = new System.Drawing.Size(1804, 1005);
             this.Controls.Add(this.pnlThongTinMay);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grbSoDo);
             this.Name = "frmPhong01";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmPhong01_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grbSoDo.ResumeLayout(false);
+            this.grbSoDo.PerformLayout();
             this.pnlThongTinMay.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.grbGV.ResumeLayout(false);
-            this.grbGV.PerformLayout();
             this.grbCB.ResumeLayout(false);
             this.grbCB.PerformLayout();
+            this.grbGV.ResumeLayout(false);
+            this.grbGV.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2027,15 +2066,8 @@ namespace TTCN
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grbSoDo;
         private System.Windows.Forms.Panel pnlThongTinMay;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lblSoMay;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -2044,7 +2076,6 @@ namespace TTCN
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox grbGV;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnMay41;
@@ -2056,9 +2087,7 @@ namespace TTCN
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label lblTinhTrang;
+        private System.Windows.Forms.Label lblTT;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -2067,7 +2096,7 @@ namespace TTCN
         private System.Windows.Forms.Label lblMayHong;
         private System.Windows.Forms.Label lblMayTot;
         private System.Windows.Forms.Label lblSoLuong;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lblViTri;
         private System.Windows.Forms.Label lblTen;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label36;
@@ -2075,24 +2104,20 @@ namespace TTCN
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label lblPMM;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblPhongMay;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnBaoCao;
         private System.Windows.Forms.ComboBox cboChon;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.GroupBox grbCB;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnHuy2;
+        private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
@@ -2102,16 +2127,28 @@ namespace TTCN
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.Label lblPM;
+        public System.Windows.Forms.Label lblHDH;
+        public System.Windows.Forms.Label lblChuot;
+        public System.Windows.Forms.Label lblOCung;
+        public System.Windows.Forms.Label lblRam;
+        public System.Windows.Forms.Label lblCPU;
+        public System.Windows.Forms.Label lblSoMay;
+        public System.Windows.Forms.ComboBox cboTT;
+        public System.Windows.Forms.Label lblBanPhim;
+        public System.Windows.Forms.Label lblManHinh;
+        public System.Windows.Forms.Label lblMain;
+        public System.Windows.Forms.ComboBox cboTinhTrang;
+        public System.Windows.Forms.TextBox txtPM;
+        public System.Windows.Forms.TextBox txtHDH;
+        public System.Windows.Forms.TextBox txtChuot;
+        public System.Windows.Forms.TextBox txtBanPhim;
+        public System.Windows.Forms.TextBox txtManHinh;
+        public System.Windows.Forms.TextBox txtOCung;
+        public System.Windows.Forms.TextBox txtRAM;
+        public System.Windows.Forms.TextBox txtCPU;
+        public System.Windows.Forms.TextBox txtMain;
+        public System.Windows.Forms.TextBox txtSoMay;
     }
 }
 

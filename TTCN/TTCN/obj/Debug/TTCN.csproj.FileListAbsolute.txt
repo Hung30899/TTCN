@@ -61,3 +61,24 @@ E:\abc\TTCN\TTCN\TTCN\obj\Debug\TTCN.csproj.GenerateResource.cache
 E:\abc\TTCN\TTCN\TTCN\obj\Debug\TTCN.csproj.CoreCompileInputs.cache
 E:\abc\TTCN\TTCN\TTCN\obj\Debug\TTCN.exe
 E:\abc\TTCN\TTCN\TTCN\obj\Debug\TTCN.pdb
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.csproj.AssemblyReference.cache
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmCanBoKyThuat.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmChonNguoiDung.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmGiangVien.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmLichSu.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmMain.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\QLPM.frmMayTinh.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmNguoiDung.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmPhanAnh.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmPhong01.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmPhongMay.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.Properties.Resources.resources
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.csproj.GenerateResource.cache
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.csproj.CoreCompileInputs.cache
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.exe
+D:\TTCN Git\TTCN\TTCN\TTCN\obj\Debug\TTCN.pdb
+D:\TTCN Git\TTCN\TTCN\TTCN\bin\Debug\QLPM.mdf
+D:\TTCN Git\TTCN\TTCN\TTCN\bin\Debug\QLPM_log.ldf
+D:\TTCN Git\TTCN\TTCN\TTCN\bin\Debug\TTCN.exe.config
+D:\TTCN Git\TTCN\TTCN\TTCN\bin\Debug\TTCN.exe
+D:\TTCN Git\TTCN\TTCN\TTCN\bin\Debug\TTCN.pdb
