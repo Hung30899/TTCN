@@ -77,8 +77,7 @@ namespace TTCN
             this.dgvUser.RowHeadersWidth = 51;
             this.dgvUser.Size = new System.Drawing.Size(1447, 430);
             this.dgvUser.TabIndex = 14;
-            this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick);
-            this.dgvUser.Click += new System.EventHandler(this.dgvUser_Click);
+this.dgvUser.Click += new System.EventHandler(this.dgvUser_Click);
             // 
             // label1
             // 
@@ -160,8 +159,7 @@ namespace TTCN
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chi tiết";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
-            // 
+              // 
             // rbnNu
             // 
             this.rbnNu.AutoSize = true;

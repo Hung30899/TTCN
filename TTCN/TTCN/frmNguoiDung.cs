@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTCN.Class;
 
@@ -16,7 +10,6 @@ namespace TTCN
         DataTable tblUser; // Lưu dữ liệu bảng người dùng;
         Char btn, rbt;
 
-       
         public frmNguoiDung()
         {
             InitializeComponent();
@@ -56,6 +49,7 @@ namespace TTCN
             btnLuu.Enabled = false;
             Disable();
         }
+
         private void ResetValues()
         {
             txtUser.Text = "";
@@ -66,8 +60,7 @@ namespace TTCN
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
-        {
-            
+        { 
             string sql, gt;
             {
                 if (txtUser.Text.Trim().Length == 0)
@@ -93,17 +86,13 @@ namespace TTCN
                     MessageBox.Show("Bạn phải nhập tên người dùng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtHoTen.Focus();
                     return;
-                }
-
-              
+                }        
                 if (txtSDT.Text.Trim().Length == 0)
                 {
                     MessageBox.Show("Bạn phải nhập điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtSDT.Focus();
                     return;
                 }
-               
-
                 if (rbnNam.Checked == true)
                     gt = "Nam";
                 else
@@ -123,7 +112,6 @@ namespace TTCN
                     sql = "INSERT INTO NguoiDung(Username,Password,HoTen,GioiTinh,BoMon,SDT) VALUES" +
                        "(N'" + txtUser.Text.Trim() + "',N'" + txtPass.Text.Trim() + "',N'" + txtHoTen.Text.Trim() + "',N'"
                        + gt + "','" + txtBoMon.Text + "','" + txtSDT.Text.Trim() + "')";
-
 
                     Functions.RunSQL(sql);
                     LoadDataGridView();
@@ -157,8 +145,7 @@ namespace TTCN
                         Disable();
                     }
                 }
-            }
-            
+            }  
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -168,19 +155,16 @@ namespace TTCN
             {
                 MessageBox.Show("Không còn dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
-
             }
             if (txtUser.Text == "")
             {
                 MessageBox.Show("Bạn phải chọn bản ghi cần sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
-
             }
             btnLuu.Enabled = true;
             btnHuy.Enabled = true;
             Enable();
-            txtUser.Enabled = false;
-            
+            txtUser.Enabled = false;            
         }
 
         private void Enable()
@@ -189,16 +173,13 @@ namespace TTCN
             txtPass.Enabled = true;
             txtHoTen.Enabled = true;
             txtBoMon.Enabled = true;
-            txtSDT.Enabled = true;
-           
+            txtSDT.Enabled = true;           
             rbnNam.Enabled = true;
-            rbnNu.Enabled = true;
-       
+            rbnNu.Enabled = true;       
         }
 
         private void btnThem_Click(object sender, EventArgs e)
-        {
-            
+        {           
             btn = 't';
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
@@ -207,13 +188,11 @@ namespace TTCN
             btnThem.Enabled = false;
             ResetValues();
             Enable();
-            txtUser.Focus();
-            
+            txtUser.Focus();        
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
-        {
-            
+        {            
             string sql;
             if (tblUser.Rows.Count == 0)
             {
@@ -233,13 +212,11 @@ namespace TTCN
                 btnLuu.Enabled = false;
                 btnSua.Enabled = false;
                 btnXoa.Enabled = false;
-            }
-            
+            }            
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            
+        {          
             string sql;
             if (cboSearch.Text.Trim() == "")
             {
@@ -261,8 +238,7 @@ namespace TTCN
                 MessageBox.Show("Không có bản ghi thoả mãn điều kiện tìm kiếm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else MessageBox.Show("Có " + tblUser.Rows.Count + "  bản ghi thoả mãn điều kiện!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             dgvUser.DataSource = tblUser;
-            ResetValues();
-            
+            ResetValues();         
         }
 
         private void rbnUser_CheckedChanged(object sender, EventArgs e)
@@ -316,16 +292,6 @@ namespace TTCN
             btnXoa.Enabled = true;
             btnHuy.Enabled = true;
             Disable();
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void LoadDataGridView()

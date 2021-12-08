@@ -78,6 +78,17 @@ namespace TTCN.Class
             reader.Close();
             return ma;
         }
+        public static int GetID(string sql)
+        {
+            int id=0;
+            SqlCommand cmd = new SqlCommand(sql, Con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+                id = int.Parse(reader.GetValue(0).ToString());
+            reader.Close();
+            return id; 
+        }
 
         public static bool CheckKey(string sql)
         {

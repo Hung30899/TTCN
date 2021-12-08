@@ -97,13 +97,14 @@ namespace TTCN
             dgvPA.Columns[5].HeaderText = "Nội dung";
             dgvPA.Columns[6].HeaderText = "Tình trạng";
 
-            dgvPA.Columns[0].Width = 50;
-            dgvPA.Columns[1].Width = 150;
-            dgvPA.Columns[2].Width = 150;
-            dgvPA.Columns[3].Width = 150;
-            dgvPA.Columns[4].Width = 150;
-            dgvPA.Columns[5].Width = 150;
+            dgvPA.Columns[0].Width = 20;
+            dgvPA.Columns[1].Width = 50;
+            dgvPA.Columns[2].Width = 50;
+            dgvPA.Columns[3].Width = 50;
+            dgvPA.Columns[4].Width = 50;
+            dgvPA.Columns[5].Width = 500;
             dgvPA.Columns[6].Width = 150;
+            dgvPA.Columns[5].DefaultCellStyle.WrapMode = DataGridViewTriState.True; //Xuống dòng ô nội dung trong datagridview
 
             dgvPA.AllowUserToAddRows = false;
             dgvPA.EditMode = DataGridViewEditMode.EditProgrammatically;

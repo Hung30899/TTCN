@@ -30,7 +30,6 @@ C:\Users\H\Desktop\ttcn\TTCN\TTCN\obj\Debug\TTCN.frmChonNguoiDung.resources
 C:\Users\H\Desktop\ttcn\TTCN\TTCN\obj\Debug\TTCN.frmGiangVien.resources
 C:\Users\H\Desktop\ttcn\TTCN\TTCN\obj\Debug\TTCN.frmLichSu.resources
 C:\Users\H\Desktop\ttcn\TTCN\TTCN\obj\Debug\TTCN.frmMain.resources
-C:\Users\H\Desktop\ttcn\TTCN\TTCN\obj\Debug\QLPM.frmMayTinh.resources
 C:\Users\H\Desktop\ttcn\TTCN\TTCN\obj\Debug\TTCN.frmNguoiDung.resources
 C:\Users\H\Desktop\ttcn\TTCN\TTCN\obj\Debug\TTCN.frmPhanAnh.resources
 C:\Users\H\Desktop\ttcn\TTCN\TTCN\obj\Debug\TTCN.frmPhong01.resources

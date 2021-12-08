@@ -159,6 +159,8 @@ namespace TTCN
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtPhanAnh = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grbSoDo.SuspendLayout();
@@ -1250,6 +1252,8 @@ namespace TTCN
             // grbGV
             // 
             this.grbGV.BackColor = System.Drawing.Color.White;
+            this.grbGV.Controls.Add(this.txtPhanAnh);
+            this.grbGV.Controls.Add(this.label10);
             this.grbGV.Controls.Add(this.btnHuy);
             this.grbGV.Controls.Add(this.btnPhananh);
             this.grbGV.Controls.Add(this.lblBanPhim);
@@ -1280,7 +1284,7 @@ namespace TTCN
             this.grbGV.Location = new System.Drawing.Point(0, 0);
             this.grbGV.Name = "grbGV";
             this.grbGV.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.grbGV.Size = new System.Drawing.Size(671, 494);
+            this.grbGV.Size = new System.Drawing.Size(670, 494);
             this.grbGV.TabIndex = 24;
             this.grbGV.TabStop = false;
             this.grbGV.Text = "THÔNG TIN MÁY TÍNH";
@@ -1356,7 +1360,7 @@ namespace TTCN
             "Không hoạt động"});
             this.cboTT.Location = new System.Drawing.Point(139, 384);
             this.cboTT.Name = "cboTT";
-            this.cboTT.Size = new System.Drawing.Size(121, 34);
+            this.cboTT.Size = new System.Drawing.Size(142, 34);
             this.cboTT.TabIndex = 21;
             // 
             // lblPM
@@ -1436,9 +1440,8 @@ namespace TTCN
             this.lblSoMay.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoMay.Location = new System.Drawing.Point(90, 32);
             this.lblSoMay.Name = "lblSoMay";
-            this.lblSoMay.Size = new System.Drawing.Size(36, 28);
+            this.lblSoMay.Size = new System.Drawing.Size(0, 28);
             this.lblSoMay.TabIndex = 10;
-            this.lblSoMay.Text = "lbl";
             // 
             // label11
             // 
@@ -1982,6 +1985,25 @@ namespace TTCN
             this.label40.TabIndex = 0;
             this.label40.Text = "Tên phòng: ";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(369, 125);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(217, 28);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Thông tin phản ánh:";
+            // 
+            // txtPhanAnh
+            // 
+            this.txtPhanAnh.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhanAnh.Location = new System.Drawing.Point(374, 159);
+            this.txtPhanAnh.Multiline = true;
+            this.txtPhanAnh.Name = "txtPhanAnh";
+            this.txtPhanAnh.Size = new System.Drawing.Size(290, 216);
+            this.txtPhanAnh.TabIndex = 29;
+            // 
             // frmPhong01
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -2143,6 +2165,8 @@ namespace TTCN
         private System.Windows.Forms.TextBox txtCPU;
         private System.Windows.Forms.TextBox txtMain;
         private System.Windows.Forms.TextBox txtSoMay;
+        private System.Windows.Forms.TextBox txtPhanAnh;
+        private System.Windows.Forms.Label label10;
     }
 }
 

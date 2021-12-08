@@ -1,37 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTCN.Class;
 
 namespace TTCN
 {
     public partial class frmChonNguoiDung : Form
-    {
-        
+    {  
         public frmChonNguoiDung()
         {
             InitializeComponent();
         }
-
-        
+      
         private void btnGiangVien_Click(object sender, EventArgs e)
         {
-            
             frmGiangVien frmGV = new frmGiangVien();
             this.Hide();
             frmGV.Show();
-            
-
         }
         
-       
-
         private void btnCanBoKyThuat_Click(object sender, EventArgs e)
         {
             frmCanBoKyThuat frmCBQL = new frmCanBoKyThuat();
@@ -42,11 +28,6 @@ namespace TTCN
         private void frmChonNguoiDung_Load(object sender, EventArgs e)
         {
             Functions.Connect();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

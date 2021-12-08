@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTCN.Class;
 
@@ -14,6 +9,7 @@ namespace TTCN
     public partial class frmPhong01 : Form
     {
         public char chonND;
+        public string tenGV;
         public frmPhong01()
         {
             InitializeComponent();
@@ -46,9 +42,6 @@ namespace TTCN
             frmGiangVien frm = new frmGiangVien();
             if (chonND !='g')
                 grbGV.Visible = false;
-            
-            
-
         }
 
         //Sự kiện bắt các nút máy tính
@@ -77,16 +70,37 @@ namespace TTCN
             txtPM.Text = lblPM.Text;
             cboTT.Text = Functions.GetFieldValues("Select TinhTrang from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             cboTinhTrang.Text = cboTT.Text;
-
         }
 
         private void btnPhananh_Click(object sender, EventArgs e)
         {
-            frmPhanAnh frm = new frmPhanAnh();
-            frm.ShowDialog();
+            string sql;
+            if (lblSoMay.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa chọn số máy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (txtPhanAnh.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập thông tin phản ánh", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPhanAnh.Focus();
+                return;
+            }
+            sql = "INSERT INTO PHANANH(Ten, PhongMay,MaMay,Ngay,NoiDung,TinhTrang)" +
+                " VALUES (N'"+tenGV+"',N'"+"CNTT01"+"',N'"+lblSoMay.Text+"',(SELECT GETDATE()),N'"+txtPhanAnh.Text.Trim()+"',N'Chưa xử lý')";
+            Functions.RunSQL(sql);
+            MessageBox.Show("Đã gửi phản ánh máy: " + lblSoMay.Text + " !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            sql = "Update MayTinh Set TinhTrang = N'Không hoạt động' where PhongMay = 'CNTT01' AND MaMay = N'" + lblSoMay.Text+"'";
+            Functions.RunSQL(sql);
+            reset();
+            setImage();
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
+        {
+            reset();
+        }
+        private void reset()
         {
             lblSoMay.Text = "";
             lblMain.Text = "";
@@ -99,7 +113,7 @@ namespace TTCN
             lblHDH.Text = "";
             lblPM.Text = "";
             cboTT.Text = "";
-
+            txtPhanAnh.Text = "";
         }
 
         private void btnHuy2_Click(object sender, EventArgs e)
@@ -115,7 +129,6 @@ namespace TTCN
             txtHDH.Text = "";
             txtPM.Text = "";
             cboTinhTrang.Text = "";
-
         }
     }
 }

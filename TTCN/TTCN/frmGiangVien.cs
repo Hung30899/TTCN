@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTCN.Class;
 
@@ -38,11 +31,11 @@ namespace TTCN
             tenGV = txtTenGiangVien.Text;
             phongHoc = cboPhongHoc.Text;
 
-            
             if(phongHoc == "CNTT01")
             {
                 frmPhong01 frmPhong01 = new frmPhong01();
                 frmPhong01.chonND = 'g';
+                frmPhong01.tenGV = tenGV;
                 frmPhong01.Show(); 
                 return;
             }
@@ -51,10 +44,7 @@ namespace TTCN
                 return;
             }
             this.Hide();
-
         }
-
-        
 
         private void btnHuybo_Click(object sender, EventArgs e)
         {

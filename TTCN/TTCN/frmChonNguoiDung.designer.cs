@@ -63,8 +63,7 @@ namespace TTCN
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(645, 337);
             this.panel1.TabIndex = 6;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
+             // 
             // btnCanBoKyThuat
             // 
             this.btnCanBoKyThuat.BackColor = System.Drawing.Color.SkyBlue;
