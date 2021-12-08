@@ -99,7 +99,6 @@ namespace TTCN
             this.txtLop.Location = new System.Drawing.Point(184, 232);
             this.txtLop.Margin = new System.Windows.Forms.Padding(2);
             this.txtLop.Name = "txtLop";
-            this.txtLop.PasswordChar = '*';
             this.txtLop.Size = new System.Drawing.Size(269, 29);
             this.txtLop.TabIndex = 18;
             this.txtLop.UseWaitCursor = true;
@@ -192,7 +191,6 @@ namespace TTCN
             this.txtMonHoc.Location = new System.Drawing.Point(184, 186);
             this.txtMonHoc.Margin = new System.Windows.Forms.Padding(2);
             this.txtMonHoc.Name = "txtMonHoc";
-            this.txtMonHoc.PasswordChar = '*';
             this.txtMonHoc.Size = new System.Drawing.Size(269, 29);
             this.txtMonHoc.TabIndex = 9;
             this.txtMonHoc.UseWaitCursor = true;

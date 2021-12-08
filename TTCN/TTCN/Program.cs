@@ -16,7 +16,7 @@ namespace TTCN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPhanAnh());
+            Application.Run(new frmChonNguoiDung());
         }
     }
 }

@@ -14,6 +14,7 @@ namespace TTCN
     public partial class frmGiangVien : Form
     {
         public string tenGV, phongHoc;
+        
         public frmGiangVien()
         {
             InitializeComponent();
@@ -37,17 +38,19 @@ namespace TTCN
             tenGV = txtTenGiangVien.Text;
             phongHoc = cboPhongHoc.Text;
 
-            this.Hide();
+            
             if(phongHoc == "CNTT01")
             {
                 frmPhong01 frmPhong01 = new frmPhong01();
-                frmPhong01.Show();
+                frmPhong01.chonND = 'g';
+                frmPhong01.Show(); 
                 return;
             }
             if (phongHoc == "CNTT09")
             {
                 return;
             }
+            this.Hide();
 
         }
 

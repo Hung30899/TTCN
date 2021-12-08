@@ -209,6 +209,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>QLPM.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\mt_tt_hong1.png" />
+    <None Include="Resources\mt_tt_tot1.png" />
     <None Include="Resources\icon_phan_anh.png" />
     <None Include="Resources\img_timkiem.png" />
     <None Include="Resources\kisspng-computer-icons-clip-art-refresh-icon-5b4b98c4dd95d7.4801181515316809649076 %282%29.png" />

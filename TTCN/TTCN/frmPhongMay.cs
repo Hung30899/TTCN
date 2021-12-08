@@ -30,6 +30,11 @@ namespace TTCN
 
         private void btnPhong01_Click(object sender, EventArgs e)
         {
+            frmPhong01 frm = new frmPhong01();
+            frm.MdiParent = this.ParentForm;
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
+
         }
     }
 }
