@@ -88,9 +88,9 @@ namespace TTCN
             this.btnMay01 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pnlThongTinMay = new System.Windows.Forms.Panel();
-            this.grbCB = new System.Windows.Forms.GroupBox();
             this.grbGV = new System.Windows.Forms.GroupBox();
+            this.txtPhanAnh = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnPhananh = new System.Windows.Forms.Button();
             this.lblBanPhim = new System.Windows.Forms.Label();
@@ -115,6 +115,8 @@ namespace TTCN
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pnlThongTinMay = new System.Windows.Forms.Panel();
+            this.grbCB = new System.Windows.Forms.GroupBox();
             this.txtPM = new System.Windows.Forms.TextBox();
             this.txtHDH = new System.Windows.Forms.TextBox();
             this.txtChuot = new System.Windows.Forms.TextBox();
@@ -159,14 +161,12 @@ namespace TTCN
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtPhanAnh = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grbSoDo.SuspendLayout();
+            this.grbGV.SuspendLayout();
             this.pnlThongTinMay.SuspendLayout();
             this.grbCB.SuspendLayout();
-            this.grbGV.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -182,7 +182,7 @@ namespace TTCN
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1920, 95);
+            this.panel3.Size = new System.Drawing.Size(1745, 95);
             this.panel3.TabIndex = 48;
             // 
             // label32
@@ -231,6 +231,7 @@ namespace TTCN
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // grbSoDo
             // 
@@ -1202,53 +1203,6 @@ namespace TTCN
             this.label2.Text = "MAY GV";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // pnlThongTinMay
-            // 
-            this.pnlThongTinMay.Controls.Add(this.grbCB);
-            this.pnlThongTinMay.Location = new System.Drawing.Point(989, 127);
-            this.pnlThongTinMay.Name = "pnlThongTinMay";
-            this.pnlThongTinMay.Size = new System.Drawing.Size(694, 866);
-            this.pnlThongTinMay.TabIndex = 52;
-            // 
-            // grbCB
-            // 
-            this.grbCB.BackColor = System.Drawing.Color.White;
-            this.grbCB.Controls.Add(this.grbGV);
-            this.grbCB.Controls.Add(this.txtPM);
-            this.grbCB.Controls.Add(this.txtHDH);
-            this.grbCB.Controls.Add(this.txtChuot);
-            this.grbCB.Controls.Add(this.txtBanPhim);
-            this.grbCB.Controls.Add(this.txtManHinh);
-            this.grbCB.Controls.Add(this.txtOCung);
-            this.grbCB.Controls.Add(this.txtRAM);
-            this.grbCB.Controls.Add(this.txtCPU);
-            this.grbCB.Controls.Add(this.txtMain);
-            this.grbCB.Controls.Add(this.txtSoMay);
-            this.grbCB.Controls.Add(this.btnHuy2);
-            this.grbCB.Controls.Add(this.btnCapNhat);
-            this.grbCB.Controls.Add(this.label34);
-            this.grbCB.Controls.Add(this.label41);
-            this.grbCB.Controls.Add(this.cboTinhTrang);
-            this.grbCB.Controls.Add(this.label50);
-            this.grbCB.Controls.Add(this.label51);
-            this.grbCB.Controls.Add(this.label52);
-            this.grbCB.Controls.Add(this.label53);
-            this.grbCB.Controls.Add(this.label54);
-            this.grbCB.Controls.Add(this.label55);
-            this.grbCB.Controls.Add(this.label56);
-            this.grbCB.Controls.Add(this.label57);
-            this.grbCB.Controls.Add(this.label58);
-            this.grbCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.grbCB.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbCB.ForeColor = System.Drawing.Color.Navy;
-            this.grbCB.Location = new System.Drawing.Point(4, 298);
-            this.grbCB.Name = "grbCB";
-            this.grbCB.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.grbCB.Size = new System.Drawing.Size(670, 494);
-            this.grbCB.TabIndex = 28;
-            this.grbCB.TabStop = false;
-            this.grbCB.Text = "THÔNG TIN MÁY TÍNH";
-            // 
             // grbGV
             // 
             this.grbGV.BackColor = System.Drawing.Color.White;
@@ -1281,7 +1235,7 @@ namespace TTCN
             this.grbGV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.grbGV.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbGV.ForeColor = System.Drawing.Color.Navy;
-            this.grbGV.Location = new System.Drawing.Point(0, 0);
+            this.grbGV.Location = new System.Drawing.Point(4, 298);
             this.grbGV.Name = "grbGV";
             this.grbGV.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.grbGV.Size = new System.Drawing.Size(670, 494);
@@ -1289,13 +1243,32 @@ namespace TTCN
             this.grbGV.TabStop = false;
             this.grbGV.Text = "THÔNG TIN MÁY TÍNH";
             // 
+            // txtPhanAnh
+            // 
+            this.txtPhanAnh.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhanAnh.Location = new System.Drawing.Point(346, 213);
+            this.txtPhanAnh.Multiline = true;
+            this.txtPhanAnh.Name = "txtPhanAnh";
+            this.txtPhanAnh.Size = new System.Drawing.Size(318, 205);
+            this.txtPhanAnh.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(341, 172);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(217, 28);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Thông tin phản ánh:";
+            // 
             // btnHuy
             // 
             this.btnHuy.BackColor = System.Drawing.Color.White;
             this.btnHuy.Location = new System.Drawing.Point(263, 439);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(113, 49);
-            this.btnHuy.TabIndex = 27;
+            this.btnHuy.TabIndex = 3;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
@@ -1306,7 +1279,7 @@ namespace TTCN
             this.btnPhananh.Location = new System.Drawing.Point(68, 439);
             this.btnPhananh.Name = "btnPhananh";
             this.btnPhananh.Size = new System.Drawing.Size(119, 49);
-            this.btnPhananh.TabIndex = 26;
+            this.btnPhananh.TabIndex = 2;
             this.btnPhananh.Text = "Phản ánh";
             this.btnPhananh.UseVisualStyleBackColor = false;
             this.btnPhananh.Click += new System.EventHandler(this.btnPhananh_Click);
@@ -1360,7 +1333,7 @@ namespace TTCN
             "Không hoạt động"});
             this.cboTT.Location = new System.Drawing.Point(139, 384);
             this.cboTT.Name = "cboTT";
-            this.cboTT.Size = new System.Drawing.Size(142, 34);
+            this.cboTT.Size = new System.Drawing.Size(163, 34);
             this.cboTT.TabIndex = 21;
             // 
             // lblPM
@@ -1533,6 +1506,53 @@ namespace TTCN
             this.label4.TabIndex = 0;
             this.label4.Text = "Số máy: ";
             // 
+            // pnlThongTinMay
+            // 
+            this.pnlThongTinMay.Controls.Add(this.grbGV);
+            this.pnlThongTinMay.Controls.Add(this.grbCB);
+            this.pnlThongTinMay.Location = new System.Drawing.Point(989, 127);
+            this.pnlThongTinMay.Name = "pnlThongTinMay";
+            this.pnlThongTinMay.Size = new System.Drawing.Size(694, 866);
+            this.pnlThongTinMay.TabIndex = 52;
+            // 
+            // grbCB
+            // 
+            this.grbCB.BackColor = System.Drawing.Color.White;
+            this.grbCB.Controls.Add(this.txtPM);
+            this.grbCB.Controls.Add(this.txtHDH);
+            this.grbCB.Controls.Add(this.txtChuot);
+            this.grbCB.Controls.Add(this.txtBanPhim);
+            this.grbCB.Controls.Add(this.txtManHinh);
+            this.grbCB.Controls.Add(this.txtOCung);
+            this.grbCB.Controls.Add(this.txtRAM);
+            this.grbCB.Controls.Add(this.txtCPU);
+            this.grbCB.Controls.Add(this.txtMain);
+            this.grbCB.Controls.Add(this.txtSoMay);
+            this.grbCB.Controls.Add(this.btnHuy2);
+            this.grbCB.Controls.Add(this.btnCapNhat);
+            this.grbCB.Controls.Add(this.label34);
+            this.grbCB.Controls.Add(this.label41);
+            this.grbCB.Controls.Add(this.cboTinhTrang);
+            this.grbCB.Controls.Add(this.label50);
+            this.grbCB.Controls.Add(this.label51);
+            this.grbCB.Controls.Add(this.label52);
+            this.grbCB.Controls.Add(this.label53);
+            this.grbCB.Controls.Add(this.label54);
+            this.grbCB.Controls.Add(this.label55);
+            this.grbCB.Controls.Add(this.label56);
+            this.grbCB.Controls.Add(this.label57);
+            this.grbCB.Controls.Add(this.label58);
+            this.grbCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.grbCB.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbCB.ForeColor = System.Drawing.Color.Navy;
+            this.grbCB.Location = new System.Drawing.Point(4, 298);
+            this.grbCB.Name = "grbCB";
+            this.grbCB.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.grbCB.Size = new System.Drawing.Size(670, 494);
+            this.grbCB.TabIndex = 28;
+            this.grbCB.TabStop = false;
+            this.grbCB.Text = "THÔNG TIN MÁY TÍNH";
+            // 
             // txtPM
             // 
             this.txtPM.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1610,6 +1630,7 @@ namespace TTCN
             this.txtSoMay.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoMay.Location = new System.Drawing.Point(161, 32);
             this.txtSoMay.Name = "txtSoMay";
+            this.txtSoMay.ReadOnly = true;
             this.txtSoMay.Size = new System.Drawing.Size(293, 29);
             this.txtSoMay.TabIndex = 28;
             // 
@@ -1633,6 +1654,7 @@ namespace TTCN
             this.btnCapNhat.TabIndex = 26;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // label34
             // 
@@ -1985,31 +2007,12 @@ namespace TTCN
             this.label40.TabIndex = 0;
             this.label40.Text = "Tên phòng: ";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(369, 125);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(217, 28);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "Thông tin phản ánh:";
-            // 
-            // txtPhanAnh
-            // 
-            this.txtPhanAnh.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhanAnh.Location = new System.Drawing.Point(374, 159);
-            this.txtPhanAnh.Multiline = true;
-            this.txtPhanAnh.Name = "txtPhanAnh";
-            this.txtPhanAnh.Size = new System.Drawing.Size(290, 216);
-            this.txtPhanAnh.TabIndex = 29;
-            // 
             // frmPhong01
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1920, 1005);
+            this.ClientSize = new System.Drawing.Size(1745, 1005);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pnlThongTinMay);
             this.Controls.Add(this.panel3);
@@ -2024,11 +2027,11 @@ namespace TTCN
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grbSoDo.ResumeLayout(false);
             this.grbSoDo.PerformLayout();
+            this.grbGV.ResumeLayout(false);
+            this.grbGV.PerformLayout();
             this.pnlThongTinMay.ResumeLayout(false);
             this.grbCB.ResumeLayout(false);
             this.grbCB.PerformLayout();
-            this.grbGV.ResumeLayout(false);
-            this.grbGV.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);

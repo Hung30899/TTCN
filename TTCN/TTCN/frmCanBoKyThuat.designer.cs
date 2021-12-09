@@ -101,7 +101,7 @@ namespace TTCN
             this.btnHuybo.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuybo.Name = "btnHuybo";
             this.btnHuybo.Size = new System.Drawing.Size(116, 41);
-            this.btnHuybo.TabIndex = 13;
+            this.btnHuybo.TabIndex = 4;
             this.btnHuybo.Text = "Hủy bỏ";
             this.btnHuybo.UseVisualStyleBackColor = false;
             this.btnHuybo.Click += new System.EventHandler(this.btnHuybo_Click);
@@ -114,7 +114,7 @@ namespace TTCN
             this.btnDangnhap.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangnhap.Name = "btnDangnhap";
             this.btnDangnhap.Size = new System.Drawing.Size(116, 41);
-            this.btnDangnhap.TabIndex = 12;
+            this.btnDangnhap.TabIndex = 3;
             this.btnDangnhap.Text = "Đăng nhập";
             this.btnDangnhap.UseVisualStyleBackColor = false;
             this.btnDangnhap.Click += new System.EventHandler(this.btnDangnhap_Click);
@@ -150,7 +150,7 @@ namespace TTCN
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(269, 29);
-            this.txtPass.TabIndex = 9;
+            this.txtPass.TabIndex = 2;
             this.txtPass.UseWaitCursor = true;
             // 
             // txtUser
@@ -161,7 +161,7 @@ namespace TTCN
             this.txtUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(269, 29);
-            this.txtUser.TabIndex = 8;
+            this.txtUser.TabIndex = 1;
             // 
             // pictureBox1
             // 

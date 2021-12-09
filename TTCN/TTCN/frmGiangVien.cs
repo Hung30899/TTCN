@@ -30,20 +30,20 @@ namespace TTCN
 
             tenGV = txtTenGiangVien.Text;
             phongHoc = cboPhongHoc.Text;
-
-            if(phongHoc == "CNTT01")
+            this.Close();
+            if (phongHoc == "CNTT01")
             {
                 frmPhong01 frmPhong01 = new frmPhong01();
                 frmPhong01.chonND = 'g';
                 frmPhong01.tenGV = tenGV;
-                frmPhong01.Show(); 
+                frmPhong01.Show();
                 return;
             }
             if (phongHoc == "CNTT09")
             {
                 return;
             }
-            this.Hide();
+            //this.Close();
         }
 
         private void btnHuybo_Click(object sender, EventArgs e)

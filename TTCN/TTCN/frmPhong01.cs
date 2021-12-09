@@ -9,10 +9,26 @@ namespace TTCN
     public partial class frmPhong01 : Form
     {
         public char chonND;
-        public string tenGV;
+        public string tenGV, userCBKT;
+
+        private string mainboard, cpu, ram, ocung, manhinh, banphim, chuot, hdh,phanmem, tinhtrang;
+       // private string sqlUpdate= "Insert into LichSu(Ten,PhongMay,MaMay,Ngay,NoiDung)";
+  
         public frmPhong01()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmGiangVien frm = new frmGiangVien();
+            frm.Show();
+            this.Close();
+        }
+
+        public frmPhong01(string Message) : this()
+        {
+            userCBKT = Message;
         }
         //sự kiện load hình ảnh cho nút máy tính
         private void setImage()
@@ -40,8 +56,16 @@ namespace TTCN
             cboChon.Text = "CNTT01";
             Functions.FillCombo("Select TenPhongMay from PhongMay", cboChon, "TenPhongMay", "TenPhongMay");
             frmGiangVien frm = new frmGiangVien();
-            if (chonND !='g')
+            if (chonND != 'g')
+            {
                 grbGV.Visible = false;
+                pictureBox1.Visible = false;
+
+            }
+            else
+            {
+                
+            }
         }
 
         //Sự kiện bắt các nút máy tính
@@ -52,24 +76,34 @@ namespace TTCN
             txtSoMay.Text = btn.Text;
             lblMain.Text = Functions.GetFieldValues("Select Mainboard from MayTinh where mamay='" + btn.Text.Trim() + "' and phongmay ='CNTT01'");
             txtMain.Text = lblMain.Text;
+            mainboard = lblMain.Text;
             lblCPU.Text = Functions.GetFieldValues("Select CPU from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             txtCPU.Text = lblCPU.Text;
+            cpu = lblCPU.Text;
             lblRAM.Text = Functions.GetFieldValues("Select RAM from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             txtRAM.Text = lblRAM.Text;
+            ram = lblRAM.Text;
             lblOCung.Text = Functions.GetFieldValues("Select OCung from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             txtOCung.Text = lblOCung.Text;
+            ocung = lblOCung.Text;
             lblManHinh.Text = Functions.GetFieldValues("Select ManHinh from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             txtManHinh.Text = lblManHinh.Text;
+            manhinh = lblManHinh.Text;
             lblBanPhim.Text = Functions.GetFieldValues("Select BanPhim from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             txtBanPhim.Text = lblBanPhim.Text;
+            banphim = lblBanPhim.Text;
             lblChuot.Text = Functions.GetFieldValues("Select Chuot from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             txtChuot.Text = lblChuot.Text;
+            chuot = lblChuot.Text;
             lblHDH.Text = Functions.GetFieldValues("Select HeDieuHanh from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             txtHDH.Text = lblHDH.Text;
+            hdh = lblHDH.Text;
             lblPM.Text = Functions.GetFieldValues("Select CacPhanMem from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             txtPM.Text = lblPM.Text;
+            phanmem = lblPM.Text;
             cboTT.Text = Functions.GetFieldValues("Select TinhTrang from MayTinh where mamay = '" + btn.Text.Trim() + "' and phongmay = 'CNTT01'");
             cboTinhTrang.Text = cboTT.Text;
+            tinhtrang = cboTT.Text;
         }
 
         private void btnPhananh_Click(object sender, EventArgs e)
@@ -86,14 +120,17 @@ namespace TTCN
                 txtPhanAnh.Focus();
                 return;
             }
-            sql = "INSERT INTO PHANANH(Ten, PhongMay,MaMay,Ngay,NoiDung,TinhTrang)" +
-                " VALUES (N'"+tenGV+"',N'"+"CNTT01"+"',N'"+lblSoMay.Text+"',(SELECT GETDATE()),N'"+txtPhanAnh.Text.Trim()+"',N'Chưa xử lý')";
-            Functions.RunSQL(sql);
-            MessageBox.Show("Đã gửi phản ánh máy: " + lblSoMay.Text + " !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            sql = "Update MayTinh Set TinhTrang = N'Không hoạt động' where PhongMay = 'CNTT01' AND MaMay = N'" + lblSoMay.Text+"'";
-            Functions.RunSQL(sql);
-            reset();
-            setImage();
+            if (MessageBox.Show("Bạn có muốn gửi phản ánh không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                sql = "INSERT INTO PHANANH(Ten, PhongMay,MaMay,Ngay,NoiDung,TinhTrang)" +
+                " VALUES (N'" + tenGV + "',N'" + "CNTT01" + "',N'" + lblSoMay.Text + "',(SELECT GETDATE()),N'" + txtPhanAnh.Text.Trim() + "',N'Chưa xử lý')";
+                Functions.RunSQL(sql);
+                MessageBox.Show("Đã gửi phản ánh máy: " + lblSoMay.Text + " !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                sql = "Update MayTinh Set TinhTrang = N'Không hoạt động' where PhongMay = 'CNTT01' AND MaMay = N'" + lblSoMay.Text + "'";
+                Functions.RunSQL(sql);
+                reset();
+                setImage();
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -115,8 +152,7 @@ namespace TTCN
             cboTT.Text = "";
             txtPhanAnh.Text = "";
         }
-
-        private void btnHuy2_Click(object sender, EventArgs e)
+        private void reset1()
         {
             txtSoMay.Text = "";
             txtMain.Text = "";
@@ -129,6 +165,111 @@ namespace TTCN
             txtHDH.Text = "";
             txtPM.Text = "";
             cboTinhTrang.Text = "";
+        }
+
+
+        private void btnHuy2_Click(object sender, EventArgs e)
+        {
+            reset1();
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            if (txtSoMay.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa chọn số máy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (txtMain.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập Mainboard!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtMain.Focus();
+                return;
+            }
+            if (txtCPU.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập CPU!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCPU.Focus();
+                return;
+            }
+            if (txtRAM.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập Ram!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtRAM.Focus();
+                return;
+            }
+            if (txtOCung.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập Ổ cứng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtOCung.Focus();
+                return;
+            }
+            if (txtManHinh.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập Màn hình!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtManHinh.Focus();
+                return;
+            }
+            if (txtBanPhim.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập Bàn phím!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtBanPhim.Focus();
+                return;
+            }
+            if (txtChuot.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập Chuột!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtChuot.Focus();
+                return;
+            }
+            if (txtHDH.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập Hệ điều hành!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtHDH.Focus();
+                return;
+            }
+            if (txtPM.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập Phầm mềm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPM.Focus();
+                return;
+            }
+
+            if (MessageBox.Show("Bạn có muốn cập nhật máy " + txtSoMay.Text.Trim() + " không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                string sql;
+                sql = "Insert into LichSu(Ten,PhongMay,MaMay,Ngay,NoiDung)" +
+                    " Values(N'" + userCBKT + "',N'CNTT01',N'" + txtSoMay.Text + "',(SELECT GETDATE())," +
+                    "N'(" + mainboard + " --> " + txtMain.Text.Trim() + ");" +
+                    " (" + cpu + " --> " + txtCPU.Text.Trim() + ");" +
+                    " (" + ram + " --> " + txtRAM.Text.Trim() + ");" +
+                    " (" + ocung + " --> " + txtOCung.Text.Trim() + ");" +
+                    " (" + manhinh + " --> " + txtManHinh.Text.Trim() + ");" +
+                    " (" + banphim + " --> " + txtBanPhim.Text.Trim() + ");" +
+                    " (" + chuot + " --> " + txtChuot.Text.Trim() + ");" +
+                    " (" + hdh + " --> " + txtHDH.Text.Trim() + ");" +
+                    " (" + phanmem + " --> " + txtHDH.Text.Trim() + ");" +
+                    " (" + tinhtrang + " --> " + cboTinhTrang.Text.Trim() + ");')";
+                Functions.RunSQL(sql);
+
+                sql = "Update MayTinh Set TinhTrang = N'"+cboTinhTrang.Text+"'," +
+                    "Mainboard = N'"+txtMain.Text+"'," +
+                    "CPU = N'"+txtCPU.Text+"'," +
+                    "RAM = N'"+txtRAM.Text+"'," +
+                    "Ocung = N'"+txtOCung.Text+"'," +
+                    "ManHinh = N'"+txtManHinh.Text+"'," +
+                    "BanPhim = N'"+txtBanPhim.Text+"'," +
+                    "Chuot = N'"+txtChuot.Text+"'," +
+                    "HeDieuHanh = N'"+txtHDH.Text+"'," +
+                    "CacPhanMem = N'"+txtPM.Text+"'" +
+                    " where PhongMay = 'CNTT01' AND MaMay = N'" + txtSoMay.Text + "'";
+                MessageBox.Show("Đã cập nhật máy: " + lblSoMay.Text + " !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Functions.RunSQL(sql);
+                reset1();
+                setImage();
+            }
         }
     }
 }

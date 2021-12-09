@@ -36,15 +36,16 @@ namespace TTCN
             dgvLS.Columns[4].HeaderText = "Ngày";
             dgvLS.Columns[5].HeaderText = "Nội dung";
 
-            dgvLS.Columns[0].Width = 150;
-            dgvLS.Columns[1].Width = 150;
-            dgvLS.Columns[2].Width = 150;
-            dgvLS.Columns[3].Width = 150;
-            dgvLS.Columns[4].Width = 150;
-            dgvLS.Columns[5].Width = 150;
-
+            dgvLS.Columns[0].Width = 50;
+            dgvLS.Columns[1].Width = 50;
+            dgvLS.Columns[2].Width = 50;
+            dgvLS.Columns[3].Width = 50;
+            dgvLS.Columns[4].Width = 50;
+            dgvLS.Columns[5].Width = 500;
+            dgvLS.Columns[5].DefaultCellStyle.WrapMode = DataGridViewTriState.True; //Xuống dòng ô nội dung trong datagridview
             dgvLS.AllowUserToAddRows = false;
             dgvLS.EditMode = DataGridViewEditMode.EditProgrammatically;
+           // dgvLS.AutoGenerateColumns = true;
         }
 
         private void rbnpm_CheckedChanged(object sender, EventArgs e)

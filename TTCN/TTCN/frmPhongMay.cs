@@ -13,6 +13,7 @@ namespace TTCN
 {
     public partial class frmPhongMay : Form
     {
+        public string user;
         public frmPhongMay()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace TTCN
             frmPhong01 frm = new frmPhong01();
             frm.MdiParent = this.ParentForm;
             frm.Dock = DockStyle.Fill;
+            frm.userCBKT = user;
             frm.Show();
 
         }

@@ -31,22 +31,25 @@ namespace TTCN
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlMove = new System.Windows.Forms.Panel();
-            this.btnPhanAnh = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblUser = new System.Windows.Forms.Label();
             this.picDangXuat = new System.Windows.Forms.PictureBox();
+            this.btnPhanAnh = new System.Windows.Forms.Button();
             this.btnLichSu = new System.Windows.Forms.Button();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.btnPhongMay = new System.Windows.Forms.Button();
+            this.pnlMove = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDangXuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btnPhanAnh);
-            this.panel1.Controls.Add(this.picDangXuat);
             this.panel1.Controls.Add(this.btnLichSu);
             this.panel1.Controls.Add(this.btnTaiKhoan);
             this.panel1.Controls.Add(this.picLogo);
@@ -58,14 +61,39 @@ namespace TTCN
             this.panel1.Size = new System.Drawing.Size(267, 870);
             this.panel1.TabIndex = 0;
             // 
-            // pnlMove
+            // panel2
             // 
-            this.pnlMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pnlMove.Location = new System.Drawing.Point(256, 92);
-            this.pnlMove.Name = "pnlMove";
-            this.pnlMove.Size = new System.Drawing.Size(10, 100);
-            this.pnlMove.TabIndex = 2;
-            this.pnlMove.Visible = false;
+            this.panel2.Controls.Add(this.lblUser);
+            this.panel2.Controls.Add(this.picDangXuat);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 770);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(267, 100);
+            this.panel2.TabIndex = 13;
+            // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblUser.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.ForeColor = System.Drawing.Color.White;
+            this.lblUser.Location = new System.Drawing.Point(110, 37);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(73, 39);
+            this.lblUser.TabIndex = 12;
+            this.lblUser.Text = "user";
+            // 
+            // picDangXuat
+            // 
+            this.picDangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picDangXuat.Image = global::TTCN.Properties.Resources.icon_dang_xuat;
+            this.picDangXuat.Location = new System.Drawing.Point(7, 1);
+            this.picDangXuat.Name = "picDangXuat";
+            this.picDangXuat.Size = new System.Drawing.Size(100, 100);
+            this.picDangXuat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picDangXuat.TabIndex = 10;
+            this.picDangXuat.TabStop = false;
+            this.picDangXuat.Click += new System.EventHandler(this.picDangXuat_Click);
             // 
             // btnPhanAnh
             // 
@@ -79,23 +107,11 @@ namespace TTCN
             this.btnPhanAnh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPhanAnh.Name = "btnPhanAnh";
             this.btnPhanAnh.Size = new System.Drawing.Size(267, 146);
-            this.btnPhanAnh.TabIndex = 11;
+            this.btnPhanAnh.TabIndex = 4;
             this.btnPhanAnh.Text = "PHẢN ÁNH";
             this.btnPhanAnh.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPhanAnh.UseVisualStyleBackColor = true;
             this.btnPhanAnh.Click += new System.EventHandler(this.btnPhanAnh_Click);
-            // 
-            // picDangXuat
-            // 
-            this.picDangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picDangXuat.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.picDangXuat.Image = global::TTCN.Properties.Resources.icon_dang_xuat;
-            this.picDangXuat.Location = new System.Drawing.Point(0, 770);
-            this.picDangXuat.Name = "picDangXuat";
-            this.picDangXuat.Size = new System.Drawing.Size(267, 100);
-            this.picDangXuat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picDangXuat.TabIndex = 10;
-            this.picDangXuat.TabStop = false;
             // 
             // btnLichSu
             // 
@@ -109,7 +125,7 @@ namespace TTCN
             this.btnLichSu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLichSu.Name = "btnLichSu";
             this.btnLichSu.Size = new System.Drawing.Size(267, 146);
-            this.btnLichSu.TabIndex = 9;
+            this.btnLichSu.TabIndex = 3;
             this.btnLichSu.Text = "LỊCH SỬ SỬA ĐỔI";
             this.btnLichSu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLichSu.UseVisualStyleBackColor = true;
@@ -127,7 +143,7 @@ namespace TTCN
             this.btnTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Size = new System.Drawing.Size(262, 148);
-            this.btnTaiKhoan.TabIndex = 8;
+            this.btnTaiKhoan.TabIndex = 2;
             this.btnTaiKhoan.Text = "NGƯỜI DÙNG";
             this.btnTaiKhoan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTaiKhoan.UseVisualStyleBackColor = true;
@@ -146,7 +162,6 @@ namespace TTCN
             this.picLogo.Size = new System.Drawing.Size(267, 141);
             this.picLogo.TabIndex = 3;
             this.picLogo.TabStop = false;
-            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
             // 
             // btnPhongMay
             // 
@@ -166,6 +181,15 @@ namespace TTCN
             this.btnPhongMay.UseVisualStyleBackColor = true;
             this.btnPhongMay.Click += new System.EventHandler(this.btnPhongMay_Click);
             // 
+            // pnlMove
+            // 
+            this.pnlMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pnlMove.Location = new System.Drawing.Point(256, 92);
+            this.pnlMove.Name = "pnlMove";
+            this.pnlMove.Size = new System.Drawing.Size(10, 100);
+            this.pnlMove.TabIndex = 2;
+            this.pnlMove.Visible = false;
+            // 
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -182,8 +206,10 @@ namespace TTCN
             this.Name = "frmMain";
             this.Text = "Oschool";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDangXuat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
@@ -200,6 +226,8 @@ namespace TTCN
         private System.Windows.Forms.PictureBox picDangXuat;
         public System.Windows.Forms.Button btnLichSu;
         public System.Windows.Forms.Button btnPhanAnh;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

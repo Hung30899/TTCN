@@ -58,8 +58,9 @@ namespace TTCN
             if (tblLogin.Rows.Count > 0)
             {
                 frmMain frm = new frmMain();
+                frm.user = GetUser();
                 frm.ShowDialog();
-                this.Close();
+                this.Hide();
             }
             else
             {

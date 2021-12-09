@@ -100,7 +100,7 @@ namespace TTCN
             this.txtLop.Margin = new System.Windows.Forms.Padding(2);
             this.txtLop.Name = "txtLop";
             this.txtLop.Size = new System.Drawing.Size(269, 29);
-            this.txtLop.TabIndex = 18;
+            this.txtLop.TabIndex = 4;
             this.txtLop.UseWaitCursor = true;
             // 
             // pictureBox2
@@ -122,7 +122,7 @@ namespace TTCN
             this.cboPhongHoc.Location = new System.Drawing.Point(184, 140);
             this.cboPhongHoc.Name = "cboPhongHoc";
             this.cboPhongHoc.Size = new System.Drawing.Size(269, 29);
-            this.cboPhongHoc.TabIndex = 16;
+            this.cboPhongHoc.TabIndex = 2;
             // 
             // label4
             // 
@@ -144,7 +144,7 @@ namespace TTCN
             this.btnHuybo.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuybo.Name = "btnHuybo";
             this.btnHuybo.Size = new System.Drawing.Size(116, 41);
-            this.btnHuybo.TabIndex = 13;
+            this.btnHuybo.TabIndex = 6;
             this.btnHuybo.Text = "Hủy bỏ";
             this.btnHuybo.UseVisualStyleBackColor = false;
             this.btnHuybo.Click += new System.EventHandler(this.btnHuybo_Click);
@@ -157,7 +157,7 @@ namespace TTCN
             this.btnDangnhap.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangnhap.Name = "btnDangnhap";
             this.btnDangnhap.Size = new System.Drawing.Size(116, 41);
-            this.btnDangnhap.TabIndex = 12;
+            this.btnDangnhap.TabIndex = 5;
             this.btnDangnhap.Text = "Đăng nhập";
             this.btnDangnhap.UseVisualStyleBackColor = false;
             this.btnDangnhap.Click += new System.EventHandler(this.btnDangnhap_Click);
@@ -192,7 +192,7 @@ namespace TTCN
             this.txtMonHoc.Margin = new System.Windows.Forms.Padding(2);
             this.txtMonHoc.Name = "txtMonHoc";
             this.txtMonHoc.Size = new System.Drawing.Size(269, 29);
-            this.txtMonHoc.TabIndex = 9;
+            this.txtMonHoc.TabIndex = 3;
             this.txtMonHoc.UseWaitCursor = true;
             // 
             // txtTenGiangVien
@@ -203,7 +203,7 @@ namespace TTCN
             this.txtTenGiangVien.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenGiangVien.Name = "txtTenGiangVien";
             this.txtTenGiangVien.Size = new System.Drawing.Size(269, 29);
-            this.txtTenGiangVien.TabIndex = 8;
+            this.txtTenGiangVien.TabIndex = 1;
             // 
             // pictureBox1
             // 

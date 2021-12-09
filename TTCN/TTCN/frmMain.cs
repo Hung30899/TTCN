@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTCN.Class;
 
@@ -14,7 +7,7 @@ namespace TTCN
 {
     public partial class frmMain : Form
     {
-        
+        public string user;
         public frmMain()
         {
             InitializeComponent();
@@ -25,6 +18,7 @@ namespace TTCN
             Functions.CloseForm(this);
             Functions.MenuMove(btnPhongMay, pnlMove);
             frmPhongMay frm = new frmPhongMay();
+            frm.user = user;
             Functions.MenuClick(frm, this);
         }
 
@@ -52,9 +46,17 @@ namespace TTCN
             Functions.MenuClick(frm, this);
         }
 
-        private void picLogo_Click(object sender, EventArgs e)
+        private void picDangXuat_Click(object sender, EventArgs e)
         {
+            this.Close();
+            lblUser.Text = "";
+            frmCanBoKyThuat frmCanBoKyThuat = new frmCanBoKyThuat();
+            frmCanBoKyThuat.Show();
+        }
 
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            lblUser.Text = user;
         }
     }
 }
