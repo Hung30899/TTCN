@@ -35,7 +35,7 @@ namespace TTCN
             this.btnPhong01 = new System.Windows.Forms.Button();
             this.btnPhong07 = new System.Windows.Forms.Button();
             this.btnPhong06 = new System.Windows.Forms.Button();
-            this.btnPhong08 = new System.Windows.Forms.Button();
+            this.btnPhong09 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +65,6 @@ namespace TTCN
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ PHÒNG MÁY";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnPhong01
             // 
@@ -91,6 +90,7 @@ namespace TTCN
             this.btnPhong07.Text = "Phòng CNTT07";
             this.btnPhong07.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPhong07.UseVisualStyleBackColor = true;
+            this.btnPhong07.Click += new System.EventHandler(this.btnPhong07_Click);
             // 
             // btnPhong06
             // 
@@ -103,18 +103,20 @@ namespace TTCN
             this.btnPhong06.Text = "Phòng CNTT06";
             this.btnPhong06.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPhong06.UseVisualStyleBackColor = true;
+            this.btnPhong06.Click += new System.EventHandler(this.btnPhong06_Click);
             // 
-            // btnPhong08
+            // btnPhong09
             // 
-            this.btnPhong08.Image = ((System.Drawing.Image)(resources.GetObject("btnPhong08.Image")));
-            this.btnPhong08.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPhong08.Location = new System.Drawing.Point(840, 572);
-            this.btnPhong08.Name = "btnPhong08";
-            this.btnPhong08.Size = new System.Drawing.Size(186, 167);
-            this.btnPhong08.TabIndex = 34;
-            this.btnPhong08.Text = "Phòng CNTT08";
-            this.btnPhong08.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnPhong08.UseVisualStyleBackColor = true;
+            this.btnPhong09.Image = ((System.Drawing.Image)(resources.GetObject("btnPhong09.Image")));
+            this.btnPhong09.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPhong09.Location = new System.Drawing.Point(840, 572);
+            this.btnPhong09.Name = "btnPhong09";
+            this.btnPhong09.Size = new System.Drawing.Size(186, 167);
+            this.btnPhong09.TabIndex = 34;
+            this.btnPhong09.Text = "Phòng CNTT09";
+            this.btnPhong09.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPhong09.UseVisualStyleBackColor = true;
+            this.btnPhong09.Click += new System.EventHandler(this.btnPhong09_Click);
             // 
             // frmPhongMay
             // 
@@ -123,7 +125,7 @@ namespace TTCN
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::TTCN.Properties.Resources.nen_pmay;
             this.ClientSize = new System.Drawing.Size(1387, 1061);
-            this.Controls.Add(this.btnPhong08);
+            this.Controls.Add(this.btnPhong09);
             this.Controls.Add(this.btnPhong06);
             this.Controls.Add(this.btnPhong07);
             this.Controls.Add(this.btnPhong01);
@@ -131,7 +133,7 @@ namespace TTCN
             this.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "frmPhongMay";
-            this.Text = "frmPhongMay";
+            this.Text = "Phòng máy";
             this.Load += new System.EventHandler(this.frmPhongMay_Load);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -145,6 +147,6 @@ namespace TTCN
         private System.Windows.Forms.Button btnPhong01;
         private System.Windows.Forms.Button btnPhong07;
         private System.Windows.Forms.Button btnPhong06;
-        private System.Windows.Forms.Button btnPhong08;
+        private System.Windows.Forms.Button btnPhong09;
     }
 }

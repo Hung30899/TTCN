@@ -27,9 +27,14 @@ namespace TTCN
                 cboPhongHoc.Focus();
                 return;
             }
-
             tenGV = txtTenGiangVien.Text;
             phongHoc = cboPhongHoc.Text;
+            if (phongHoc != "CNTT01" && phongHoc != "CNTT06" && phongHoc != "CNTT07" && phongHoc != "CNTT09")
+            {
+                MessageBox.Show("Bạn cần chọn đúng tên phòng học !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboPhongHoc.Focus();
+                return;
+            }
             this.Close();
             if (phongHoc == "CNTT01")
             {
@@ -39,11 +44,30 @@ namespace TTCN
                 frmPhong01.Show();
                 return;
             }
-            if (phongHoc == "CNTT09")
+            if (phongHoc == "CNTT06")
             {
+                frmPhong06 frmPhong06 = new frmPhong06();
+                frmPhong06.chonND = 'g';
+                frmPhong06.tenGV = tenGV;
+                frmPhong06.Show();
+                return;            
+            }
+            if (phongHoc == "CNTT07")
+            {
+                frmPhong07 frmPhong07 = new frmPhong07();
+                frmPhong07.chonND = 'g';
+                frmPhong07.tenGV = tenGV;
+                frmPhong07.Show();
                 return;
             }
-            //this.Close();
+            if (phongHoc == "CNTT09")
+            {
+                frmPhong09 frmPhong09 = new frmPhong09();
+                frmPhong09.chonND = 'g';
+                frmPhong09.tenGV = tenGV;
+                frmPhong09.Show();
+                return;
+            }           
         }
 
         private void btnHuybo_Click(object sender, EventArgs e)

@@ -12,11 +12,44 @@ namespace TTCN
         public string tenGV, userCBKT;
 
         private string mainboard, cpu, ram, ocung, manhinh, banphim, chuot, hdh,phanmem, tinhtrang;
-       // private string sqlUpdate= "Insert into LichSu(Ten,PhongMay,MaMay,Ngay,NoiDung)";
   
         public frmPhong01()
         {
             InitializeComponent();
+        }
+
+        private void btnDoi_Click(object sender, EventArgs e)
+        {          
+            if (cboChon.Text == "CNTT06")
+            {
+                frmPhong06 frm= new frmPhong06();
+                frm.chonND = chonND;
+                frm.tenGV = tenGV;
+                frm.userCBKT = userCBKT;
+                frm.Show();
+                this.Close();
+                return;
+            }
+            if (cboChon.Text == "CNTT07")
+            {
+                frmPhong07 frm = new frmPhong07();
+                frm.chonND = chonND;
+                frm.tenGV = tenGV;
+                frm.userCBKT = userCBKT;
+                frm.Show();
+                this.Close();
+                return;
+            }
+            if (cboChon.Text == "CNTT09")
+            {
+                frmPhong09 frm = new frmPhong09();
+                frm.chonND = chonND;
+                frm.tenGV = tenGV;
+                frm.userCBKT = userCBKT;
+                frm.Show();
+                this.Close();
+                return;
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -26,10 +59,6 @@ namespace TTCN
             this.Close();
         }
 
-        public frmPhong01(string Message) : this()
-        {
-            userCBKT = Message;
-        }
         //sự kiện load hình ảnh cho nút máy tính
         private void setImage()
         {
@@ -43,6 +72,7 @@ namespace TTCN
                     btn.Image = Properties.Resources.mt_tt_hong1;
             }
         }
+
         private void frmPhong01_Load(object sender, EventArgs e)
         {
             Functions.Connect();
@@ -53,18 +83,13 @@ namespace TTCN
             lblMayHong.Text = Functions.GetFieldValues("Select count(MaMay) from MayTinh where phongmay ='CNTT01' and TinhTrang =N'Không hoạt động'");
             lblTinhTrang.Text = Functions.GetFieldValues("Select TrangThai from PhongMay where phongmay ='CNTT01'");
             lblPMM.Text = Functions.GetFieldValues("Select CacPhanMem from MayTinh where phongmay ='CNTT01' and mamay ='M01'");
-            cboChon.Text = "CNTT01";
             Functions.FillCombo("Select TenPhongMay from PhongMay", cboChon, "TenPhongMay", "TenPhongMay");
-            frmGiangVien frm = new frmGiangVien();
+            cboChon.Text = "CNTT01";
             if (chonND != 'g')
             {
                 grbGV.Visible = false;
                 pictureBox1.Visible = false;
-
-            }
-            else
-            {
-                
+                btnDoi.Visible = false;
             }
         }
 
@@ -241,16 +266,16 @@ namespace TTCN
                 string sql;
                 sql = "Insert into LichSu(Ten,PhongMay,MaMay,Ngay,NoiDung)" +
                     " Values(N'" + userCBKT + "',N'CNTT01',N'" + txtSoMay.Text + "',(SELECT GETDATE())," +
-                    "N'(" + mainboard + " --> " + txtMain.Text.Trim() + ");" +
-                    " (" + cpu + " --> " + txtCPU.Text.Trim() + ");" +
-                    " (" + ram + " --> " + txtRAM.Text.Trim() + ");" +
-                    " (" + ocung + " --> " + txtOCung.Text.Trim() + ");" +
-                    " (" + manhinh + " --> " + txtManHinh.Text.Trim() + ");" +
-                    " (" + banphim + " --> " + txtBanPhim.Text.Trim() + ");" +
-                    " (" + chuot + " --> " + txtChuot.Text.Trim() + ");" +
-                    " (" + hdh + " --> " + txtHDH.Text.Trim() + ");" +
-                    " (" + phanmem + " --> " + txtHDH.Text.Trim() + ");" +
-                    " (" + tinhtrang + " --> " + cboTinhTrang.Text.Trim() + ");')";
+                    "N'" + mainboard + " --> " + txtMain.Text.Trim() + " Char(13)" +
+                    " (" + cpu + " --> " + txtCPU.Text.Trim() + " Char(13)" +
+                    " (" + ram + " --> " + txtRAM.Text.Trim() + " Char(13)" +
+                    " (" + ocung + " --> " + txtOCung.Text.Trim() + " Char(13)" +
+                    " (" + manhinh + " --> " + txtManHinh.Text.Trim() + " Char(13)" +
+                    " (" + banphim + " --> " + txtBanPhim.Text.Trim() + " Char(13)" +
+                    " (" + chuot + " --> " + txtChuot.Text.Trim() + " Char(13)" +
+                    " (" + hdh + " --> " + txtHDH.Text.Trim() + " (13)" +
+                    " (" + phanmem + " --> " + txtHDH.Text.Trim() + " Char(13)" +
+                    " (" + tinhtrang + " --> " + cboTinhTrang.Text.Trim() + " Char(13)')";
                 Functions.RunSQL(sql);
 
                 sql = "Update MayTinh Set TinhTrang = N'"+cboTinhTrang.Text+"'," +

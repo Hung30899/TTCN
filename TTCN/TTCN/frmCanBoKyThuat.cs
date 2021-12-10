@@ -66,8 +66,7 @@ namespace TTCN
             {
                 MessageBox.Show("Sai toài khoản hoặc mật khẩu!");
                 txtUser.Focus();
-            }
-            
+            }   
         }
 
         private void frmCanBoQuanLy_Load(object sender, EventArgs e)

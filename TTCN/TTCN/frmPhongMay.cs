@@ -18,12 +18,6 @@ namespace TTCN
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmPhongMay_Load(object sender, EventArgs e)
         {
 
@@ -36,7 +30,33 @@ namespace TTCN
             frm.Dock = DockStyle.Fill;
             frm.userCBKT = user;
             frm.Show();
+        }
 
+        private void btnPhong07_Click(object sender, EventArgs e)
+        {
+            frmPhong07 frm = new frmPhong07();
+            frm.MdiParent = this.ParentForm;
+            frm.Dock = DockStyle.Fill;
+            frm.userCBKT = user;
+            frm.Show();
+        }
+
+        private void btnPhong06_Click(object sender, EventArgs e)
+        {
+            frmPhong06 frm = new frmPhong06();
+            frm.MdiParent = this.ParentForm;
+            frm.Dock = DockStyle.Fill;
+            frm.userCBKT = user;
+            frm.Show();
+        }
+
+        private void btnPhong09_Click(object sender, EventArgs e)
+        {
+            frmPhong09 frm = new frmPhong09();
+            frm.MdiParent = this.ParentForm;
+            frm.Dock = DockStyle.Fill;
+            frm.userCBKT = user;
+            frm.Show();
         }
     }
 }

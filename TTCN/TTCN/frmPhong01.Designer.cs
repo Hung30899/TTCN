@@ -161,6 +161,7 @@ namespace TTCN
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
+            this.btnDoi = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grbSoDo.SuspendLayout();
@@ -174,6 +175,7 @@ namespace TTCN
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(185)))), ((int)(((byte)(244)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.btnDoi);
             this.panel3.Controls.Add(this.label32);
             this.panel3.Controls.Add(this.cboChon);
             this.panel3.Controls.Add(this.label1);
@@ -207,7 +209,7 @@ namespace TTCN
             this.cboChon.Size = new System.Drawing.Size(241, 40);
             this.cboChon.TabIndex = 2;
             this.cboChon.Tag = "";
-            // 
+           // 
             // label1
             // 
             this.label1.AutoEllipsis = true;
@@ -2007,10 +2009,21 @@ namespace TTCN
             this.label40.TabIndex = 0;
             this.label40.Text = "Tên phòng: ";
             // 
+            // btnDoi
+            // 
+            this.btnDoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDoi.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoi.Location = new System.Drawing.Point(1444, 21);
+            this.btnDoi.Name = "btnDoi";
+            this.btnDoi.Size = new System.Drawing.Size(147, 38);
+            this.btnDoi.TabIndex = 4;
+            this.btnDoi.Text = "Đổi phòng học";
+            this.btnDoi.UseVisualStyleBackColor = false;
+            this.btnDoi.Click += new System.EventHandler(this.btnDoi_Click);
+            // 
             // frmPhong01
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1745, 1005);
             this.Controls.Add(this.groupBox3);
@@ -2020,7 +2033,7 @@ namespace TTCN
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmPhong01";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Form1";
+            this.Text = "CNTT01";
             this.Load += new System.EventHandler(this.frmPhong01_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -2170,6 +2183,7 @@ namespace TTCN
         private System.Windows.Forms.TextBox txtSoMay;
         private System.Windows.Forms.TextBox txtPhanAnh;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnDoi;
     }
 }
 

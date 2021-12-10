@@ -110,6 +110,24 @@
     <Compile Include="frmPhong01.Designer.cs">
       <DependentUpon>frmPhong01.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPhong06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhong06.Designer.cs">
+      <DependentUpon>frmPhong06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhong07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhong07.Designer.cs">
+      <DependentUpon>frmPhong07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhong09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhong09.Designer.cs">
+      <DependentUpon>frmPhong09.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPhongMay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +159,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhong01.resx">
       <DependentUpon>frmPhong01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhong06.resx">
+      <DependentUpon>frmPhong06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhong07.resx">
+      <DependentUpon>frmPhong07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhong09.resx">
+      <DependentUpon>frmPhong09.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhongMay.resx">
       <DependentUpon>frmPhongMay.cs</DependentUpon>

@@ -102,3 +102,6 @@ D:\TTCN\TTCN\TTCN\TTCN\bin\Debug\QLPM_log.ldf
 D:\TTCN\TTCN\TTCN\TTCN\bin\Debug\TTCN.exe.config
 D:\TTCN\TTCN\TTCN\TTCN\bin\Debug\TTCN.exe
 D:\TTCN\TTCN\TTCN\TTCN\bin\Debug\TTCN.pdb
+C:\Users\H\Desktop\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmPhong06.resources
+C:\Users\H\Desktop\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmPhong07.resources
+C:\Users\H\Desktop\TTCN\TTCN\TTCN\obj\Debug\TTCN.frmPhong09.resources
