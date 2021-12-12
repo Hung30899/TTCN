@@ -118,7 +118,7 @@ namespace TTCN
                 return;
             }
             txtid.Text = dgvPA.CurrentRow.Cells[0].Value.ToString();
-            txttrangthai.Text = dgvPA.CurrentRow.Cells[6].Value.ToString();
+            cbotrangthai.Text = dgvPA.CurrentRow.Cells[6].Value.ToString();
             txtid.Enabled = false;
         }
 
@@ -126,17 +126,17 @@ namespace TTCN
         {
             string sql;
             {
-                if (txttrangthai.Text.Trim().Length == 0)
+                if (cbotrangthai.Text.Trim().Length == 0)
                 {
                     MessageBox.Show("Trạng thái không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txttrangthai.Focus();
+                    cbotrangthai.Focus();
                 }
 
-                if (txttrangthai.Text.Trim().Length != 0)
+                if (cbotrangthai.Text.Trim().Length != 0)
                 {
                     if (MessageBox.Show("Bạn có muốn lưu chỉnh sửa không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                     {
-                        sql = "UPDATE PhanAnh SET TinhTrang=N'" + txttrangthai.Text.Trim() + "' WHERE ID=N'" + txtid.Text + "'";
+                        sql = "UPDATE PhanAnh SET TinhTrang=N'" + cbotrangthai.Text.Trim() + "' WHERE ID=N'" + txtid.Text + "'";
                         Functions.RunSQL(sql);
                         LoadDataGridView();
                         MessageBox.Show("Đã cập nhật Phản ánh:" + txtid.Text + "!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

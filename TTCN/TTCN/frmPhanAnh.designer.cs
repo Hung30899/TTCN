@@ -29,16 +29,15 @@ namespace TTCN
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvPA = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txttrangthai = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cboSearch = new System.Windows.Forms.ComboBox();
             this.txtid = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@ namespace TTCN
             this.rbnpm = new System.Windows.Forms.RadioButton();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.rbnmm = new System.Windows.Forms.RadioButton();
+            this.cbotrangthai = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPA)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -55,33 +55,33 @@ namespace TTCN
             // 
             // dgvPA
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(242)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvPA.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(242)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvPA.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvPA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPA.BackgroundColor = System.Drawing.Color.White;
             this.dgvPA.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvPA.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPA.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPA.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvPA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPA.GridColor = System.Drawing.Color.DodgerBlue;
             this.dgvPA.Location = new System.Drawing.Point(0, 316);
-            this.dgvPA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPA.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPA.Name = "dgvPA";
             this.dgvPA.RowHeadersWidth = 51;
             this.dgvPA.Size = new System.Drawing.Size(1041, 461);
@@ -108,7 +108,7 @@ namespace TTCN
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1041, 316);
             this.panel1.TabIndex = 15;
@@ -121,7 +121,7 @@ namespace TTCN
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1041, 82);
             this.panel2.TabIndex = 27;
@@ -129,8 +129,8 @@ namespace TTCN
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.cbotrangthai);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.txttrangthai);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.cboSearch);
             this.groupBox3.Controls.Add(this.txtid);
@@ -141,9 +141,9 @@ namespace TTCN
             this.groupBox3.Controls.Add(this.rbnmm);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(28, 93);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(1002, 208);
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
@@ -158,18 +158,9 @@ namespace TTCN
             this.label2.Location = new System.Drawing.Point(153, 50);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 23);
+            this.label2.Size = new System.Drawing.Size(130, 31);
             this.label2.TabIndex = 38;
             this.label2.Text = "Trạng thái:";
-            // 
-            // txttrangthai
-            // 
-            this.txttrangthai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttrangthai.Location = new System.Drawing.Point(256, 50);
-            this.txttrangthai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txttrangthai.Name = "txttrangthai";
-            this.txttrangthai.Size = new System.Drawing.Size(178, 26);
-            this.txttrangthai.TabIndex = 37;
             // 
             // label3
             // 
@@ -179,7 +170,7 @@ namespace TTCN
             this.label3.Location = new System.Drawing.Point(17, 50);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 23);
+            this.label3.Size = new System.Drawing.Size(47, 31);
             this.label3.TabIndex = 36;
             this.label3.Text = "ID:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -191,9 +182,9 @@ namespace TTCN
             this.cboSearch.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSearch.FormattingEnabled = true;
             this.cboSearch.Location = new System.Drawing.Point(18, 135);
-            this.cboSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboSearch.Margin = new System.Windows.Forms.Padding(2);
             this.cboSearch.Name = "cboSearch";
-            this.cboSearch.Size = new System.Drawing.Size(259, 31);
+            this.cboSearch.Size = new System.Drawing.Size(259, 37);
             this.cboSearch.TabIndex = 35;
             this.cboSearch.SelectedIndexChanged += new System.EventHandler(this.cboSearch_SelectedIndexChanged);
             // 
@@ -201,9 +192,9 @@ namespace TTCN
             // 
             this.txtid.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtid.Location = new System.Drawing.Point(58, 47);
-            this.txtid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(60, 26);
+            this.txtid.Size = new System.Drawing.Size(60, 30);
             this.txtid.TabIndex = 17;
             // 
             // label4
@@ -214,7 +205,7 @@ namespace TTCN
             this.label4.Location = new System.Drawing.Point(14, 105);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 23);
+            this.label4.Size = new System.Drawing.Size(111, 31);
             this.label4.TabIndex = 28;
             this.label4.Text = "Từ khóa:";
             // 
@@ -225,10 +216,10 @@ namespace TTCN
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Image = global::TTCN.Properties.Resources.img_luu;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(472, 46);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLuu.Location = new System.Drawing.Point(632, 40);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(102, 33);
+            this.btnLuu.Size = new System.Drawing.Size(146, 44);
             this.btnLuu.TabIndex = 20;
             this.btnLuu.Text = "    Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -241,9 +232,9 @@ namespace TTCN
             this.rbnpm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbnpm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbnpm.Location = new System.Drawing.Point(447, 141);
-            this.rbnpm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbnpm.Margin = new System.Windows.Forms.Padding(2);
             this.rbnpm.Name = "rbnpm";
-            this.rbnpm.Size = new System.Drawing.Size(157, 25);
+            this.rbnpm.Size = new System.Drawing.Size(198, 31);
             this.rbnpm.TabIndex = 27;
             this.rbnpm.Text = "Theo Phòng Máy";
             this.rbnpm.UseVisualStyleBackColor = true;
@@ -257,7 +248,7 @@ namespace TTCN
             this.btnTimKiem.Image = global::TTCN.Properties.Resources.img_timkiem;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimKiem.Location = new System.Drawing.Point(632, 127);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(146, 44);
             this.btnTimKiem.TabIndex = 25;
@@ -272,14 +263,27 @@ namespace TTCN
             this.rbnmm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.rbnmm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbnmm.Location = new System.Drawing.Point(312, 141);
-            this.rbnmm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbnmm.Margin = new System.Windows.Forms.Padding(2);
             this.rbnmm.Name = "rbnmm";
-            this.rbnmm.Size = new System.Drawing.Size(134, 25);
+            this.rbnmm.Size = new System.Drawing.Size(170, 31);
             this.rbnmm.TabIndex = 26;
             this.rbnmm.TabStop = true;
             this.rbnmm.Text = "Theo Mã Máy";
             this.rbnmm.UseVisualStyleBackColor = true;
             this.rbnmm.CheckedChanged += new System.EventHandler(this.rbnmm_CheckedChanged);
+            // 
+            // cbotrangthai
+            // 
+            this.cbotrangthai.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbotrangthai.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbotrangthai.FormattingEnabled = true;
+            this.cbotrangthai.Items.AddRange(new object[] {
+            "Đã xử lý",
+            "Chưa xử lý"});
+            this.cbotrangthai.Location = new System.Drawing.Point(288, 44);
+            this.cbotrangthai.Name = "cbotrangthai";
+            this.cbotrangthai.Size = new System.Drawing.Size(204, 37);
+            this.cbotrangthai.TabIndex = 32;
             // 
             // frmPhanAnh
             // 
@@ -287,7 +291,7 @@ namespace TTCN
             this.ClientSize = new System.Drawing.Size(1041, 777);
             this.Controls.Add(this.dgvPA);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPhanAnh";
             this.Text = "frmPhanAnh";
             this.Load += new System.EventHandler(this.frmPhanAnh_Load);
@@ -316,6 +320,6 @@ namespace TTCN
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txttrangthai;
+        private System.Windows.Forms.ComboBox cbotrangthai;
     }
 }
