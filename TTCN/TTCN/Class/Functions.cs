@@ -43,6 +43,7 @@ namespace TTCN.Class
                 cbo.DataSource = table;
                 cbo.ValueMember = ma; //Trường giá trị
                 cbo.DisplayMember = ten; //Trường hiển thị
+                
             }
             catch (Exception ex)
             {

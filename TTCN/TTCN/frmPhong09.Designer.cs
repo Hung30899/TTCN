@@ -161,7 +161,6 @@ namespace TTCN
             this.btnMay01 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnDoi = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.grbCB.SuspendLayout();
             this.grbGV.SuspendLayout();
@@ -979,7 +978,6 @@ namespace TTCN
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(185)))), ((int)(((byte)(244)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.btnDoi);
             this.panel3.Controls.Add(this.label32);
             this.panel3.Controls.Add(this.cboChon);
             this.panel3.Controls.Add(this.label1);
@@ -1008,11 +1006,17 @@ namespace TTCN
             this.cboChon.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cboChon.FormattingEnabled = true;
+            this.cboChon.Items.AddRange(new object[] {
+            "CNTT01",
+            "CNTT06",
+            "CNTT07",
+            "CNTT09"});
             this.cboChon.Location = new System.Drawing.Point(1180, 19);
             this.cboChon.Name = "cboChon";
             this.cboChon.Size = new System.Drawing.Size(241, 40);
             this.cboChon.TabIndex = 2;
             this.cboChon.Tag = "";
+            this.cboChon.SelectedValueChanged += new System.EventHandler(this.cboChon_SelectedValueChanged);
             // 
             // label1
             // 
@@ -2009,18 +2013,6 @@ namespace TTCN
             this.label2.Text = "MAY GV";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // btnDoi
-            // 
-            this.btnDoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDoi.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoi.Location = new System.Drawing.Point(1444, 21);
-            this.btnDoi.Name = "btnDoi";
-            this.btnDoi.Size = new System.Drawing.Size(147, 38);
-            this.btnDoi.TabIndex = 7;
-            this.btnDoi.Text = "Đổi phòng học";
-            this.btnDoi.UseVisualStyleBackColor = false;
-            this.btnDoi.Click += new System.EventHandler(this.btnDoi_Click);
-            // 
             // frmPhong09
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -2184,6 +2176,5 @@ namespace TTCN
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox grbSoDo;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button btnDoi;
     }
 }

@@ -81,16 +81,16 @@ namespace TTCN
                 string sql;
                 sql = "Insert into LichSu(Ten,PhongMay,MaMay,Ngay,NoiDung)" +
                     " Values(N'" + userCBKT + "',N'CNTT06',N'" + txtSoMay.Text + "',(SELECT GETDATE())," +
-                    "N'" + mainboard + " --> " + txtMain.Text.Trim() + " Char(13)" +
-                    " (" + cpu + " --> " + txtCPU.Text.Trim() + " Char(13)" +
-                    " (" + ram + " --> " + txtRAM.Text.Trim() + " Char(13)" +
-                    " (" + ocung + " --> " + txtOCung.Text.Trim() + " Char(13)" +
-                    " (" + manhinh + " --> " + txtManHinh.Text.Trim() + " Char(13)" +
-                    " (" + banphim + " --> " + txtBanPhim.Text.Trim() + " Char(13)" +
-                    " (" + chuot + " --> " + txtChuot.Text.Trim() + " Char(13)" +
-                    " (" + hdh + " --> " + txtHDH.Text.Trim() + " (13)" +
-                    " (" + phanmem + " --> " + txtHDH.Text.Trim() + " Char(13)" +
-                    " (" + tinhtrang + " --> " + cboTinhTrang.Text.Trim() + " Char(13)')";
+                    "N'" + mainboard + " --> " + txtMain.Text.Trim() + ";" +
+                    " " + cpu + " --> " + txtCPU.Text.Trim() + ";" +
+                    " " + ram + " --> " + txtRAM.Text.Trim() + ";" +
+                    " " + ocung + " --> " + txtOCung.Text.Trim() + ";" +
+                    " " + manhinh + " --> " + txtManHinh.Text.Trim() + ";" +
+                    " " + banphim + " --> " + txtBanPhim.Text.Trim() + ";" +
+                    " " + chuot + " --> " + txtChuot.Text.Trim() + ";" +
+                    " " + hdh + " --> " + txtHDH.Text.Trim() + ";" +
+                    " " + phanmem + " --> " + txtPM.Text.Trim() + ";" +
+                    " " + tinhtrang + " --> " + cboTinhTrang.Text.Trim() + ";')";
                 Functions.RunSQL(sql);
 
                 sql = "Update MayTinh Set TinhTrang = N'" + cboTinhTrang.Text + "'," +
@@ -112,37 +112,85 @@ namespace TTCN
             }
         }
 
-        private void btnDoi_Click(object sender, EventArgs e)
+        private void cboChon_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (cboChon.Text == "CNTT01")
+            if (chonND == 'g')
             {
-                frmPhong01 frm = new frmPhong01();
-                frm.chonND = chonND;
-                frm.tenGV = tenGV;
-                frm.userCBKT = userCBKT;
-                frm.Show();
-                this.Close();
-                return;
+                if (cboChon.Text == "CNTT01")
+                {
+                    frmPhong01 frm = new frmPhong01();
+                    frm.chonND = chonND;
+                    frm.tenGV = tenGV;
+                    frm.userCBKT = userCBKT;
+                    frm.MdiParent = this.ParentForm;
+                    frm.Dock = DockStyle.Fill;
+                    frm.Show();
+                    this.Close();
+                    return;
+                }
+                if (cboChon.Text == "CNTT07")
+                {
+                    frmPhong07 frm = new frmPhong07();
+                    frm.chonND = chonND;
+                    frm.tenGV = tenGV;
+                    frm.userCBKT = userCBKT;
+                    frm.MdiParent = this.ParentForm;
+                    frm.Dock = DockStyle.Fill;
+                    frm.Show();
+                    this.Close();
+                    return;
+                }
+                if (cboChon.Text == "CNTT09")
+                {
+                    frmPhong09 frm = new frmPhong09();
+                    frm.chonND = chonND;
+                    frm.tenGV = tenGV;
+                    frm.userCBKT = userCBKT;
+                    frm.MdiParent = this.ParentForm;
+                    frm.Dock = DockStyle.Fill;
+                    frm.Show();
+                    this.Close();
+                    return;
+                }
             }
-            if (cboChon.Text == "CNTT07")
+            else
             {
-                frmPhong07 frm = new frmPhong07();
-                frm.chonND = chonND;
-                frm.tenGV = tenGV;
-                frm.userCBKT = userCBKT;
-                frm.Show();
-                this.Close();
-                return;
-            }
-            if (cboChon.Text == "CNTT09")
-            {
-                frmPhong09 frm = new frmPhong09();
-                frm.chonND = chonND;
-                frm.tenGV = tenGV;
-                frm.userCBKT = userCBKT;
-                frm.Show();
-                this.Close();
-                return;
+                if (cboChon.Text == "CNTT01")
+                {
+                    frmPhong01 frm = new frmPhong01();
+                    frm.chonND = chonND;
+                    frm.tenGV = tenGV;
+                    frm.userCBKT = userCBKT;
+                    frm.MdiParent = this.ParentForm;
+                    frm.Dock = DockStyle.Fill;
+                    frm.Show();
+                    this.Close();
+                    return;
+                }
+                if (cboChon.Text == "CNTT07")
+                {
+                    frmPhong07 frm = new frmPhong07();
+                    frm.chonND = chonND;
+                    frm.tenGV = tenGV;
+                    frm.userCBKT = userCBKT;
+                    frm.MdiParent = this.ParentForm;
+                    frm.Dock = DockStyle.Fill;
+                    frm.Show();
+                    this.Close();
+                    return;
+                }
+                if (cboChon.Text == "CNTT09")
+                {
+                    frmPhong09 frm = new frmPhong09();
+                    frm.chonND = chonND;
+                    frm.tenGV = tenGV;
+                    frm.userCBKT = userCBKT;
+                    frm.MdiParent = this.ParentForm;
+                    frm.Dock = DockStyle.Fill;
+                    frm.Show();
+                    this.Close();
+                    return;
+                }
             }
         }
 
@@ -214,9 +262,16 @@ namespace TTCN
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            frmGiangVien frm = new frmGiangVien();
-            frm.Show();
-            this.Close();
+            if (chonND == 'g')
+            {
+                frmGiangVien frm = new frmGiangVien();
+                frm.Show();
+                this.Close();
+            }
+            else
+            {
+                this.Close();
+            }
         }
 
         public frmPhong06()
@@ -245,15 +300,13 @@ namespace TTCN
             lblMayTot.Text = Functions.GetFieldValues("Select count(MaMay) from MayTinh where phongmay ='CNTT06' and TinhTrang =N'Hoạt động'");
             lblMayHong.Text = Functions.GetFieldValues("Select count(MaMay) from MayTinh where phongmay ='CNTT06' and TinhTrang =N'Không hoạt động'");
             lblTinhTrang.Text = Functions.GetFieldValues("Select TrangThai from PhongMay where phongmay ='CNTT06'");
-            lblPMM.Text = Functions.GetFieldValues("Select CacPhanMem from MayTinh where phongmay ='CNTT06' and mamay ='M01'");
-            
-            Functions.FillCombo("Select TenPhongMay from PhongMay", cboChon, "TenPhongMay", "TenPhongMay");
+            lblPMM.Text = Functions.GetFieldValues("Select CacPhanMem from MayTinh where phongmay ='CNTT06' and mamay ='M01'"); 
+          //Functions.FillCombo("Select TenPhongMay from PhongMay", cboChon, "TenPhongMay", "TenPhongMay");
             cboChon.Text = "CNTT06";
             if (chonND != 'g')
             {
                 grbGV.Visible = false;
-                pictureBox1.Visible = false;
-                btnDoi.Visible = false;
+              //  pictureBox1.Visible = false;
             }
         }
         private void buttons_CheckedChanged(object sender, EventArgs e)

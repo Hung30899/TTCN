@@ -113,9 +113,29 @@ namespace TTCN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_lich_su1 {
+            get {
+                object obj = ResourceManager.GetObject("icon_lich_su1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_phan_anh {
             get {
                 object obj = ResourceManager.GetObject("icon_phan_anh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_phan_anh1 {
+            get {
+                object obj = ResourceManager.GetObject("icon_phan_anh1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

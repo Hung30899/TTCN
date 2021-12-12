@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using TTCN.Class;
 
 namespace TTCN
@@ -45,14 +38,13 @@ namespace TTCN
             dgvLS.Columns[5].DefaultCellStyle.WrapMode = DataGridViewTriState.True; //Xuống dòng ô nội dung trong datagridview
             dgvLS.AllowUserToAddRows = false;
             dgvLS.EditMode = DataGridViewEditMode.EditProgrammatically;
-           // dgvLS.AutoGenerateColumns = true;
         }
 
         private void rbnpm_CheckedChanged(object sender, EventArgs e)
         {
             string sql;
             rbt = 'p';
-            sql = "SELECT * fROM LichSu";
+            sql = "SELECT * fROM PhongMay";
             tblLichSu = Functions.GetDataToTable(sql); //Lấy dữ liệu
             cboSearch.DataSource = tblLichSu;
             cboSearch.DisplayMember = "PhongMay";
@@ -64,7 +56,7 @@ namespace TTCN
         {
             string sql;
             rbt = 'm';
-            sql = "SELECT * fROM LichSu";
+            sql = "SELECT DISTINCT MaMay fROM LichSu";
             tblLichSu = Functions.GetDataToTable(sql); //Lấy dữ liệu
             cboSearch.DataSource = tblLichSu;
             cboSearch.DisplayMember = "MaMay";
@@ -77,9 +69,8 @@ namespace TTCN
             string sql;
             if (cboSearch.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn hãy nhập thông tin tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                cboSearch.Focus();
-                return;
+                sql = "SELECT * FROM LichSu";
+                tblLichSu = Functions.GetDataToTable(sql);
             }
             if (rbt == 'm')
             {
@@ -97,26 +88,11 @@ namespace TTCN
             dgvLS.DataSource = tblLichSu;
         }
 
-        private void cboSearch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvLS_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void frmLichSu_Load_1(object sender, EventArgs e)
         {
             Functions.Connect();
             LoadDataGridView();
             rbnpm_CheckedChanged(sender, e);
-        }
-
-        private void dgvLS_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

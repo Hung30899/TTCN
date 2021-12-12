@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using TTCN.Class;
 
 namespace TTCN
@@ -26,7 +19,7 @@ namespace TTCN
         {
             string sql;
             rbt = 'p';
-            sql = "SELECT * fROM PhanAnh";
+            sql = "SELECT * fROM PhongMay";
             tblPhanAnh = Functions.GetDataToTable(sql); //Lấy dữ liệu
             cboSearch.DataSource = tblPhanAnh;
             cboSearch.DisplayMember = "PhongMay";
@@ -38,7 +31,7 @@ namespace TTCN
         {
             string sql;
             rbt = 'm';
-            sql = "SELECT * fROM PhanAnh";
+            sql = "SELECT DISTINCT MaMay fROM PhanAnh";
             tblPhanAnh = Functions.GetDataToTable(sql); //Lấy dữ liệu
             cboSearch.DataSource = tblPhanAnh;
             cboSearch.DisplayMember = "MaMay";
@@ -56,9 +49,8 @@ namespace TTCN
             string sql;
             if (cboSearch.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn hãy nhập thông tin tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                cboSearch.Focus();
-                return;
+                sql = "SELECT * FROM PhanAnh";
+                tblPhanAnh = Functions.GetDataToTable(sql);
             }
             if (rbt == 'm')
             {

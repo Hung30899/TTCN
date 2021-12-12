@@ -161,6 +161,11 @@ namespace TTCN
                 MessageBox.Show("Bạn phải chọn bản ghi cần sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            if (txtUser.Text == "Admin")
+            {
+                MessageBox.Show("Bạn không thể sửa tài khoản Admin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             btnLuu.Enabled = true;
             btnHuy.Enabled = true;
             Enable();
@@ -197,10 +202,17 @@ namespace TTCN
             if (tblUser.Rows.Count == 0)
             {
                 MessageBox.Show("Không còn dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
             if (txtUser.Text == "")
             {
                 MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtUser.Text == "Admin")
+            {
+                MessageBox.Show("Bạn không thể xóa tài khoản Admin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
             if (MessageBox.Show("Bạn có muốn xóa không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
@@ -220,9 +232,8 @@ namespace TTCN
             string sql;
             if (cboSearch.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn hãy nhập thông tin tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                cboSearch.Focus();
-                return;
+                sql = "SELECT * FROM NguoiDung";
+                tblUser = Functions.GetDataToTable(sql);
             }
             if (rbt == 'u') //Tìm kiếm theo Username
             {
@@ -237,6 +248,7 @@ namespace TTCN
             if (tblUser.Rows.Count == 0)
                 MessageBox.Show("Không có bản ghi thoả mãn điều kiện tìm kiếm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else MessageBox.Show("Có " + tblUser.Rows.Count + "  bản ghi thoả mãn điều kiện!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
             dgvUser.DataSource = tblUser;
             ResetValues();         
         }

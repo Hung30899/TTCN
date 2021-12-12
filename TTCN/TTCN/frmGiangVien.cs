@@ -67,7 +67,8 @@ namespace TTCN
                 frmPhong09.tenGV = tenGV;
                 frmPhong09.Show();
                 return;
-            }           
+            }
+            
         }
 
         private void btnHuybo_Click(object sender, EventArgs e)

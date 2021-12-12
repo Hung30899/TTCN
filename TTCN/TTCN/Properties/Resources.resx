@@ -136,8 +136,11 @@
   <data name="icon_dang_xuat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_dang_xuat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_ql_phong_may" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_ql_phong_may.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_phan_anh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_phan_anh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_them" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_them.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_sua" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_sua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,14 +151,14 @@
   <data name="icon_phong_may" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_phong_may.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_cua" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_cua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="img_them" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_them.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_huy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_huy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mt_tt_tot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mt_tt_tot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_cua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_cua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_timkiem" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_timkiem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,13 +181,16 @@
   <data name="icon_phan_anh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_phan_anh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_huy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_huy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mt_tt_hong1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mt_tt_hong1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_ql_phong_may" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_ql_phong_may.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mt_tt_hong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mt_tt_hong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mt_tt_hong1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mt_tt_hong1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_lich_su1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_lich_su.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
