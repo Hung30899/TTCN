@@ -29,19 +29,19 @@ namespace TTCN
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cboSearch = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.rbnpm = new System.Windows.Forms.RadioButton();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.rbnmm = new System.Windows.Forms.RadioButton();
             this.dgvLS = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnTimKiem = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -72,6 +72,20 @@ namespace TTCN
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1175, 109);
             this.panel2.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.AutoEllipsis = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Image = global::TTCN.Properties.Resources.icon_lich_su1;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(10, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(350, 94);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "LỊCH SỬ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox3
             // 
@@ -131,68 +145,6 @@ namespace TTCN
             this.rbnpm.UseVisualStyleBackColor = true;
             this.rbnpm.CheckedChanged += new System.EventHandler(this.rbnpm_CheckedChanged);
             // 
-            // rbnmm
-            // 
-            this.rbnmm.AutoSize = true;
-            this.rbnmm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.rbnmm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnmm.Location = new System.Drawing.Point(394, 82);
-            this.rbnmm.Margin = new System.Windows.Forms.Padding(2);
-            this.rbnmm.Name = "rbnmm";
-            this.rbnmm.Size = new System.Drawing.Size(134, 25);
-            this.rbnmm.TabIndex = 26;
-            this.rbnmm.Text = "Theo Mã Máy";
-            this.rbnmm.UseVisualStyleBackColor = true;
-            this.rbnmm.CheckedChanged += new System.EventHandler(this.rbnmm_CheckedChanged);
-            // 
-            // dgvLS
-            // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(242)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvLS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            this.dgvLS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvLS.BackgroundColor = System.Drawing.Color.White;
-            this.dgvLS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
-            this.dgvLS.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLS.DefaultCellStyle = dataGridViewCellStyle18;
-            this.dgvLS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLS.GridColor = System.Drawing.Color.DodgerBlue;
-            this.dgvLS.Location = new System.Drawing.Point(0, 303);
-            this.dgvLS.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvLS.Name = "dgvLS";
-            this.dgvLS.RowHeadersWidth = 51;
-            this.dgvLS.Size = new System.Drawing.Size(1175, 451);
-            this.dgvLS.TabIndex = 14;
-              // 
-            // label1
-            // 
-            this.label1.AutoEllipsis = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Image = global::TTCN.Properties.Resources.icon_lich_su1;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(10, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 94);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "LỊCH SỬ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnTimKiem
             // 
             this.btnTimKiem.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
@@ -209,6 +161,54 @@ namespace TTCN
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
+            // rbnmm
+            // 
+            this.rbnmm.AutoSize = true;
+            this.rbnmm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.rbnmm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbnmm.Location = new System.Drawing.Point(394, 82);
+            this.rbnmm.Margin = new System.Windows.Forms.Padding(2);
+            this.rbnmm.Name = "rbnmm";
+            this.rbnmm.Size = new System.Drawing.Size(134, 25);
+            this.rbnmm.TabIndex = 26;
+            this.rbnmm.Text = "Theo Mã Máy";
+            this.rbnmm.UseVisualStyleBackColor = true;
+            this.rbnmm.CheckedChanged += new System.EventHandler(this.rbnmm_CheckedChanged);
+            // 
+            // dgvLS
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(242)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvLS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvLS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvLS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvLS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvLS.ColumnHeadersHeight = 40;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLS.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvLS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvLS.GridColor = System.Drawing.Color.DodgerBlue;
+            this.dgvLS.Location = new System.Drawing.Point(0, 303);
+            this.dgvLS.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvLS.Name = "dgvLS";
+            this.dgvLS.RowHeadersWidth = 51;
+            this.dgvLS.Size = new System.Drawing.Size(1175, 451);
+            this.dgvLS.TabIndex = 14;
+            // 
             // frmLichSu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -217,7 +217,7 @@ namespace TTCN
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmLichSu";
-            this.Text = "frmLichSu";
+            this.Text = "Lịch sử";
             this.Load += new System.EventHandler(this.frmLichSu_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

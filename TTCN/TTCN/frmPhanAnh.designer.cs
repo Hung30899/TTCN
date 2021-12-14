@@ -29,23 +29,23 @@ namespace TTCN
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvPA = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbotrangthai = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.rbnmm = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.cboSearch = new System.Windows.Forms.ComboBox();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.rbnpm = new System.Windows.Forms.RadioButton();
-            this.rbnmm = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.rbnpm = new System.Windows.Forms.RadioButton();
             this.btnTimKiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPA)).BeginInit();
             this.panel1.SuspendLayout();
@@ -55,29 +55,29 @@ namespace TTCN
             // 
             // dgvPA
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(242)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvPA.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(242)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvPA.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPA.BackgroundColor = System.Drawing.Color.White;
             this.dgvPA.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPA.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPA.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPA.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPA.GridColor = System.Drawing.Color.DodgerBlue;
             this.dgvPA.Location = new System.Drawing.Point(0, 372);
@@ -112,6 +112,20 @@ namespace TTCN
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1233, 109);
             this.panel2.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.AutoEllipsis = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Image = global::TTCN.Properties.Resources.icon_phan_anh1;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(10, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(393, 94);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "PHẢN ÁNH";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox3
             // 
@@ -164,6 +178,20 @@ namespace TTCN
             this.label2.TabIndex = 38;
             this.label2.Text = "Trạng thái:";
             // 
+            // rbnmm
+            // 
+            this.rbnmm.AutoSize = true;
+            this.rbnmm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.rbnmm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbnmm.Location = new System.Drawing.Point(450, 138);
+            this.rbnmm.Margin = new System.Windows.Forms.Padding(2);
+            this.rbnmm.Name = "rbnmm";
+            this.rbnmm.Size = new System.Drawing.Size(134, 25);
+            this.rbnmm.TabIndex = 26;
+            this.rbnmm.Text = "Theo Mã Máy";
+            this.rbnmm.UseVisualStyleBackColor = true;
+            this.rbnmm.CheckedChanged += new System.EventHandler(this.rbnmm_CheckedChanged);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -212,50 +240,6 @@ namespace TTCN
             this.label4.TabIndex = 28;
             this.label4.Text = "Từ khóa:";
             // 
-            // rbnpm
-            // 
-            this.rbnpm.AutoSize = true;
-            this.rbnpm.Checked = true;
-            this.rbnpm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.rbnpm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnpm.Location = new System.Drawing.Point(288, 138);
-            this.rbnpm.Margin = new System.Windows.Forms.Padding(2);
-            this.rbnpm.Name = "rbnpm";
-            this.rbnpm.Size = new System.Drawing.Size(158, 25);
-            this.rbnpm.TabIndex = 27;
-            this.rbnpm.TabStop = true;
-            this.rbnpm.Text = "Theo Phòng Máy";
-            this.rbnpm.UseVisualStyleBackColor = true;
-            this.rbnpm.CheckedChanged += new System.EventHandler(this.rbnpm_CheckedChanged);
-            // 
-            // rbnmm
-            // 
-            this.rbnmm.AutoSize = true;
-            this.rbnmm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.rbnmm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnmm.Location = new System.Drawing.Point(450, 138);
-            this.rbnmm.Margin = new System.Windows.Forms.Padding(2);
-            this.rbnmm.Name = "rbnmm";
-            this.rbnmm.Size = new System.Drawing.Size(134, 25);
-            this.rbnmm.TabIndex = 26;
-            this.rbnmm.Text = "Theo Mã Máy";
-            this.rbnmm.UseVisualStyleBackColor = true;
-            this.rbnmm.CheckedChanged += new System.EventHandler(this.rbnmm_CheckedChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoEllipsis = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Image = global::TTCN.Properties.Resources.icon_phan_anh1;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(10, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(393, 94);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "PHẢN ÁNH";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnLuu
             // 
             this.btnLuu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -271,6 +255,22 @@ namespace TTCN
             this.btnLuu.Text = "    Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // rbnpm
+            // 
+            this.rbnpm.AutoSize = true;
+            this.rbnpm.Checked = true;
+            this.rbnpm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.rbnpm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbnpm.Location = new System.Drawing.Point(288, 138);
+            this.rbnpm.Margin = new System.Windows.Forms.Padding(2);
+            this.rbnpm.Name = "rbnpm";
+            this.rbnpm.Size = new System.Drawing.Size(158, 25);
+            this.rbnpm.TabIndex = 27;
+            this.rbnpm.TabStop = true;
+            this.rbnpm.Text = "Theo Phòng Máy";
+            this.rbnpm.UseVisualStyleBackColor = true;
+            this.rbnpm.CheckedChanged += new System.EventHandler(this.rbnpm_CheckedChanged);
             // 
             // btnTimKiem
             // 
@@ -296,7 +296,7 @@ namespace TTCN
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPhanAnh";
-            this.Text = "frmPhanAnh";
+            this.Text = "Phản ánh";
             this.Load += new System.EventHandler(this.frmPhanAnh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPA)).EndInit();
             this.panel1.ResumeLayout(false);
