@@ -183,6 +183,7 @@ namespace TTCN
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmCanBoKyThuat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cán bộ kỹ thuật";
             this.Load += new System.EventHandler(this.frmCanBoQuanLy_Load);
             this.panel1.ResumeLayout(false);

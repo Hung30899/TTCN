@@ -225,6 +225,7 @@ namespace TTCN
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "frmGiangVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giảng viên";
             this.Load += new System.EventHandler(this.frmGiangVien_Load);
             this.panel1.ResumeLayout(false);

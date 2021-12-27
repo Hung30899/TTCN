@@ -2025,6 +2025,7 @@ namespace TTCN
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmPhong07";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CNTT07";
             this.Load += new System.EventHandler(this.frmPhong07_Load);
             this.groupBox3.ResumeLayout(false);

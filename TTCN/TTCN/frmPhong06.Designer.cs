@@ -2027,6 +2027,7 @@ namespace TTCN
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmPhong06";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CNTT06";
             this.Load += new System.EventHandler(this.frmPhong06_Load);
             this.groupBox3.ResumeLayout(false);
