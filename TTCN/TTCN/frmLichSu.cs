@@ -23,14 +23,14 @@ namespace TTCN
             tblLichSu = Functions.GetDataToTable(sql); //Lấy dữ liệu
             dgvLS.DataSource = tblLichSu; //Hiển thị vào dataGridView
             dgvLS.Columns[0].HeaderText = "ID";
-            dgvLS.Columns[1].HeaderText = "Tên";
+            dgvLS.Columns[1].HeaderText = "Tên cán bộ kỹ thuật";
             dgvLS.Columns[2].HeaderText = "Phòng máy";
             dgvLS.Columns[3].HeaderText = "Mã máy";
             dgvLS.Columns[4].HeaderText = "Ngày";
             dgvLS.Columns[5].HeaderText = "Nội dung";
 
             dgvLS.Columns[0].Width = 50;
-            dgvLS.Columns[1].Width = 50;
+            dgvLS.Columns[1].Width = 70;
             dgvLS.Columns[2].Width = 50;
             dgvLS.Columns[3].Width = 50;
             dgvLS.Columns[4].Width = 50;

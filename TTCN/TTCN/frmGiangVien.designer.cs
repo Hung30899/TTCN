@@ -46,6 +46,7 @@ namespace TTCN
             this.txtTenGiangVien = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.cboTenGV = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,6 +66,7 @@ namespace TTCN
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Controls.Add(this.cboTenGV);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtLop);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -216,6 +218,26 @@ namespace TTCN
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // cboTenGV
+            // 
+            this.cboTenGV.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboTenGV.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboTenGV.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTenGV.FormattingEnabled = true;
+            this.cboTenGV.Items.AddRange(new object[] {
+            "Ngô Công Thắng",
+            "Hoàng Thị Hà",
+            "Lê Thị Minh Thùy",
+            "Lê Thị Nhung",
+            "Phong Trọng Tiến",
+            "Trần Trung Hiếu",
+            "Nguyễn Doãn Đông",
+            "Đỗ Thị Nhâm"});
+            this.cboTenGV.Location = new System.Drawing.Point(184, 95);
+            this.cboTenGV.Name = "cboTenGV";
+            this.cboTenGV.Size = new System.Drawing.Size(269, 29);
+            this.cboTenGV.TabIndex = 20;
+            // 
             // frmGiangVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,5 +277,6 @@ namespace TTCN
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtLop;
+        private System.Windows.Forms.ComboBox cboTenGV;
     }
 }

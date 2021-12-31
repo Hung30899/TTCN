@@ -133,6 +133,7 @@ namespace TTCN
             lblMayHong.Text = Functions.GetFieldValues("Select count(MaMay) from MayTinh where phongmay ='CNTT01' and TinhTrang =N'Không hoạt động'");
             lblTinhTrang.Text = Functions.GetFieldValues("Select TrangThai from PhongMay where phongmay ='CNTT01'");
             lblPMM.Text = Functions.GetFieldValues("Select CacPhanMem from MayTinh where phongmay ='CNTT01' and mamay ='M01'");
+            lblSoLuong.Text = Functions.GetFieldValues("Select count(MaMay) from MayTinh where phongmay ='CNTT01'");
             //Functions.FillCombo("Select TenPhongMay from PhongMay", cboChon, "TenPhongMay", "TenPhongMay");
             cboChon.Text = "CNTT01";
             if (chonND != 'g')
@@ -338,10 +339,22 @@ namespace TTCN
                     "CacPhanMem = N'"+txtPM.Text+"'" +
                     " where PhongMay = 'CNTT01' AND MaMay = N'" + txtSoMay.Text + "'";
                 MessageBox.Show("Đã cập nhật máy: " + lblSoMay.Text + " !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 Functions.RunSQL(sql);
-                reset1();
                 setImage();
+
+                //sửa tình trạng các phản ánh
+                if (cboTinhTrang.Text.Trim() == "Hoạt động")
+                {
+                    sql = "Select * from PhanAnh Where PhongMay = 'CNTT01' AND MaMay = N'" + txtSoMay.Text + "'";
+
+                    if (Functions.CheckKey(sql))
+                    {
+                        sql = "Update PhanAnh Set TinhTrang = N'Đã xử lý'" +
+                             " where PhongMay = 'CNTT01' AND MaMay = N'" + txtSoMay.Text + "'";
+                        Functions.RunSQL(sql);
+                    }
+                }
+                reset1();
             }
         }
     }

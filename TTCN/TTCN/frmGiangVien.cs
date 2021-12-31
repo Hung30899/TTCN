@@ -15,10 +15,16 @@ namespace TTCN
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            if (txtTenGiangVien.Text.Trim() == "")
+            //if (txtTenGiangVien.Text.Trim() == "")
+            //{
+            //    MessageBox.Show("Bạn chưa nhập tên giảng viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    txtTenGiangVien.Focus();
+            //    return;
+            //}
+            if (cboTenGV.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa nhập tên giảng viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtTenGiangVien.Focus();
+                MessageBox.Show("Bạn chưa chọn phòng học!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboPhongHoc.Focus();
                 return;
             }
             if (cboPhongHoc.Text.Trim() == "")
@@ -27,7 +33,7 @@ namespace TTCN
                 cboPhongHoc.Focus();
                 return;
             }
-            tenGV = txtTenGiangVien.Text;
+            tenGV = cboTenGV.Text;
             phongHoc = cboPhongHoc.Text;
             if (phongHoc != "CNTT01" && phongHoc != "CNTT06" && phongHoc != "CNTT07" && phongHoc != "CNTT09")
             {

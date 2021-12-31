@@ -107,8 +107,21 @@ namespace TTCN
                 MessageBox.Show("Đã cập nhật máy: " + lblSoMay.Text + " !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 Functions.RunSQL(sql);
-                reset1();
                 setImage();
+
+                //sửa tình trạng các phản ánh
+                if (cboTinhTrang.Text.Trim() == "Hoạt động")
+                {
+                    sql = "Select * from PhanAnh Where PhongMay = 'CNTT06' AND MaMay = N'" + txtSoMay.Text + "'";
+
+                    if (Functions.CheckKey(sql))
+                    {
+                        sql = "Update PhanAnh Set TinhTrang = N'Đã xử lý'" +
+                             " where PhongMay = 'CNTT06' AND MaMay = N'" + txtSoMay.Text + "'";
+                        Functions.RunSQL(sql);
+                    }
+                }
+                reset1();
             }
         }
 
@@ -300,8 +313,10 @@ namespace TTCN
             lblMayTot.Text = Functions.GetFieldValues("Select count(MaMay) from MayTinh where phongmay ='CNTT06' and TinhTrang =N'Hoạt động'");
             lblMayHong.Text = Functions.GetFieldValues("Select count(MaMay) from MayTinh where phongmay ='CNTT06' and TinhTrang =N'Không hoạt động'");
             lblTinhTrang.Text = Functions.GetFieldValues("Select TrangThai from PhongMay where phongmay ='CNTT06'");
-            lblPMM.Text = Functions.GetFieldValues("Select CacPhanMem from MayTinh where phongmay ='CNTT06' and mamay ='M01'"); 
-          //Functions.FillCombo("Select TenPhongMay from PhongMay", cboChon, "TenPhongMay", "TenPhongMay");
+            lblPMM.Text = Functions.GetFieldValues("Select CacPhanMem from MayTinh where phongmay ='CNTT06' and mamay ='M01'");
+            lblSoLuong.Text = Functions.GetFieldValues("Select count(MaMay) from MayTinh where phongmay ='CNTT06'");
+
+            //Functions.FillCombo("Select TenPhongMay from PhongMay", cboChon, "TenPhongMay", "TenPhongMay");
             cboChon.Text = "CNTT06";
             if (chonND != 'g')
             {

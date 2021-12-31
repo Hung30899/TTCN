@@ -82,7 +82,7 @@ namespace TTCN
             tblPhanAnh = Functions.GetDataToTable(sql); //Lấy dữ liệu
             dgvPA.DataSource = tblPhanAnh; //Hiển thị vào dataGridView
             dgvPA.Columns[0].HeaderText = "ID";
-            dgvPA.Columns[1].HeaderText = "Tên";
+            dgvPA.Columns[1].HeaderText = "Tên giảng viên";
             dgvPA.Columns[2].HeaderText = "Phòng máy";
             dgvPA.Columns[3].HeaderText = "Mã máy";
             dgvPA.Columns[4].HeaderText = "Ngày";
@@ -90,8 +90,8 @@ namespace TTCN
             dgvPA.Columns[6].HeaderText = "Tình trạng";
 
             dgvPA.Columns[0].Width = 20;
-            dgvPA.Columns[1].Width = 50;
-            dgvPA.Columns[2].Width = 50;
+            dgvPA.Columns[1].Width = 100;
+            dgvPA.Columns[2].Width = 70;
             dgvPA.Columns[3].Width = 50;
             dgvPA.Columns[4].Width = 50;
             dgvPA.Columns[5].Width = 500;
@@ -100,43 +100,44 @@ namespace TTCN
 
             dgvPA.AllowUserToAddRows = false;
             dgvPA.EditMode = DataGridViewEditMode.EditProgrammatically;
+
         }
 
         private void dgvPA_Click_1(object sender, EventArgs e)
         {
-            if (tblPhanAnh.Rows.Count == 0)
-            {
-                MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            txtid.Text = dgvPA.CurrentRow.Cells[0].Value.ToString();
-            cbotrangthai.Text = dgvPA.CurrentRow.Cells[6].Value.ToString();
-            txtid.Enabled = false;
+            //if (tblPhanAnh.Rows.Count == 0)
+            //{
+            //    MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    return;
+            //}
+            //txtid.Text = dgvPA.CurrentRow.Cells[0].Value.ToString();
+            //cbotrangthai.Text = dgvPA.CurrentRow.Cells[6].Value.ToString();
+            //txtid.Enabled = false;
         }
 
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-            string sql;
-            {
-                if (cbotrangthai.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Trạng thái không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    cbotrangthai.Focus();
-                }
+        //private void btnLuu_Click(object sender, EventArgs e)
+        //{ 
+        //    string sql;
+        //    {
+        //        if (cbotrangthai.Text.Trim().Length == 0)
+        //        {
+        //            MessageBox.Show("Trạng thái không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //            cbotrangthai.Focus();
+        //        }
 
-                if (cbotrangthai.Text.Trim().Length != 0)
-                {
-                    if (MessageBox.Show("Bạn có muốn lưu chỉnh sửa không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                    {
-                        sql = "UPDATE PhanAnh SET TinhTrang=N'" + cbotrangthai.Text.Trim() + "' WHERE ID=N'" + txtid.Text + "'";
-                        Functions.RunSQL(sql);
-                        LoadDataGridView();
-                        MessageBox.Show("Đã cập nhật Phản ánh:" + txtid.Text + "!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //        if (cbotrangthai.Text.Trim().Length != 0)
+        //        {
+        //            if (MessageBox.Show("Bạn có muốn lưu chỉnh sửa không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+        //            {
+        //                sql = "UPDATE PhanAnh SET TinhTrang=N'" + cbotrangthai.Text.Trim() + "' WHERE ID=N'" + txtid.Text + "'";
+        //                Functions.RunSQL(sql);
+        //                LoadDataGridView();
+        //                MessageBox.Show("Đã cập nhật Phản ánh:" + txtid.Text + "!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    }
-                }
-            }
-        }
+        //            }
+        //        }
+        //    }
+        //}
 
         private void label3_Click(object sender, EventArgs e)
         {

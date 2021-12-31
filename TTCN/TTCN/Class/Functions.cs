@@ -42,8 +42,7 @@ namespace TTCN.Class
                 dap.Fill(table);
                 cbo.DataSource = table;
                 cbo.ValueMember = ma; //Trường giá trị
-                cbo.DisplayMember = ten; //Trường hiển thị
-                
+                cbo.DisplayMember = ten; //Trường hiển thị   
             }
             catch (Exception ex)
             {

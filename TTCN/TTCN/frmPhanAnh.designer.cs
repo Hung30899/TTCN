@@ -37,14 +37,9 @@ namespace TTCN
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cbotrangthai = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.rbnmm = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
             this.cboSearch = new System.Windows.Forms.ComboBox();
-            this.txtid = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.rbnpm = new System.Windows.Forms.RadioButton();
             this.btnTimKiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPA)).BeginInit();
@@ -80,11 +75,11 @@ namespace TTCN
             this.dgvPA.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPA.GridColor = System.Drawing.Color.DodgerBlue;
-            this.dgvPA.Location = new System.Drawing.Point(0, 372);
+            this.dgvPA.Location = new System.Drawing.Point(0, 321);
             this.dgvPA.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPA.Name = "dgvPA";
             this.dgvPA.RowHeadersWidth = 51;
-            this.dgvPA.Size = new System.Drawing.Size(1233, 446);
+            this.dgvPA.Size = new System.Drawing.Size(1233, 497);
             this.dgvPA.TabIndex = 16;
             this.dgvPA.Click += new System.EventHandler(this.dgvPA_Click_1);
             // 
@@ -97,7 +92,7 @@ namespace TTCN
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1233, 372);
+            this.panel1.Size = new System.Drawing.Size(1233, 321);
             this.panel1.TabIndex = 15;
             // 
             // panel2
@@ -130,14 +125,9 @@ namespace TTCN
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
-            this.groupBox3.Controls.Add(this.cbotrangthai);
-            this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.rbnmm);
-            this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.cboSearch);
-            this.groupBox3.Controls.Add(this.txtid);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.btnLuu);
             this.groupBox3.Controls.Add(this.rbnpm);
             this.groupBox3.Controls.Add(this.btnTimKiem);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,45 +135,18 @@ namespace TTCN
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(1002, 208);
+            this.groupBox3.Size = new System.Drawing.Size(1002, 151);
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm Kiếm";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
-            // 
-            // cbotrangthai
-            // 
-            this.cbotrangthai.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbotrangthai.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbotrangthai.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbotrangthai.FormattingEnabled = true;
-            this.cbotrangthai.ItemHeight = 23;
-            this.cbotrangthai.Items.AddRange(new object[] {
-            "Đã xử lý",
-            "Chưa xử lý"});
-            this.cbotrangthai.Location = new System.Drawing.Point(288, 44);
-            this.cbotrangthai.Name = "cbotrangthai";
-            this.cbotrangthai.Size = new System.Drawing.Size(204, 31);
-            this.cbotrangthai.TabIndex = 32;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(153, 50);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 23);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "Trạng thái:";
             // 
             // rbnmm
             // 
             this.rbnmm.AutoSize = true;
             this.rbnmm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.rbnmm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnmm.Location = new System.Drawing.Point(450, 138);
+            this.rbnmm.Location = new System.Drawing.Point(515, 69);
             this.rbnmm.Margin = new System.Windows.Forms.Padding(2);
             this.rbnmm.Name = "rbnmm";
             this.rbnmm.Size = new System.Drawing.Size(134, 25);
@@ -192,69 +155,30 @@ namespace TTCN
             this.rbnmm.UseVisualStyleBackColor = true;
             this.rbnmm.CheckedChanged += new System.EventHandler(this.rbnmm_CheckedChanged);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(17, 50);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 23);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "ID:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // cboSearch
             // 
             this.cboSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboSearch.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSearch.FormattingEnabled = true;
-            this.cboSearch.Location = new System.Drawing.Point(18, 135);
+            this.cboSearch.Location = new System.Drawing.Point(83, 66);
             this.cboSearch.Margin = new System.Windows.Forms.Padding(2);
             this.cboSearch.Name = "cboSearch";
             this.cboSearch.Size = new System.Drawing.Size(259, 31);
             this.cboSearch.TabIndex = 1;
             this.cboSearch.SelectedIndexChanged += new System.EventHandler(this.cboSearch_SelectedIndexChanged);
             // 
-            // txtid
-            // 
-            this.txtid.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtid.Location = new System.Drawing.Point(58, 47);
-            this.txtid.Margin = new System.Windows.Forms.Padding(2);
-            this.txtid.Name = "txtid";
-            this.txtid.ReadOnly = true;
-            this.txtid.Size = new System.Drawing.Size(60, 26);
-            this.txtid.TabIndex = 17;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(14, 105);
+            this.label4.Location = new System.Drawing.Point(79, 36);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 23);
             this.label4.TabIndex = 28;
             this.label4.Text = "Từ khóa:";
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Image = global::TTCN.Properties.Resources.img_luu;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(632, 40);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(115, 44);
-            this.btnLuu.TabIndex = 20;
-            this.btnLuu.Text = "    Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // rbnpm
             // 
@@ -262,7 +186,7 @@ namespace TTCN
             this.rbnpm.Checked = true;
             this.rbnpm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.rbnpm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnpm.Location = new System.Drawing.Point(288, 138);
+            this.rbnpm.Location = new System.Drawing.Point(353, 69);
             this.rbnpm.Margin = new System.Windows.Forms.Padding(2);
             this.rbnpm.Name = "rbnpm";
             this.rbnpm.Size = new System.Drawing.Size(158, 25);
@@ -279,7 +203,7 @@ namespace TTCN
             this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.Image = global::TTCN.Properties.Resources.img_timkiem;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(632, 127);
+            this.btnTimKiem.Location = new System.Drawing.Point(697, 58);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(146, 44);
@@ -318,11 +242,6 @@ namespace TTCN
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.RadioButton rbnmm;
         private System.Windows.Forms.ComboBox cboSearch;
-        private System.Windows.Forms.TextBox txtid;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbotrangthai;
         public System.Windows.Forms.Label label1;
     }
 }
