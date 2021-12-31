@@ -14,17 +14,11 @@ namespace TTCN
         }
 
         private void btnDangnhap_Click(object sender, EventArgs e)
-        {
-            //if (txtTenGiangVien.Text.Trim() == "")
-            //{
-            //    MessageBox.Show("Bạn chưa nhập tên giảng viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    txtTenGiangVien.Focus();
-            //    return;
-            //}
+        {        
             if (cboTenGV.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa chọn phòng học!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                cboPhongHoc.Focus();
+                MessageBox.Show("Bạn chưa nhập tên giảng viên!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboTenGV.Focus();
                 return;
             }
             if (cboPhongHoc.Text.Trim() == "")

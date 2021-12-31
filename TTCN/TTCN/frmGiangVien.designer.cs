@@ -33,6 +33,7 @@ namespace TTCN
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiangVien));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cboTenGV = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtLop = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -43,10 +44,8 @@ namespace TTCN
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtMonHoc = new System.Windows.Forms.TextBox();
-            this.txtTenGiangVien = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cboTenGV = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,11 +76,30 @@ namespace TTCN
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtMonHoc);
-            this.panel1.Controls.Add(this.txtTenGiangVien);
             this.panel1.Location = new System.Drawing.Point(205, 105);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(521, 340);
             this.panel1.TabIndex = 6;
+            // 
+            // cboTenGV
+            // 
+            this.cboTenGV.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboTenGV.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboTenGV.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTenGV.FormattingEnabled = true;
+            this.cboTenGV.Items.AddRange(new object[] {
+            "Ngô Công Thắng",
+            "Hoàng Thị Hà",
+            "Lê Thị Minh Thùy",
+            "Lê Thị Nhung",
+            "Phong Trọng Tiến",
+            "Trần Trung Hiếu",
+            "Nguyễn Doãn Đông",
+            "Đỗ Thị Nhâm"});
+            this.cboTenGV.Location = new System.Drawing.Point(184, 95);
+            this.cboTenGV.Name = "cboTenGV";
+            this.cboTenGV.Size = new System.Drawing.Size(269, 29);
+            this.cboTenGV.TabIndex = 1;
             // 
             // label5
             // 
@@ -197,16 +215,6 @@ namespace TTCN
             this.txtMonHoc.TabIndex = 3;
             this.txtMonHoc.UseWaitCursor = true;
             // 
-            // txtTenGiangVien
-            // 
-            this.txtTenGiangVien.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenGiangVien.ForeColor = System.Drawing.Color.Black;
-            this.txtTenGiangVien.Location = new System.Drawing.Point(184, 95);
-            this.txtTenGiangVien.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTenGiangVien.Name = "txtTenGiangVien";
-            this.txtTenGiangVien.Size = new System.Drawing.Size(269, 29);
-            this.txtTenGiangVien.TabIndex = 1;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -217,26 +225,6 @@ namespace TTCN
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // cboTenGV
-            // 
-            this.cboTenGV.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboTenGV.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboTenGV.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTenGV.FormattingEnabled = true;
-            this.cboTenGV.Items.AddRange(new object[] {
-            "Ngô Công Thắng",
-            "Hoàng Thị Hà",
-            "Lê Thị Minh Thùy",
-            "Lê Thị Nhung",
-            "Phong Trọng Tiến",
-            "Trần Trung Hiếu",
-            "Nguyễn Doãn Đông",
-            "Đỗ Thị Nhâm"});
-            this.cboTenGV.Location = new System.Drawing.Point(184, 95);
-            this.cboTenGV.Name = "cboTenGV";
-            this.cboTenGV.Size = new System.Drawing.Size(269, 29);
-            this.cboTenGV.TabIndex = 20;
             // 
             // frmGiangVien
             // 
@@ -270,7 +258,6 @@ namespace TTCN
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMonHoc;
-        private System.Windows.Forms.TextBox txtTenGiangVien;
         private System.Windows.Forms.ComboBox cboPhongHoc;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.BindingSource bindingSource1;
