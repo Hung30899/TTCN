@@ -104,7 +104,7 @@ namespace TTCN
             this.label58 = new System.Windows.Forms.Label();
             this.pnlThongTinMay = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
+            this.lblChon = new System.Windows.Forms.Label();
             this.cboChon = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -173,12 +173,11 @@ namespace TTCN
             // lblPMM
             // 
             this.lblPMM.AutoSize = true;
-            this.lblPMM.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPMM.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPMM.Location = new System.Drawing.Point(145, 252);
             this.lblPMM.Name = "lblPMM";
-            this.lblPMM.Size = new System.Drawing.Size(36, 28);
+            this.lblPMM.Size = new System.Drawing.Size(0, 25);
             this.lblPMM.TabIndex = 29;
-            this.lblPMM.Text = "lbl";
             // 
             // groupBox3
             // 
@@ -203,7 +202,7 @@ namespace TTCN
             this.groupBox3.Controls.Add(this.label39);
             this.groupBox3.Controls.Add(this.label40);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox3.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.Navy;
             this.groupBox3.Location = new System.Drawing.Point(993, 129);
             this.groupBox3.Name = "groupBox3";
@@ -216,30 +215,29 @@ namespace TTCN
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(7, 252);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(128, 28);
+            this.label27.Size = new System.Drawing.Size(126, 25);
             this.label27.TabIndex = 28;
             this.label27.Text = "Phần mềm: ";
             // 
             // lblTinhTrang
             // 
             this.lblTinhTrang.AutoSize = true;
-            this.lblTinhTrang.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTinhTrang.Location = new System.Drawing.Point(218, 219);
             this.lblTinhTrang.Name = "lblTinhTrang";
-            this.lblTinhTrang.Size = new System.Drawing.Size(36, 28);
+            this.lblTinhTrang.Size = new System.Drawing.Size(0, 25);
             this.lblTinhTrang.TabIndex = 25;
-            this.lblTinhTrang.Text = "lbl";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(7, 215);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(198, 28);
+            this.label22.Size = new System.Drawing.Size(187, 25);
             this.label22.TabIndex = 24;
             this.label22.Text = "Tình trạng phòng: ";
             // 
@@ -292,52 +290,47 @@ namespace TTCN
             // lblMayHong
             // 
             this.lblMayHong.AutoSize = true;
-            this.lblMayHong.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMayHong.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMayHong.Location = new System.Drawing.Point(315, 180);
             this.lblMayHong.Name = "lblMayHong";
-            this.lblMayHong.Size = new System.Drawing.Size(36, 28);
+            this.lblMayHong.Size = new System.Drawing.Size(0, 25);
             this.lblMayHong.TabIndex = 14;
-            this.lblMayHong.Text = "lbl";
             // 
             // lblMayTot
             // 
             this.lblMayTot.AutoSize = true;
-            this.lblMayTot.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMayTot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMayTot.Location = new System.Drawing.Point(245, 142);
             this.lblMayTot.Name = "lblMayTot";
-            this.lblMayTot.Size = new System.Drawing.Size(36, 28);
+            this.lblMayTot.Size = new System.Drawing.Size(0, 25);
             this.lblMayTot.TabIndex = 13;
-            this.lblMayTot.Text = "lbl";
             // 
             // lblSoLuong
             // 
             this.lblSoLuong.AutoSize = true;
-            this.lblSoLuong.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.Location = new System.Drawing.Point(169, 105);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(36, 28);
+            this.lblSoLuong.Size = new System.Drawing.Size(0, 25);
             this.lblSoLuong.TabIndex = 12;
-            this.lblSoLuong.Text = "lbl";
             // 
             // lblViTri
             // 
             this.lblViTri.AutoSize = true;
-            this.lblViTri.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblViTri.Location = new System.Drawing.Point(85, 68);
             this.lblViTri.Name = "lblViTri";
-            this.lblViTri.Size = new System.Drawing.Size(36, 28);
+            this.lblViTri.Size = new System.Drawing.Size(0, 25);
             this.lblViTri.TabIndex = 11;
-            this.lblViTri.Text = "lbl";
             // 
             // lblTen
             // 
             this.lblTen.AutoSize = true;
-            this.lblTen.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTen.Location = new System.Drawing.Point(127, 32);
             this.lblTen.Name = "lblTen";
-            this.lblTen.Size = new System.Drawing.Size(36, 28);
+            this.lblTen.Size = new System.Drawing.Size(0, 25);
             this.lblTen.TabIndex = 10;
-            this.lblTen.Text = "lbl";
             // 
             // label31
             // 
@@ -352,50 +345,50 @@ namespace TTCN
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(5, 180);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(304, 28);
+            this.label36.Size = new System.Drawing.Size(297, 25);
             this.label36.TabIndex = 4;
             this.label36.Text = "Số máy không sử dụng được: ";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.Location = new System.Drawing.Point(5, 142);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(234, 28);
+            this.label37.Size = new System.Drawing.Size(232, 25);
             this.label37.TabIndex = 3;
             this.label37.Text = "Số máy sử dụng được: ";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.Location = new System.Drawing.Point(5, 105);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(158, 28);
+            this.label38.Size = new System.Drawing.Size(155, 25);
             this.label38.TabIndex = 2;
             this.label38.Text = "Số lượng máy: ";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.Location = new System.Drawing.Point(5, 68);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(72, 28);
+            this.label39.Size = new System.Drawing.Size(67, 25);
             this.label39.TabIndex = 1;
             this.label39.Text = "Vị trí: ";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.Location = new System.Drawing.Point(5, 32);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(129, 28);
+            this.label40.Size = new System.Drawing.Size(127, 25);
             this.label40.TabIndex = 0;
             this.label40.Text = "Tên phòng: ";
             // 
@@ -428,7 +421,7 @@ namespace TTCN
             this.grbCB.Controls.Add(this.label57);
             this.grbCB.Controls.Add(this.label58);
             this.grbCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.grbCB.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbCB.ForeColor = System.Drawing.Color.Navy;
             this.grbCB.Location = new System.Drawing.Point(4, 298);
             this.grbCB.Name = "grbCB";
@@ -468,9 +461,9 @@ namespace TTCN
             this.grbGV.Controls.Add(this.label5);
             this.grbGV.Controls.Add(this.label4);
             this.grbGV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.grbGV.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbGV.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbGV.ForeColor = System.Drawing.Color.Navy;
-            this.grbGV.Location = new System.Drawing.Point(0, 0);
+            this.grbGV.Location = new System.Drawing.Point(0, -1);
             this.grbGV.Name = "grbGV";
             this.grbGV.Padding = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.grbGV.Size = new System.Drawing.Size(670, 494);
@@ -481,17 +474,17 @@ namespace TTCN
             // txtPhanAnh
             // 
             this.txtPhanAnh.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhanAnh.Location = new System.Drawing.Point(346, 213);
+            this.txtPhanAnh.Location = new System.Drawing.Point(397, 213);
             this.txtPhanAnh.Multiline = true;
             this.txtPhanAnh.Name = "txtPhanAnh";
-            this.txtPhanAnh.Size = new System.Drawing.Size(318, 205);
+            this.txtPhanAnh.Size = new System.Drawing.Size(267, 205);
             this.txtPhanAnh.TabIndex = 1;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(341, 172);
+            this.label10.Location = new System.Drawing.Point(392, 176);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(217, 28);
             this.label10.TabIndex = 28;
@@ -500,6 +493,7 @@ namespace TTCN
             // btnHuy
             // 
             this.btnHuy.BackColor = System.Drawing.Color.White;
+            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Location = new System.Drawing.Point(263, 439);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(113, 49);
@@ -511,6 +505,7 @@ namespace TTCN
             // btnPhananh
             // 
             this.btnPhananh.BackColor = System.Drawing.Color.White;
+            this.btnPhananh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhananh.Location = new System.Drawing.Point(68, 439);
             this.btnPhananh.Name = "btnPhananh";
             this.btnPhananh.Size = new System.Drawing.Size(119, 49);
@@ -522,124 +517,115 @@ namespace TTCN
             // lblBanPhim
             // 
             this.lblBanPhim.AutoSize = true;
-            this.lblBanPhim.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBanPhim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBanPhim.Location = new System.Drawing.Point(127, 229);
             this.lblBanPhim.Name = "lblBanPhim";
-            this.lblBanPhim.Size = new System.Drawing.Size(36, 28);
+            this.lblBanPhim.Size = new System.Drawing.Size(0, 25);
             this.lblBanPhim.TabIndex = 25;
-            this.lblBanPhim.Text = "lbl";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(6, 229);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(119, 28);
+            this.label28.Size = new System.Drawing.Size(114, 25);
             this.label28.TabIndex = 24;
             this.label28.Text = "Bàn phím: ";
             // 
             // lblManHinh
             // 
             this.lblManHinh.AutoSize = true;
-            this.lblManHinh.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManHinh.Location = new System.Drawing.Point(128, 194);
             this.lblManHinh.Name = "lblManHinh";
-            this.lblManHinh.Size = new System.Drawing.Size(36, 28);
+            this.lblManHinh.Size = new System.Drawing.Size(0, 25);
             this.lblManHinh.TabIndex = 23;
-            this.lblManHinh.Text = "lbl";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(5, 194);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 28);
+            this.label8.Size = new System.Drawing.Size(113, 25);
             this.label8.TabIndex = 22;
             this.label8.Text = "Màn hình: ";
             // 
             // cboTT
             // 
-            this.cboTT.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTT.FormattingEnabled = true;
             this.cboTT.Items.AddRange(new object[] {
             "Hoạt động",
             "Không hoạt động"});
             this.cboTT.Location = new System.Drawing.Point(139, 384);
             this.cboTT.Name = "cboTT";
-            this.cboTT.Size = new System.Drawing.Size(163, 34);
+            this.cboTT.Size = new System.Drawing.Size(163, 32);
             this.cboTT.TabIndex = 21;
             // 
             // lblPM
             // 
             this.lblPM.AutoSize = true;
-            this.lblPM.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPM.Location = new System.Drawing.Point(127, 343);
             this.lblPM.Name = "lblPM";
-            this.lblPM.Size = new System.Drawing.Size(36, 28);
+            this.lblPM.Size = new System.Drawing.Size(0, 25);
             this.lblPM.TabIndex = 18;
-            this.lblPM.Text = "lbl";
             // 
             // lblHDH
             // 
             this.lblHDH.AutoSize = true;
-            this.lblHDH.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHDH.Location = new System.Drawing.Point(151, 303);
             this.lblHDH.Name = "lblHDH";
-            this.lblHDH.Size = new System.Drawing.Size(36, 28);
+            this.lblHDH.Size = new System.Drawing.Size(0, 25);
             this.lblHDH.TabIndex = 17;
-            this.lblHDH.Text = "lbl";
             // 
             // lblChuot
             // 
             this.lblChuot.AutoSize = true;
-            this.lblChuot.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChuot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChuot.Location = new System.Drawing.Point(88, 264);
             this.lblChuot.Name = "lblChuot";
-            this.lblChuot.Size = new System.Drawing.Size(36, 28);
+            this.lblChuot.Size = new System.Drawing.Size(0, 25);
             this.lblChuot.TabIndex = 16;
-            this.lblChuot.Text = "lbl";
             // 
             // lblOCung
             // 
             this.lblOCung.AutoSize = true;
-            this.lblOCung.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOCung.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOCung.Location = new System.Drawing.Point(90, 159);
             this.lblOCung.Name = "lblOCung";
-            this.lblOCung.Size = new System.Drawing.Size(36, 28);
+            this.lblOCung.Size = new System.Drawing.Size(0, 25);
             this.lblOCung.TabIndex = 15;
-            this.lblOCung.Text = "lbl";
             // 
             // lblRAM
             // 
             this.lblRAM.AutoSize = true;
-            this.lblRAM.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRAM.Location = new System.Drawing.Point(85, 125);
             this.lblRAM.Name = "lblRAM";
-            this.lblRAM.Size = new System.Drawing.Size(36, 28);
+            this.lblRAM.Size = new System.Drawing.Size(0, 25);
             this.lblRAM.TabIndex = 13;
-            this.lblRAM.Text = "lbl";
             // 
             // lblCPU
             // 
             this.lblCPU.AutoSize = true;
-            this.lblCPU.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPU.Location = new System.Drawing.Point(85, 96);
             this.lblCPU.Name = "lblCPU";
-            this.lblCPU.Size = new System.Drawing.Size(36, 28);
+            this.lblCPU.Size = new System.Drawing.Size(0, 25);
             this.lblCPU.TabIndex = 12;
-            this.lblCPU.Text = "lbl";
             // 
             // lblMain
             // 
             this.lblMain.AutoSize = true;
-            this.lblMain.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMain.Location = new System.Drawing.Point(140, 65);
             this.lblMain.Name = "lblMain";
-            this.lblMain.Size = new System.Drawing.Size(32, 34);
+            this.lblMain.Size = new System.Drawing.Size(0, 28);
             this.lblMain.TabIndex = 11;
-            this.lblMain.Text = "lbl";
             this.lblMain.UseCompatibleTextRendering = true;
             // 
             // lblSoMay
@@ -654,177 +640,178 @@ namespace TTCN
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(5, 392);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(128, 28);
+            this.label11.Size = new System.Drawing.Size(121, 25);
             this.label11.TabIndex = 9;
             this.label11.Text = "Tình trạng: ";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(5, 343);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 28);
+            this.label12.Size = new System.Drawing.Size(126, 25);
             this.label12.TabIndex = 8;
             this.label12.Text = "Phần mềm: ";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(5, 303);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(159, 28);
+            this.label13.Size = new System.Drawing.Size(152, 25);
             this.label13.TabIndex = 7;
             this.label13.Text = "Hệ điều hành: ";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(5, 264);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(84, 28);
+            this.label14.Size = new System.Drawing.Size(81, 25);
             this.label14.TabIndex = 6;
             this.label14.Text = "Chuột: ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(5, 159);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 28);
+            this.label7.Size = new System.Drawing.Size(93, 25);
             this.label7.TabIndex = 5;
             this.label7.Text = "Ổ cứng: ";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(5, 125);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 28);
+            this.label9.Size = new System.Drawing.Size(68, 25);
             this.label9.TabIndex = 3;
             this.label9.Text = "Ram: ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(5, 96);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 28);
+            this.label6.Size = new System.Drawing.Size(68, 25);
             this.label6.TabIndex = 2;
             this.label6.Text = "CPU: ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(5, 65);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 28);
+            this.label5.Size = new System.Drawing.Size(126, 25);
             this.label5.TabIndex = 1;
             this.label5.Text = "Mainboard: ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(5, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 28);
+            this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Số máy: ";
             // 
             // txtPM
             // 
-            this.txtPM.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPM.Location = new System.Drawing.Point(161, 363);
             this.txtPM.Name = "txtPM";
-            this.txtPM.Size = new System.Drawing.Size(293, 29);
+            this.txtPM.Size = new System.Drawing.Size(293, 26);
             this.txtPM.TabIndex = 37;
             // 
             // txtHDH
             // 
-            this.txtHDH.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHDH.Location = new System.Drawing.Point(161, 329);
             this.txtHDH.Name = "txtHDH";
-            this.txtHDH.Size = new System.Drawing.Size(293, 29);
+            this.txtHDH.Size = new System.Drawing.Size(293, 26);
             this.txtHDH.TabIndex = 36;
             // 
             // txtChuot
             // 
-            this.txtChuot.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChuot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtChuot.Location = new System.Drawing.Point(161, 292);
             this.txtChuot.Name = "txtChuot";
-            this.txtChuot.Size = new System.Drawing.Size(293, 29);
+            this.txtChuot.Size = new System.Drawing.Size(293, 26);
             this.txtChuot.TabIndex = 35;
             // 
             // txtBanPhim
             // 
-            this.txtBanPhim.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBanPhim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBanPhim.Location = new System.Drawing.Point(161, 255);
             this.txtBanPhim.Name = "txtBanPhim";
-            this.txtBanPhim.Size = new System.Drawing.Size(293, 29);
+            this.txtBanPhim.Size = new System.Drawing.Size(293, 26);
             this.txtBanPhim.TabIndex = 34;
             // 
             // txtManHinh
             // 
-            this.txtManHinh.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtManHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtManHinh.Location = new System.Drawing.Point(161, 217);
             this.txtManHinh.Name = "txtManHinh";
-            this.txtManHinh.Size = new System.Drawing.Size(293, 29);
+            this.txtManHinh.Size = new System.Drawing.Size(293, 26);
             this.txtManHinh.TabIndex = 33;
             // 
             // txtOCung
             // 
-            this.txtOCung.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOCung.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOCung.Location = new System.Drawing.Point(161, 178);
             this.txtOCung.Name = "txtOCung";
-            this.txtOCung.Size = new System.Drawing.Size(293, 29);
+            this.txtOCung.Size = new System.Drawing.Size(293, 26);
             this.txtOCung.TabIndex = 32;
             // 
             // txtRAM
             // 
-            this.txtRAM.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRAM.Location = new System.Drawing.Point(161, 140);
             this.txtRAM.Name = "txtRAM";
-            this.txtRAM.Size = new System.Drawing.Size(293, 29);
+            this.txtRAM.Size = new System.Drawing.Size(293, 26);
             this.txtRAM.TabIndex = 31;
             // 
             // txtCPU
             // 
-            this.txtCPU.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCPU.Location = new System.Drawing.Point(161, 101);
             this.txtCPU.Name = "txtCPU";
-            this.txtCPU.Size = new System.Drawing.Size(293, 29);
+            this.txtCPU.Size = new System.Drawing.Size(293, 26);
             this.txtCPU.TabIndex = 30;
             // 
             // txtMain
             // 
-            this.txtMain.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMain.Location = new System.Drawing.Point(161, 66);
             this.txtMain.Name = "txtMain";
-            this.txtMain.Size = new System.Drawing.Size(293, 29);
+            this.txtMain.Size = new System.Drawing.Size(293, 26);
             this.txtMain.TabIndex = 29;
             // 
             // txtSoMay
             // 
-            this.txtSoMay.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoMay.Location = new System.Drawing.Point(161, 32);
             this.txtSoMay.Name = "txtSoMay";
             this.txtSoMay.ReadOnly = true;
-            this.txtSoMay.Size = new System.Drawing.Size(293, 29);
+            this.txtSoMay.Size = new System.Drawing.Size(293, 26);
             this.txtSoMay.TabIndex = 28;
             // 
             // btnHuy2
             // 
             this.btnHuy2.BackColor = System.Drawing.Color.White;
+            this.btnHuy2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy2.Location = new System.Drawing.Point(314, 439);
             this.btnHuy2.Name = "btnHuy2";
             this.btnHuy2.Size = new System.Drawing.Size(113, 49);
@@ -836,6 +823,7 @@ namespace TTCN
             // btnCapNhat
             // 
             this.btnCapNhat.BackColor = System.Drawing.Color.White;
+            this.btnCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapNhat.Location = new System.Drawing.Point(79, 441);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(119, 49);
@@ -847,122 +835,122 @@ namespace TTCN
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(8, 258);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(110, 27);
+            this.label34.Size = new System.Drawing.Size(105, 25);
             this.label34.TabIndex = 24;
             this.label34.Text = "Bàn phím: ";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.Location = new System.Drawing.Point(7, 223);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(111, 27);
+            this.label41.Size = new System.Drawing.Size(104, 25);
             this.label41.TabIndex = 22;
             this.label41.Text = "Màn hình: ";
             // 
             // cboTinhTrang
             // 
-            this.cboTinhTrang.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTinhTrang.FormattingEnabled = true;
             this.cboTinhTrang.Items.AddRange(new object[] {
             "Hoạt động",
             "Không hoạt động"});
             this.cboTinhTrang.Location = new System.Drawing.Point(161, 403);
             this.cboTinhTrang.Name = "cboTinhTrang";
-            this.cboTinhTrang.Size = new System.Drawing.Size(121, 30);
+            this.cboTinhTrang.Size = new System.Drawing.Size(121, 28);
             this.cboTinhTrang.TabIndex = 21;
             // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.Location = new System.Drawing.Point(14, 406);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(119, 27);
+            this.label50.Size = new System.Drawing.Size(111, 25);
             this.label50.TabIndex = 9;
             this.label50.Text = "Tình trạng: ";
             // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.Location = new System.Drawing.Point(13, 365);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(119, 27);
+            this.label51.Size = new System.Drawing.Size(117, 25);
             this.label51.TabIndex = 8;
             this.label51.Text = "Phần mềm: ";
             // 
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.Location = new System.Drawing.Point(10, 331);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(145, 27);
+            this.label52.Size = new System.Drawing.Size(139, 25);
             this.label52.TabIndex = 7;
             this.label52.Text = "Hệ điều hành: ";
             // 
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.Location = new System.Drawing.Point(9, 294);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(78, 27);
+            this.label53.Size = new System.Drawing.Size(76, 25);
             this.label53.TabIndex = 6;
             this.label53.Text = "Chuột: ";
             // 
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(7, 182);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(89, 27);
+            this.label54.Size = new System.Drawing.Size(87, 25);
             this.label54.TabIndex = 5;
             this.label54.Text = "Ổ cứng: ";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.Location = new System.Drawing.Point(8, 143);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(64, 27);
+            this.label55.Size = new System.Drawing.Size(63, 25);
             this.label55.TabIndex = 3;
             this.label55.Text = "Ram: ";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.Location = new System.Drawing.Point(7, 106);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(64, 27);
+            this.label56.Size = new System.Drawing.Size(65, 25);
             this.label56.TabIndex = 2;
             this.label56.Text = "CPU: ";
             // 
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label57.Location = new System.Drawing.Point(6, 67);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(123, 27);
+            this.label57.Size = new System.Drawing.Size(116, 25);
             this.label57.TabIndex = 1;
             this.label57.Text = "Mainboard: ";
             // 
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.Location = new System.Drawing.Point(5, 32);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(89, 27);
+            this.label58.Size = new System.Drawing.Size(90, 25);
             this.label58.TabIndex = 0;
             this.label58.Text = "Số máy: ";
             // 
@@ -978,7 +966,7 @@ namespace TTCN
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(185)))), ((int)(((byte)(244)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.label32);
+            this.panel3.Controls.Add(this.lblChon);
             this.panel3.Controls.Add(this.cboChon);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.pictureBox1);
@@ -989,21 +977,22 @@ namespace TTCN
             this.panel3.Size = new System.Drawing.Size(1745, 95);
             this.panel3.TabIndex = 54;
             // 
-            // label32
+            // lblChon
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(984, 21);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(194, 38);
-            this.label32.TabIndex = 3;
-            this.label32.Text = "Chọn phòng: ";
+            this.lblChon.AutoSize = true;
+            this.lblChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChon.ForeColor = System.Drawing.Color.White;
+            this.lblChon.Location = new System.Drawing.Point(984, 21);
+            this.lblChon.Name = "lblChon";
+            this.lblChon.Size = new System.Drawing.Size(188, 33);
+            this.lblChon.TabIndex = 3;
+            this.lblChon.Text = "Chọn phòng: ";
+            this.lblChon.Visible = false;
             // 
             // cboChon
             // 
             this.cboChon.BackColor = System.Drawing.Color.LightPink;
-            this.cboChon.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cboChon.FormattingEnabled = true;
             this.cboChon.Items.AddRange(new object[] {
@@ -1013,20 +1002,21 @@ namespace TTCN
             "CNTT09"});
             this.cboChon.Location = new System.Drawing.Point(1180, 19);
             this.cboChon.Name = "cboChon";
-            this.cboChon.Size = new System.Drawing.Size(241, 40);
+            this.cboChon.Size = new System.Drawing.Size(241, 37);
             this.cboChon.TabIndex = 2;
             this.cboChon.Tag = "";
+            this.cboChon.Visible = false;
             this.cboChon.SelectedValueChanged += new System.EventHandler(this.cboChon_SelectedValueChanged);
             // 
             // label1
             // 
             this.label1.AutoEllipsis = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(92, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 72);
+            this.label1.Size = new System.Drawing.Size(361, 72);
             this.label1.TabIndex = 0;
             this.label1.Text = "PHÒNG CNTT09";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1117,7 +1107,7 @@ namespace TTCN
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Image = global::TTCN.Properties.Resources.icon_cua;
             this.label3.Location = new System.Drawing.Point(24, 742);
             this.label3.Name = "label3";
@@ -1992,7 +1982,7 @@ namespace TTCN
             // 
             // label21
             // 
-            this.label21.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Image = ((System.Drawing.Image)(resources.GetObject("label21.Image")));
             this.label21.Location = new System.Drawing.Point(290, 755);
             this.label21.Name = "label21";
@@ -2003,7 +1993,7 @@ namespace TTCN
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(533, 767);
@@ -2172,7 +2162,7 @@ namespace TTCN
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label lblChon;
         private System.Windows.Forms.ComboBox cboChon;
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox grbSoDo;

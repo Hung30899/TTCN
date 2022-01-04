@@ -49,10 +49,10 @@ namespace TTCN
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(214, 32);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(223, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 42);
+            this.label1.Size = new System.Drawing.Size(280, 42);
             this.label1.TabIndex = 11;
             this.label1.Text = "Cán bộ kỹ thuật";
             // 
@@ -96,7 +96,7 @@ namespace TTCN
             // 
             this.btnHuybo.BackColor = System.Drawing.Color.SkyBlue;
             this.btnHuybo.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnHuybo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuybo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuybo.Location = new System.Drawing.Point(324, 211);
             this.btnHuybo.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuybo.Name = "btnHuybo";
@@ -109,7 +109,7 @@ namespace TTCN
             // btnDangnhap
             // 
             this.btnDangnhap.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnDangnhap.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangnhap.Location = new System.Drawing.Point(171, 211);
             this.btnDangnhap.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangnhap.Name = "btnDangnhap";
@@ -122,28 +122,28 @@ namespace TTCN
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(35, 103);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 21);
+            this.label3.Size = new System.Drawing.Size(121, 24);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Username:";
+            this.label3.Text = "Username(*):";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(35, 154);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 21);
+            this.label2.Size = new System.Drawing.Size(116, 24);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Password:";
+            this.label2.Text = "Password(*):";
             // 
             // txtPass
             // 
-            this.txtPass.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.Black;
             this.txtPass.Location = new System.Drawing.Point(171, 147);
             this.txtPass.Margin = new System.Windows.Forms.Padding(2);
@@ -155,7 +155,7 @@ namespace TTCN
             // 
             // txtUser
             // 
-            this.txtUser.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.Color.Black;
             this.txtUser.Location = new System.Drawing.Point(171, 96);
             this.txtUser.Margin = new System.Windows.Forms.Padding(2);

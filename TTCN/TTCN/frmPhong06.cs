@@ -321,7 +321,9 @@ namespace TTCN
             if (chonND != 'g')
             {
                 grbGV.Visible = false;
-              //  pictureBox1.Visible = false;
+                cboChon.Visible = true;
+                lblChon.Visible = true;
+                //  pictureBox1.Visible = false;
             }
         }
         private void buttons_CheckedChanged(object sender, EventArgs e)

@@ -95,6 +95,11 @@ namespace TTCN
             }
         }
 
+        private void cboChon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (chonND == 'g')
@@ -138,7 +143,9 @@ namespace TTCN
             cboChon.Text = "CNTT01";
             if (chonND != 'g')
             {
-                grbGV.Visible = false;       
+                grbGV.Visible = false;
+                cboChon.Visible = true;
+                lblChon.Visible = true;
             }
         }
 

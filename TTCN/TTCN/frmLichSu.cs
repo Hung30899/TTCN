@@ -69,7 +69,7 @@ namespace TTCN
             string sql;
             if (cboSearch.Text.Trim() == "")
             {
-                sql = "SELECT * FROM LichSu";
+                sql = "SELECT * FROM LichSu order by Ngay";
                 tblLichSu = Functions.GetDataToTable(sql);
             }
             if (rbt == 'm')

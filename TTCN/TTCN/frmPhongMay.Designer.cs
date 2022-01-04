@@ -55,19 +55,20 @@ namespace TTCN
             // label1
             // 
             this.label1.AutoEllipsis = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = global::TTCN.Properties.Resources.icon_phong_may;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(10, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(544, 89);
+            this.label1.Size = new System.Drawing.Size(703, 89);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ PHÒNG MÁY";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnPhong01
             // 
+            this.btnPhong01.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhong01.Image = ((System.Drawing.Image)(resources.GetObject("btnPhong01.Image")));
             this.btnPhong01.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPhong01.Location = new System.Drawing.Point(314, 292);
@@ -81,6 +82,7 @@ namespace TTCN
             // 
             // btnPhong07
             // 
+            this.btnPhong07.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhong07.Image = ((System.Drawing.Image)(resources.GetObject("btnPhong07.Image")));
             this.btnPhong07.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPhong07.Location = new System.Drawing.Point(840, 292);
@@ -94,6 +96,7 @@ namespace TTCN
             // 
             // btnPhong06
             // 
+            this.btnPhong06.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhong06.Image = ((System.Drawing.Image)(resources.GetObject("btnPhong06.Image")));
             this.btnPhong06.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPhong06.Location = new System.Drawing.Point(314, 583);
@@ -107,6 +110,7 @@ namespace TTCN
             // 
             // btnPhong09
             // 
+            this.btnPhong09.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhong09.Image = ((System.Drawing.Image)(resources.GetObject("btnPhong09.Image")));
             this.btnPhong09.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPhong09.Location = new System.Drawing.Point(840, 572);

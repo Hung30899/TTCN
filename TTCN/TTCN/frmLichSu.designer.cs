@@ -76,15 +76,15 @@ namespace TTCN
             // label1
             // 
             this.label1.AutoEllipsis = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = global::TTCN.Properties.Resources.icon_lich_su1;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(10, 6);
+            this.label1.Location = new System.Drawing.Point(7, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(350, 94);
             this.label1.TabIndex = 2;
-            this.label1.Text = "LỊCH SỬ";
+            this.label1.Text = "     LỊCH SỬ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox3
@@ -95,7 +95,7 @@ namespace TTCN
             this.groupBox3.Controls.Add(this.rbnpm);
             this.groupBox3.Controls.Add(this.btnTimKiem);
             this.groupBox3.Controls.Add(this.rbnmm);
-            this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(136, 137);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
@@ -109,23 +109,23 @@ namespace TTCN
             // 
             this.cboSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboSearch.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSearch.FormattingEnabled = true;
             this.cboSearch.Location = new System.Drawing.Point(15, 77);
             this.cboSearch.Margin = new System.Windows.Forms.Padding(2);
             this.cboSearch.Name = "cboSearch";
-            this.cboSearch.Size = new System.Drawing.Size(198, 31);
+            this.cboSearch.Size = new System.Drawing.Size(198, 33);
             this.cboSearch.TabIndex = 29;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label4.Location = new System.Drawing.Point(11, 46);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 23);
+            this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 28;
             this.label4.Text = "Từ khóa:";
             // 
@@ -134,11 +134,11 @@ namespace TTCN
             this.rbnpm.AutoSize = true;
             this.rbnpm.Checked = true;
             this.rbnpm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.rbnpm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbnpm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbnpm.Location = new System.Drawing.Point(233, 83);
             this.rbnpm.Margin = new System.Windows.Forms.Padding(2);
             this.rbnpm.Name = "rbnpm";
-            this.rbnpm.Size = new System.Drawing.Size(158, 25);
+            this.rbnpm.Size = new System.Drawing.Size(174, 28);
             this.rbnpm.TabIndex = 27;
             this.rbnpm.TabStop = true;
             this.rbnpm.Text = "Theo Phòng Máy";
@@ -149,10 +149,10 @@ namespace TTCN
             // 
             this.btnTimKiem.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.Image = global::TTCN.Properties.Resources.img_timkiem;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(553, 68);
+            this.btnTimKiem.Location = new System.Drawing.Point(589, 68);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(146, 39);
@@ -165,11 +165,11 @@ namespace TTCN
             // 
             this.rbnmm.AutoSize = true;
             this.rbnmm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.rbnmm.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnmm.Location = new System.Drawing.Point(394, 82);
+            this.rbnmm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbnmm.Location = new System.Drawing.Point(424, 82);
             this.rbnmm.Margin = new System.Windows.Forms.Padding(2);
             this.rbnmm.Name = "rbnmm";
-            this.rbnmm.Size = new System.Drawing.Size(134, 25);
+            this.rbnmm.Size = new System.Drawing.Size(144, 28);
             this.rbnmm.TabIndex = 26;
             this.rbnmm.Text = "Theo Mã Máy";
             this.rbnmm.UseVisualStyleBackColor = true;

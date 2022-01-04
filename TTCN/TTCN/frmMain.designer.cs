@@ -75,11 +75,11 @@ namespace TTCN
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblUser.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.White;
             this.lblUser.Location = new System.Drawing.Point(110, 37);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(73, 39);
+            this.lblUser.Size = new System.Drawing.Size(73, 33);
             this.lblUser.TabIndex = 12;
             this.lblUser.Text = "user";
             // 
@@ -99,7 +99,7 @@ namespace TTCN
             // 
             this.btnPhanAnh.FlatAppearance.BorderSize = 0;
             this.btnPhanAnh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhanAnh.Font = new System.Drawing.Font("Palatino Linotype", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhanAnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhanAnh.ForeColor = System.Drawing.Color.White;
             this.btnPhanAnh.Image = global::TTCN.Properties.Resources.icon_phan_anh;
             this.btnPhanAnh.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -117,7 +117,7 @@ namespace TTCN
             // 
             this.btnLichSu.FlatAppearance.BorderSize = 0;
             this.btnLichSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichSu.Font = new System.Drawing.Font("Palatino Linotype", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLichSu.ForeColor = System.Drawing.Color.White;
             this.btnLichSu.Image = global::TTCN.Properties.Resources.icon_lich_su;
             this.btnLichSu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -135,7 +135,7 @@ namespace TTCN
             // 
             this.btnTaiKhoan.FlatAppearance.BorderSize = 0;
             this.btnTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaiKhoan.Font = new System.Drawing.Font("Palatino Linotype", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.Image = global::TTCN.Properties.Resources.icon_rai_khoan;
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -167,7 +167,7 @@ namespace TTCN
             // 
             this.btnPhongMay.FlatAppearance.BorderSize = 0;
             this.btnPhongMay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhongMay.Font = new System.Drawing.Font("Palatino Linotype", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhongMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhongMay.ForeColor = System.Drawing.Color.White;
             this.btnPhongMay.Image = global::TTCN.Properties.Resources.icon_phong_may;
             this.btnPhongMay.ImageAlign = System.Drawing.ContentAlignment.TopCenter;

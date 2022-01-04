@@ -44,10 +44,10 @@ namespace TTCN
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(239, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 42);
+            this.label1.Size = new System.Drawing.Size(342, 42);
             this.label1.TabIndex = 8;
             this.label1.Text = "Quản lý phòng máy";
             // 
@@ -65,7 +65,7 @@ namespace TTCN
             // btnCanBoKyThuat
             // 
             this.btnCanBoKyThuat.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnCanBoKyThuat.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCanBoKyThuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCanBoKyThuat.Location = new System.Drawing.Point(255, 150);
             this.btnCanBoKyThuat.Name = "btnCanBoKyThuat";
             this.btnCanBoKyThuat.Size = new System.Drawing.Size(210, 60);
@@ -77,7 +77,7 @@ namespace TTCN
             // btnGiangVien
             // 
             this.btnGiangVien.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnGiangVien.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiangVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGiangVien.Location = new System.Drawing.Point(26, 150);
             this.btnGiangVien.Name = "btnGiangVien";
             this.btnGiangVien.Size = new System.Drawing.Size(210, 60);
