@@ -483,10 +483,10 @@ namespace TTCN
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(392, 176);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(217, 28);
+            this.label10.Size = new System.Drawing.Size(204, 25);
             this.label10.TabIndex = 28;
             this.label10.Text = "Thông tin phản ánh:";
             // 
@@ -561,7 +561,7 @@ namespace TTCN
             "Không hoạt động"});
             this.cboTT.Location = new System.Drawing.Point(139, 384);
             this.cboTT.Name = "cboTT";
-            this.cboTT.Size = new System.Drawing.Size(163, 32);
+            this.cboTT.Size = new System.Drawing.Size(211, 32);
             this.cboTT.TabIndex = 21;
             // 
             // lblPM

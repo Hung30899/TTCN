@@ -227,6 +227,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>QLPM.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\lammoi.png" />
     <None Include="Resources\mt_tt_hong1.png" />
     <None Include="Resources\mt_tt_tot1.png" />
     <None Include="Resources\icon_phan_anh.png" />

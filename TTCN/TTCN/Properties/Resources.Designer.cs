@@ -244,6 +244,16 @@ namespace TTCN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lammoi {
+            get {
+                object obj = ResourceManager.GetObject("lammoi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_Oschool {
             get {
                 object obj = ResourceManager.GetObject("logo_Oschool", resourceCulture);

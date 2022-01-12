@@ -145,7 +145,7 @@ namespace TTCN
             {
                 grbGV.Visible = false;
                 cboChon.Visible = true;
-                lblChon.Visible = true;
+                lblChon.Visible = true;  
             }
         }
 

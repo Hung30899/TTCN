@@ -90,6 +90,7 @@ namespace TTCN
             this.label2 = new System.Windows.Forms.Label();
             this.grbGV = new System.Windows.Forms.GroupBox();
             this.txtPhanAnh = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnPhananh = new System.Windows.Forms.Button();
             this.lblBanPhim = new System.Windows.Forms.Label();
@@ -160,7 +161,6 @@ namespace TTCN
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grbSoDo.SuspendLayout();
@@ -213,6 +213,7 @@ namespace TTCN
             this.cboChon.Size = new System.Drawing.Size(241, 37);
             this.cboChon.TabIndex = 2;
             this.cboChon.Tag = "";
+            this.cboChon.Visible = false;
             this.cboChon.SelectedIndexChanged += new System.EventHandler(this.cboChon_SelectedIndexChanged);
             this.cboChon.SelectedValueChanged += new System.EventHandler(this.cboChon_SelectedValueChanged);
             // 
@@ -1260,6 +1261,16 @@ namespace TTCN
             this.txtPhanAnh.Size = new System.Drawing.Size(284, 205);
             this.txtPhanAnh.TabIndex = 1;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(375, 169);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(204, 25);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Thông tin phản ánh:";
+            // 
             // btnHuy
             // 
             this.btnHuy.BackColor = System.Drawing.Color.White;
@@ -1324,14 +1335,14 @@ namespace TTCN
             // 
             // cboTT
             // 
-            this.cboTT.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTT.FormattingEnabled = true;
             this.cboTT.Items.AddRange(new object[] {
             "Hoạt động",
             "Không hoạt động"});
             this.cboTT.Location = new System.Drawing.Point(139, 384);
             this.cboTT.Name = "cboTT";
-            this.cboTT.Size = new System.Drawing.Size(163, 34);
+            this.cboTT.Size = new System.Drawing.Size(191, 32);
             this.cboTT.TabIndex = 21;
             // 
             // lblPM
@@ -1992,16 +2003,6 @@ namespace TTCN
             this.label40.Size = new System.Drawing.Size(127, 25);
             this.label40.TabIndex = 0;
             this.label40.Text = "Tên phòng: ";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(375, 169);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(217, 28);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "Thông tin phản ánh:";
             // 
             // frmPhong01
             // 
